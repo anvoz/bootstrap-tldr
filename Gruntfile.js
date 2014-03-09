@@ -58,6 +58,10 @@ module.exports = function (grunt) {
                     '.tmp/styles/{,*/}*.css',
                     '<%= config.app %>/images/{,*/}*'
                 ]
+            },
+            htmlbuild: {
+                files: ['<%= config.app %>/fixtures/**/*.html'],
+                tasks: ['htmlbuild']
             }
         },
 
@@ -316,6 +320,23 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        // Append html partials
+        htmlbuild: {
+            app: {
+                src: '<%= config.app %>/fixtures/index.html',
+                dest: '<%= config.app %>/index.html',
+                options: {
+                    beautify: true,
+                    parseTag: 'htmlbuild',
+                    sections: {
+                        css: {
+                            typography: '<%= config.app %>/fixtures/sections/css/typography.html'
+                        }
+                    }
+                }
+            }
         }
     });
 
