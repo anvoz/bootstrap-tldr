@@ -332,7 +332,15 @@ module.exports = function (grunt) {
                     parseTag: 'htmlbuild',
                     sections: {
                         css: {
-                            typography: '<%= config.app %>/fixtures/sections/css/typography.html'
+                            typography: '<%= config.app %>/fixtures/sections/css/typography.html',
+                            tables: '<%= config.app %>/fixtures/sections/css/tables.html',
+                            helperClasses: '<%= config.app %>/fixtures/sections/css/helper_classes.html'
+                        },
+                        components: {
+                            labels: '<%= config.app %>/fixtures/sections/components/labels.html',
+                            alerts: '<%= config.app %>/fixtures/sections/components/alerts.html',
+                            listGroup: '<%= config.app %>/fixtures/sections/components/list_group.html',
+                            wells: '<%= config.app %>/fixtures/sections/components/wells.html'
                         }
                     }
                 }

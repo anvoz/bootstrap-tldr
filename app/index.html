@@ -54,24 +54,464 @@
     </div>
 
     <div class="container">
-        <div class="media">
-            <div class="pull-left">
-                <h1>h1 <small>small</small></h1>
+        <div class="row">
+            <div class="col-md-9" role="main">
+                <h1 id="css" class="page-header">CSS</h1>
+
+                <h2 id="typography">Typography</h2>
+                <div class="media">
+                    <!-- Headings -->
+                    <div class="pull-left">
+                        <h1>h1 <small>small</small></h1>
+                    </div>
+                    <div class="pull-left">
+                        <h2>h2 <small>small</small></h2>
+                    </div>
+                    <div class="pull-left">
+                        <h3>h3 <small>small</small></h3>
+                    </div>
+                    <div class="pull-left">
+                        <h4>h4 <small>small</small></h4>
+                    </div>
+                    <div class="pull-left">
+                        <h5>h5 <small>small</small></h5>
+                    </div>
+                    <div class="pull-left">
+                        <h6>h6 <small>small</small></h6>
+                    </div>
+                </div>
+
+                <p>
+                    <!-- Lead body copy -->
+                    <span class="lead">.lead</span>
+                    <!-- Bold -->
+                    <strong>strong</strong>
+                    <b>b</b>
+                    <!-- Small text -->
+                    <small>small</small>
+                    <span class="small">.small</span>
+                    <!-- Italics -->
+                    <em>em</em>
+                    <i>i</i>
+                    <!-- Abbreviations -->
+                    <abbr title="abbreviation">abbr</abbr>
+                    <abbr title="abbreviation.initialism" class="initialism">.initialism</abbr>
+                    <!-- Inline code -->
+                    <code>code</code>
+                    <!-- User input -->
+                    <kbd>kbd</kbd>
+                </p>
+
+                <!-- Alignment classes -->
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="text-left">.text-left</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center">.text-center</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-right">.text-right</p>
+                    </div>
+                </div>
+                <p class="text-justify">.text-justify</p>
+
+                <!-- Addresses -->
+                <address>
+    <strong>address strong</strong><br>
+    address<br>
+    <a href="mailto:#">first.last@example.com</a>
+</address>
+
+                <!-- Blockquotes -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <blockquote>
+                            <p>blockquote p</p>
+                            <footer>footer <cite title="Cite">cite</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-sm-6">
+                        <blockquote class="blockquote-reverse">
+                            <p>blockquote.blockquote-reverse p</p>
+                            <footer>Someone famous in <cite title="Source Title">Source Title</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!-- Unordered list -->
+                        <p><strong>ul</strong>
+                        </p>
+                        <ul>
+                            <li>li</li>
+                            <li>List item
+                                <ul>
+                                    <li>ul li</li>
+                                    <li>List item</li>
+                                </ul>
+                            </li>
+                            <li>List item</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Ordered list -->
+                        <p><strong>ol</strong>
+                        </p>
+                        <ol>
+                            <li>List item</li>
+                            <li>List item
+                                <ol>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                </ol>
+                            </li>
+                            <li>List item</li>
+                        </ol>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Unstyled list -->
+                        <p><strong>ul.list-unstyled</strong>
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>List item</li>
+                            <li>List item
+                                <ul>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                </ul>
+                            </li>
+                            <li>List item</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <!-- Inline list -->
+                    <p><strong>ul.list-inline</strong>
+                    </p>
+                    <ul class="list-inline">
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- Description -->
+                        <p><strong>dl</strong>
+                        </p>
+                        <dl>
+                            <dt>dt</dt>
+                            <dd>dd</dd>
+                            <dt>Term</dt>
+                            <dd>Description
+                                <br>Description</dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- Horizontal description -->
+                        <p><strong>dl.dl-horizontal</strong>
+                        </p>
+                        <dl class="dl-horizontal">
+                            <dt>Term</dt>
+                            <dd>Description</dd>
+                            <dt>Horizontal description lists will truncate terms that are too long to fit in the left column with text-overflow.</dt>
+                            <dd>Description
+                                <br>Description</dd>
+                        </dl>
+                    </div>
+                </div>
+                <h2 id="tables">Tables</h2>
+                <p><strong>table.table</strong>
+                </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>thead tr th</th>
+                            <th>th</th>
+                            <th>Header</th>
+                            <th>Header</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>tbody tr td</td>
+                            <td>td</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p><strong>table.table.table-striped</strong>
+                        </p>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><strong>..table-bordered</strong>
+                        </p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p><strong>..table-hover</strong>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><strong>..table-condensed</strong>
+                        </p>
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <p><strong>div.table-responsive table.table</strong>
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Header</th>
+                                <th>Header</th>
+                                <th>Header</th>
+                                <th>Header</th>
+                                <th>Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="active">td.active</td>
+                                <td class="success">td.success</td>
+                                <td class="info">td.info</td>
+                                <td class="warning">td.warning</td>
+                                <td class="danger">td.danger</td>
+                            </tr>
+                            <tr class="active">
+                                <td>tr.active td</td>
+                                <td colspan="4">Applies the hover color to a particular row or cell</td>
+                            </tr>
+                            <tr class="success">
+                                <td>tr.success td</td>
+                                <td colspan="4">Indicates a successful or positive action</td>
+                            </tr>
+                            <tr class="info">
+                                <td>tr.info td</td>
+                                <td colspan="4">Indicates a neutral informative change or action</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>tr.warning td</td>
+                                <td colspan="4">Indicates a warning that might need attention</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>tr.danger td</td>
+                                <td colspan="4">Indicates a dangerous or potentially negative action</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 id="helper-classes">Helper classes</h2>
+                <p>
+                    <!-- Contextual colors -->
+                    <span class="text-muted">.text-muted</span>
+                    <span class="text-primary">.text-primary</span>
+                    <span class="text-success">.text-success</span>
+                    <span class="text-info">.text-info</span>
+                    <span class="text-warning">.text-warning</span>
+                    <span class="text-danger">.text-danger</span>
+                </p>
+
+                <p>
+                    <!-- Contextual backgrounds -->
+                    <span class="bg-primary">.bg-primary</span>
+                    <span class="bg-success">.bg-success</span>
+                    <span class="bg-info">.bg-info</span>
+                    <span class="bg-warning">.bg-warning</span>
+                    <span class="bg-danger">.bg-danger</span>
+                </p>
+
+                <h1 id="components" class="page-header">Components</h1>
+
+                <h2 id="labels">Labels</h2>
+                <p>
+                    <span class="label label-default">.label.label-default</span>
+                    <span class="label label-primary">..label-primary</span>
+                    <span class="label label-success">..label-success</span>
+                    <span class="label label-info">..label-info</span>
+                    <span class="label label-warning">..label-warning</span>
+                    <span class="label label-danger">..label-danger</span>
+                </p>
+                <h2 id="alerts">Alerts</h2>
+                <!-- Alerts -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="alert alert-success">.alert.alert-success <a class="alert-link" href="#">a.alert-link</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="alert alert-info">..alert-info <a class="alert-link" href="#">a.alert-link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="alert alert-warning">..alert-warning <a class="alert-link" href="#">a.alert-link</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="alert alert-danger">..alert-danger <a class="alert-link" href="#">a.alert-link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dismissable alerts -->
+                <div class="alert alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    .alert.alert-dismissable <a class="alert-link" href="#">a.alert-link</a>
+                </div>
+                <h2 id="list-group">List group</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p><strong>ul.list-group</strong>
+                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item">li.list-group-item</li>
+                            <li class="list-group-item"><span class="badge">.badge</span> List item</li>
+                            <li class="list-group-item">List item</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><strong>div.list-group</strong>
+                        </p>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">a.list-group-item</a>
+                            <a href="#" class="list-group-item list-group-item-success">..list-group-item-success</a>
+                            <a href="#" class="list-group-item list-group-item-info">..list-group-item-info</a>
+                            <a href="#" class="list-group-item list-group-item-warning">..list-group-item-warning</a>
+                            <a href="#" class="list-group-item list-group-item-danger">..list-group-item-danger</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><strong>div.list-group</strong>
+                        </p>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">a.list-group-item.active</a>
+                            <a href="#" class="list-group-item list-group-item-success active">..list-group-item-success.active</a>
+                            <a href="#" class="list-group-item list-group-item-info active">..list-group-item-info.active</a>
+                            <a href="#" class="list-group-item list-group-item-warning active">..list-group-item-warning.active</a>
+                            <a href="#" class="list-group-item list-group-item-danger active">..list-group-item-danger.active</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p><strong>div.list-group</strong>
+                </p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+        a.list-group-item.active
+        <h4 class="list-group-item-heading">&gt; h4.list-group-item-heading</h4>
+        <p class="list-group-item-text">&gt; p.list-group-item-text</p>
+    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Paragraph</p>
+                    </a>
+                </div>
+
+                <h2 id="wells">Wells</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well well-lg">.well.well-lg</div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">.well</div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well well-sm">.well.well-sm</div>
+                    </div>
+                </div>
             </div>
-            <div class="pull-left">
-                <h2>h2 <small>small</small></h2>
-            </div>
-            <div class="pull-left">
-                <h3>h3 <small>small</small></h3>
-            </div>
-            <div class="pull-left">
-                <h4>h4 <small>small</small></h4>
-            </div>
-            <div class="pull-left">
-                <h5>h5 <small>small</small></h5>
-            </div>
-            <div class="pull-left">
-                <h6>h6 <small>small</small></h6>
+            <div class="col-md-3">
             </div>
         </div>
     </div>
