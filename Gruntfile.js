@@ -342,10 +342,22 @@ module.exports = function (grunt) {
                         },
                         components: {
                             glyphicons: '<%= config.app %>/fixtures/sections/components/glyphicons.html',
+                            dropdowns: '<%= config.app %>/fixtures/sections/components/dropdowns.html',
+                            buttonGroups: '<%= config.app %>/fixtures/sections/components/button_groups.html',
                             inputGroups: '<%= config.app %>/fixtures/sections/components/input_groups.html',
+                            navs: '<%= config.app %>/fixtures/sections/components/navs.html',
+                            navbar: '<%= config.app %>/fixtures/sections/components/navbar.html',
+                            breadcrumbs: '<%= config.app %>/fixtures/sections/components/breadcrumbs.html',
+                            pagination: '<%= config.app %>/fixtures/sections/components/pagination.html',
                             labels: '<%= config.app %>/fixtures/sections/components/labels.html',
+                            jumbotron: '<%= config.app %>/fixtures/sections/components/jumbotron.html',
+                            pageHeader: '<%= config.app %>/fixtures/sections/components/page_header.html',
+                            thumbnails: '<%= config.app %>/fixtures/sections/components/thumbnails.html',
                             alerts: '<%= config.app %>/fixtures/sections/components/alerts.html',
+                            progressBars: '<%= config.app %>/fixtures/sections/components/progress_bars.html',
+                            mediaObject: '<%= config.app %>/fixtures/sections/components/media_object.html',
                             listGroup: '<%= config.app %>/fixtures/sections/components/list_group.html',
+                            panels: '<%= config.app %>/fixtures/sections/components/panels.html',
                             wells: '<%= config.app %>/fixtures/sections/components/wells.html'
                         }
                     }
