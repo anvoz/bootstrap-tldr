@@ -1,0 +1,189 @@
+<p><strong>form</strong></p>
+<form>
+    <!-- Inputs with different sizes -->
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="input.form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control input-lg" placeholder="input.form-control.input-lg">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control input-sm" placeholder="input.form-control.input-sm">
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+        <textarea class="form-control" rows="3">textarea.form-control</textarea>
+    </div>
+
+    <!-- File input -->
+    <div class="form-group">
+        <label for="example-file-input">input[type="file"]</label>
+        <input type="file" id="example-file-input">
+        <span class="help-block">.help-block: Wrap labels and controls in <code>.form-group</code> for optimum spacing.</span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+</form>
+
+<!-- Inline form -->
+<p><strong>form.form-inline</strong></p>
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="example-text-input-inline">label.sr-only</label>
+        <input type="text" class="form-control" id="example-text-input-inline" placeholder="input.form-control">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> .checkbox label input[type="checkbox"]
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<br>
+
+<!-- Horizontal form -->
+<p><strong>form.form-horizontal</strong></p>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-3 control-label" for="example-text-input-horizontal">label.control-label</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="example-text-input-horizontal" placeholder="input.form-control">
+        </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Checkboxes</label>
+        <div class="col-sm-9">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> .checkbox label input[type="checkbox"]
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <label class="checkbox-inline">
+                <input type="checkbox" value="option1"> label.checkbox-inline Checkbox #1
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" value="option2"> Checkbox #2
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" value="option3" disabled> Disabled checkbox
+            </label>
+        </div>
+    </div>
+
+    <!-- Radios -->
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Radios</label>
+        <div class="col-sm-9">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" value="option1" checked> .radio label input[type="radio"]
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <label class="radio-inline">
+                <input type="radio" name="optionsRadios2" value="option1" checked> label.radio-inline Radio #1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optionsRadios2" value="option2"> Radio #2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optionsRadios2" value="option3" disabled> Disabled radio
+            </label>
+        </div>
+    </div>
+
+    <!-- Select -->
+    <div class="form-group">
+        <label class="col-sm-3 control-label">select.form-control</label>
+        <div class="col-sm-4">
+            <select class="form-control">
+                <option>option</option><option>Option #2</option><option>Option #3</option>
+            </select>
+            <br>
+            <select class="form-control" disabled>
+                <option>select[disabled]</option>
+            </select>
+        </div>
+        <div class="col-sm-5">
+            <p>select.form-control[multiple]</p>
+            <select class="form-control" multiple>
+                <option>Option #1</option><option>Option #2</option><option>Option #3</option><option>Option #4</option><option>Option #5</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Static control -->
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Static control</label>
+        <div class="col-sm-9">
+            <p class="form-control-static">p.form-control-static</p>
+        </div>
+    </div>
+
+    <!-- Disabled input -->
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Disabled input</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder=".form-control[disabled]" disabled>
+        </div>
+    </div>
+
+    <!-- Validation states -->
+    <div class="form-group has-success">
+        <label class="col-sm-3 control-label" for="inputSuccess">.has-success</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputSuccess" placeholder="input.form-control">
+        </div>
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label class="col-sm-3 control-label" for="inputSuccess2">..has-feedback</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputSuccess2" placeholder="input.form-control">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+    </div>
+    <div class="form-group has-warning">
+        <label class="col-sm-3 control-label" for="inputWarning">.has-warning</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputWarning" placeholder="input.form-control">
+        </div>
+    </div>
+    <div class="form-group has-warning has-feedback">
+        <label class="col-sm-3 control-label" for="inputWarning2">..has-feedback</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputWarning2" placeholder="input.form-control">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+        </div>
+    </div>
+    <div class="form-group has-error">
+        <label class="col-sm-3 control-label" for="inputError">.has-error</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputError" placeholder="input.form-control">
+        </div>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="col-sm-3 control-label" for="inputError2">..has-feedback</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputError2" placeholder="input.form-control">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form>

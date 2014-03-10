@@ -334,9 +334,15 @@ module.exports = function (grunt) {
                         css: {
                             typography: '<%= config.app %>/fixtures/sections/css/typography.html',
                             tables: '<%= config.app %>/fixtures/sections/css/tables.html',
-                            helperClasses: '<%= config.app %>/fixtures/sections/css/helper_classes.html'
+                            forms: '<%= config.app %>/fixtures/sections/css/forms.html',
+                            buttons: '<%= config.app %>/fixtures/sections/css/buttons.html',
+                            images: '<%= config.app %>/fixtures/sections/css/images.html',
+                            helperClasses: '<%= config.app %>/fixtures/sections/css/helper_classes.html',
+                            responsiveUtilities: '<%= config.app %>/fixtures/sections/css/responsive_utilities.html'
                         },
                         components: {
+                            glyphicons: '<%= config.app %>/fixtures/sections/components/glyphicons.html',
+                            inputGroups: '<%= config.app %>/fixtures/sections/components/input_groups.html',
                             labels: '<%= config.app %>/fixtures/sections/components/labels.html',
                             alerts: '<%= config.app %>/fixtures/sections/components/alerts.html',
                             listGroup: '<%= config.app %>/fixtures/sections/components/list_group.html',
