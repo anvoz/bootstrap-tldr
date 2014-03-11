@@ -359,6 +359,17 @@ module.exports = function (grunt) {
                             listGroup: '<%= config.app %>/fixtures/sections/components/list_group.html',
                             panels: '<%= config.app %>/fixtures/sections/components/panels.html',
                             wells: '<%= config.app %>/fixtures/sections/components/wells.html'
+                        },
+                        javascript: {
+                            modals: '<%= config.app %>/fixtures/sections/javascript/modals.html',
+                            dropdowns: '<%= config.app %>/fixtures/sections/javascript/dropdowns.html',
+                            tabs: '<%= config.app %>/fixtures/sections/javascript/tabs.html',
+                            tooltips: '<%= config.app %>/fixtures/sections/javascript/tooltips.html',
+                            popovers: '<%= config.app %>/fixtures/sections/javascript/popovers.html',
+                            alerts: '<%= config.app %>/fixtures/sections/javascript/alerts.html',
+                            buttons: '<%= config.app %>/fixtures/sections/javascript/buttons.html',
+                            collapse: '<%= config.app %>/fixtures/sections/javascript/collapse.html',
+                            carousel: '<%= config.app %>/fixtures/sections/javascript/carousel.html'
                         }
                     }
                 }

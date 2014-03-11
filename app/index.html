@@ -56,6 +56,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9" role="main">
+                <p><strong>.container .row .col-md-9</strong>
+                </p>
+
                 <h1 id="css" class="page-header">CSS</h1>
 
                 <h2 id="typography">Typography</h2>
@@ -1227,7 +1230,7 @@
                 <p><strong>.btn-toolbar .btn-group.dropup</strong>
                 </p>
                 <div class="btn-group dropup">
-                    <button type="button" class="btn btn-default">Dropup</button>
+                    <button type="button" class="btn btn-default">.dropdown-menu &rarr;</button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
                     </button>
@@ -1239,7 +1242,7 @@
                     </ul>
                 </div>
                 <div class="btn-group dropup">
-                    <button type="button" class="btn btn-default">(.dropdown-menu-right)</button>
+                    <button type="button" class="btn btn-default">.dropdown-menu.dropdown-menu-right &rarr;</button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
                     </button>
@@ -1251,43 +1254,42 @@
                     </ul>
                 </div>
                 <h2 id="input-groups">Input groups</h2>
-                <p><strong>form</strong>
+                <p><strong>.form-group .input-group</strong>
                 </p>
-                <form>
-                    <p>&gt; div.input-group</p>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><abbr title=".input-group-addon: The horizontal scrollbar will appear in IE9 if this content (abbr.text) is too long">...</abbr></span>
-                            <input type="text" class="form-control" placeholder="input.form-control">
-                            <span class="input-group-addon"><input type="checkbox"></span>
-                            <span class="input-group-addon"><input type="radio"></span>
-                        </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">.input-group-addon</span>
+                        <input type="text" class="form-control" placeholder="input.form-control">
+                        <span class="input-group-addon"><input type="checkbox"></span>
+                        <span class="input-group-addon"><input type="radio"></span>
                     </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="input.form-control">
-                            <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><span class="text-muted">span.input-group-btn</span> button</button>
-                            </span>
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="input.form-control">
+                        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">span.input-group-btn button</button>
+        </span>
                     </div>
-                    <p>&gt; div.input-group.input-group-lg</p>
-                    <div class="form-group">
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon">.</span>
-                            <input type="text" class="form-control input-lg" placeholder="input.form-control.input-lg">
-                            <span class="input-group-addon">.</span>
-                        </div>
+                </div>
+                <p><strong>.form-group .input-group.input-group-lg</strong>
+                </p>
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">.</span>
+                        <input type="text" class="form-control input-lg" placeholder="input.form-control.input-lg">
+                        <span class="input-group-addon">.</span>
                     </div>
-                    <p>&gt; div.input-group.input-group-sm</p>
-                    <div class="form-group">
-                        <div class="input-group input-group-sm">
-                            <span class="input-group-addon">.</span>
-                            <input type="text" class="form-control input-sm" placeholder="input.form-control.input-sm">
-                            <span class="input-group-addon">.</span>
-                        </div>
+                </div>
+                <p><strong>.form-group .input-group.input-group-sm</strong>
+                </p>
+                <div class="form-group">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon">.</span>
+                        <input type="text" class="form-control input-sm" placeholder="input.form-control.input-sm">
+                        <span class="input-group-addon">.</span>
                     </div>
-                </form>
+                </div>
                 <h2 id="labels">Navs</h2>
                 <div class="row">
                     <div class="col-sm-6">
@@ -1642,12 +1644,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Dismissable alerts -->
-                <div class="alert alert-dismissable">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-                    .alert.alert-dismissable <a class="alert-link" href="#">a.alert-link</a>
-                </div>
                 <h2 id="progress-bars">Progress bars</h2>
                 <p><strong>.progress</strong>
                 </p>
@@ -1903,8 +1899,392 @@
                         <div class="well well-sm">.well.well-sm</div>
                     </div>
                 </div>
+
+                <h1 id="javascript" class="page-header">Javascript</h1>
+                <h2 id="js-modals">Modals</h2>
+                <p>
+                    Via data attributes: <code>data-toggle="modal"</code>  <code>data-target="#modal"</code>
+                    <a data-toggle="modal" href="#modal" class="btn btn-primary">Launch modal</a>
+                </p>
+                <p>
+                    Via Javascript: <code>$('#modal').modal()</code>
+                    <a href="#" onclick="$('#modal').modal(); return false;" class="btn btn-primary">Launch modal</a>
+                </p>
+                <div>
+                    <a data-toggle="modal" href="#modal-lg" class="btn btn-primary">Large modal</a>
+                    <a data-toggle="modal" href="#modal-sm" class="btn btn-primary">Small modal</a>
+                </div>
+                <!-- Static modal example -->
+                <div class="modal" role="dialog" style="display: block; position: static; overflow: hidden;">
+                    <div class="modal-dialog">
+                        <p><strong>.modal .modal-dialog .modal-content</strong>
+                        </p>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close">&times;</button>
+                                <h4 class="modal-title">.modal-header h4.modal-title</h4>
+                            </div>
+                            <div class="modal-body">
+                                .modal-body
+                            </div>
+                            <div class="modal-footer">
+                                .modal-footer
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Options: <code>backdrop: true|false|'static'</code>  <code>keyboard: true|false</code>  <code>show: true|false</code>  <code>remote: false|path</code>
+                </p>
+                <p>Methods: <code>.modal('toggle')</code>  <code>.modal('show')</code>  <code>.modal('hide')</code>
+                </p>
+                <p>Events: <code>show.bs.modal</code>  <code>shown.bs.modal</code>  <code>hide.bs.modal</code>  <code>hidden.bs.modal</code>  <code>loaded.bs.modal</code>
+                </p>
+
+                <!-- Default modal -->
+                <div class="modal fade" id="modal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">.modal-title</h4>
+                            </div>
+                            <div class="modal-body">
+                                .modal-body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Optional sizes -->
+                <div class="modal fade" id="modal-lg" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">.modal-title</h4>
+                            </div>
+                            <div class="modal-body">
+                                .modal-body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-sm" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">.modal-title</h4>
+                            </div>
+                            <div class="modal-body">
+                                .modal-body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="js-dropdowns">Dropdowns</h2>
+                <p>Via data attributes: <code>data-toggle="dropdown"</code>
+                </p>
+                <div class="dropdown">
+                    <a class="btn btn-primary" data-toggle="dropdown" href="#">Dropdown trigger</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Link #1</a>
+                        </li>
+                        <li><a href="#">Link #2</a>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    <br>Via Javascript: <code>$('.dropdown-toggle').dropdown()</code>(<code>data-toggle="dropdown"</code> still required)</p>
+                <p>Methods: <code>.dropdown('toggle')</code>
+                </p>
+                <p>Events: <code>show.bs.dropdown</code>  <code>shown.bs.dropdown</code>  <code>hide.bs.dropdown</code>  <code>hidden.bs.dropdown</code>
+                </p>
+                <h2 id="js-tabs">Tabs</h2>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#js-tab-pane1" data-toggle="tab">
+            Via data attributes: <code>data-toggle="tab"</code>
+        </a>
+                    </li>
+                    <li>
+                        <a href="#js-tab-pane2" onclick="$(this).tab('show'); return false;">
+            Via Javascript: <code>$(this).tab('show')</code>
+        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="js-tab-pane1">
+                        <p>Content #1: .table-content .tab-pane.active</p>
+                    </div>
+                    <div class="tab-pane" id="js-tab-pane2">
+                        <p>Content #2: .table-content .tab-pane</p>
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#js-tab-pane3" data-toggle="tab">Tab #1</a>
+                    </li>
+                    <li>
+                        <a href="#js-tab-pane4" data-toggle="tab">Tab #2</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="js-tab-pane3">
+                        <p>Content #1: .table-content .tab-pane.fade.in.active</p>
+                    </div>
+                    <div class="tab-pane fade" id="js-tab-pane4">
+                        <p>Content #2: .table-content .tab-pane.fade</p>
+                    </div>
+                </div>
+
+                <p>Events: <code>show.bs.tab</code>  <code>shown.bs.tab</code>
+                </p>
+                <h2 id="js-tooltips">Tooltips</h2>
+                <p>Usage: <code>$('[data-toggle="tooltip"]').tooltip()</code>
+                </p>
+                <div class="text-center">
+                    <button type="button" title="Tooltip on left" data-toggle="tooltip" data-placement="left" class="btn btn-primary">Left</button>
+                    <button type="button" title="Tooltip on top" data-toggle="tooltip" data-placement="top" class="btn btn-primary">Top</button>
+                    <button type="button" title="Tooltip on bottom" data-toggle="tooltip" data-placement="bottom" class="btn btn-primary">Bottom</button>
+                    <button type="button" title="Tooltip on right" data-toggle="tooltip" data-placement="right" class="btn btn-primary">Right</button>
+                </div>
+                <div class="text-center">
+                    <!-- Static tooltip -->
+                    <div class="tooltip bottom" style="display: inline-block; position: relative; opacity: 1; filter: alpha(opacity=100); z-index: 1000;">
+                        <div class="tooltip-inner">You must initialize them yourself</div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
+                </div>
+                <p>
+                    Options: <code>animation: true|false</code>  <code>html: false|true</code>  <code>selector: false|string</code>
+                    <br>
+                    <code>title: ''|function</code>  <code>container: false|string</code>
+                    <br>
+                    <code>placement: top|bottom|left|right|auto|function</code>
+                    <br>
+                    <code>trigger: 'hover focus'|click|hover|focus|manual</code>
+                    <br>
+                    <code>delay: 0|{show:500, hide:100}</code>
+                </p>
+                <p>Methods: <code>.tooltip('show')</code>  <code>.tooltip('hide')</code>  <code>.tooltip('toggle')</code>  <code>.tooltip('destroy')</code>
+                </p>
+                <p>Events: <code>show.bs.tooltip</code>  <code>shown.bs.tooltip</code>  <code>hide.bs.tooltip</code>  <code>hidden.bs.tooltip</code>
+                </p>
+                <h2 id="js-popovers">Popovers</h2>
+                <p>Usage: <code>$('[data-toggle="popover"]').popover()</code>
+                </p>
+                <div class="text-center">
+                    <button type="button" title="Popover on left" data-toggle="popover" data-placement="left" data-content="..." class="btn btn-primary">Left</button>
+                    <button type="button" title="Popover on top" data-toggle="popover" data-placement="top" data-content="..." class="btn btn-primary">Top</button>
+                    <button type="button" title="Popover on bottom" data-toggle="popover" data-placement="bottom" data-content="..." class="btn btn-primary">Bottom</button>
+                    <button type="button" title="Popover on right" data-toggle="popover" data-placement="right" data-content="..." class="btn btn-primary">Right</button>
+                </div>
+                <div class="text-center">
+                    <!-- Static popover -->
+                    <div class="popover bottom" style="display: inline-block; position: relative; z-index: 1000;">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title">Popover</h3>
+                        <div class="popover-content">
+                            <p>You must initialize them yourself</p>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <br>Options: <code>animation: true|false</code>  <code>html: false|true</code>  <code>selector: false|string</code>
+                    <br>
+                    <code>title: ''|function</code>  <code>content: ''|function</code>  <code>container: false|string</code>
+                    <br>
+                    <code>placement: right|top|bottom|left|auto|function</code>
+                    <br>
+                    <code>trigger: click|hover|focus|manual</code>
+                    <br>
+                    <code>delay: 0|{show:500, hide:100}</code>
+                </p>
+                <p>Methods: <code>.popover('show')</code>  <code>.popover('hide')</code>  <code>.popover('toggle')</code>  <code>.popover('destroy')</code>
+                </p>
+                <p>Events: <code>show.bs.popover</code>  <code>shown.bs.popover</code>  <code>hide.bs.popover</code>  <code>hidden.bs.popover</code>
+                </p>
+                <h2 id="js-alerts">Alerts</h2>
+                <p>Via data attributes (close button): <code>data-dismiss="alert"</code>
+                </p>
+                <div class="alert alert-danger fade in">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    .alert.alert-danger.fade.in
+                </div>
+                <p>Via Javascript: <code>$('.alert').alert()</code>
+                </p>
+                <p>Methods: <code>.alert('close')</code>
+                </p>
+                <p>Events: <code>close.bs.alert</code>  <code>closed.bs.alert</code>
+                </p>
+                <h2 id="js-buttons">Buttons</h2>
+                <p>Stateful button: <code>data-loading-text="Loading..."</code>  <code>data-complete-text="Completed"</code>
+                </p>
+                <div class="btn-group">
+                    <button class="btn btn-primary" type="button" data-loading-text="Loading..." data-complete-text="Completed" onclick="$(this).button('loading').siblings('button').prop('disabled',false);" autocomplete="off">
+                        $(this).button('loading')
+                    </button>
+                    <button class="btn btn-primary" type="button" onclick="$(this).prop('disabled',true).parent().find('button:first').button('complete');" disabled="disabled" autocomplete="off">
+                        $('&larr;').button('complete')
+                    </button>
+                    <button class="btn btn-primary" type="button" onclick="$(this).parent().find('button:first').button('reset').siblings('button').prop('disabled',true);" disabled="disabled" autocomplete="off">
+                        $('&larr; &larr;').button('reset')
+                    </button>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    Single toggle:
+                    <button type="button" class="btn btn-primary" data-toggle="button">[data-toggle="button"]</button>
+                </div>
+                <br>
+
+                <div>
+                    Checkbox: <code>data-toggle="buttons"</code>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary">
+                            <input type="checkbox">#1</label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox">#2</label>
+                        <label class="btn btn-primary disabled">
+                            <input type="checkbox">Disabled
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox">#4</label>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    Radio: <code>data-toggle="buttons"</code>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary">
+                            <input type="radio" name="optionsRadiosJS" value="option1" checked="checked">#1
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="optionsRadiosJS" value="option2">#2
+                        </label>
+                        <label class="btn btn-primary disabled">
+                            <input type="radio" name="optionsRadiosJS" value="option3">Disabled
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="optionsRadiosJS" value="option2">#4
+                        </label>
+                    </div>
+                </div>
+                <br>
+
+                <p>Methods: <code>.button('toggle')</code>  <code>.button('loading')</code>  <code>.button('reset')</code>  <code>.button(string)</code>
+                </p>
+                <h2 id="js-collapse">Collapse</h2>
+                <p>Via data attributes: <code>data-toggle="collapse"</code>
+                </p>
+                <p><strong>#accordion.panel-group</strong>
+                </p>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
+                    data-toggle="collapse" data-parent="#accordion" href="#collapse-one"
+                </a>
+            </h4>
+                        </div>
+                        <div id="collapse-one" class="panel-collapse collapse in">
+                            <div class="panel-body">#collapse-one.collapse.in</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-two">
+                    data-toggle="collapse" data-parent="#accordion" href="#collapse-two"
+                </a>
+            </h4>
+                        </div>
+                        <div id="collapse-two" class="panel-collapse collapse">
+                            <div class="panel-body">#collapse-two.collapse</div>
+                        </div>
+                    </div>
+                </div>
+                <p>Via Javascript: <code>$(".collapse").collapse()</code>
+                </p>
+                <p>Options: <code>parent: false|selector</code>  <code>toggle: true|false</code>
+                </p>
+                <p>Methods: <code>.collapse('toggle')</code>  <code>.collapse('show')</code>  <code>.collapse('hide')</code>
+                </p>
+                <p>Events: <code>show.bs.collapse</code>  <code>shown.bs.collapse</code>  <code>hide.bs.collapse</code>  <code>hidden.bs.collapse</code>
+                </p>
+                <h2 id="js-carousel">Carousel</h2>
+                <p>Via data attributes: <code>data-target="#carousel"</code>  <code>data-slide</code>  <code>data-slide-to</code>  <code>data-ride</code>
+                </p>
+                <p>Via Javascript: <code>$('.carousel').carousel()</code>
+                </p>
+
+                <p><strong>.carousel.slide</strong>
+                </p>
+                <div class="carousel slide" id="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-target="#carousel" class="active"></li>
+                        <li data-slide-to="1" data-target="#carousel"></li>
+                        <li data-slide-to="2" data-target="#carousel"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
+                            <div class="carousel-caption">
+                                .carousel-inner .item
+                                <h3>&gt; .carousel-caption h3</h3>
+                                <p>&gt; Paragraph</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="Second slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">
+                        </div>
+                        <div class="item">
+                            <img alt="Third slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojMzMzO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a href="#carousel" class="left carousel-control" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a href="#carousel" class="right carousel-control" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+                </div>
+                <br>
+
+                <p>Options: <code>interval: 5000</code>  <code>pause: hover</code>  <code>wrap: true|false</code>
+                </p>
+                <p>Methods: <code>.carousel('cycle')</code>  <code>.carousel('pause')</code>  <code>.carousel(number)</code>  <code>.carousel('prev')</code>  <code>.carousel('next')</code>
+                </p>
+                <p>Events: <code>slide.bs.carousel</code>  <code>slid.bs.carousel</code>
+                </p>
             </div>
             <div class="col-md-3">
+                <p><strong>.col-md-3</strong>
+                </p>
             </div>
         </div>
     </div>

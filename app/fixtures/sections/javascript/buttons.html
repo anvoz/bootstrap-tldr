@@ -1,0 +1,48 @@
+<p>Stateful button: <code>data-loading-text="Loading..."</code> <code>data-complete-text="Completed"</code></p>
+<div class="btn-group">
+    <button class="btn btn-primary" type="button" data-loading-text="Loading..." data-complete-text="Completed" onclick="$(this).button('loading').siblings('button').prop('disabled',false);" autocomplete="off">
+        $(this).button('loading')
+    </button>
+    <button class="btn btn-primary" type="button" onclick="$(this).prop('disabled',true).parent().find('button:first').button('complete');" disabled="disabled" autocomplete="off">
+        $('&larr;').button('complete')
+    </button>
+    <button class="btn btn-primary" type="button" onclick="$(this).parent().find('button:first').button('reset').siblings('button').prop('disabled',true);" disabled="disabled" autocomplete="off">
+        $('&larr; &larr;').button('reset')
+    </button>
+</div><br><br>
+
+<div>
+    Single toggle: <button type="button" class="btn btn-primary" data-toggle="button">[data-toggle="button"]</button>
+</div><br>
+
+<div>
+    Checkbox: <code>data-toggle="buttons"</code>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary"><input type="checkbox">#1</label>
+        <label class="btn btn-primary"><input type="checkbox">#2</label>
+        <label class="btn btn-primary disabled">
+            <input type="checkbox">Disabled
+        </label>
+        <label class="btn btn-primary"><input type="checkbox">#4</label>
+    </div>
+</div><br>
+
+<div>
+    Radio: <code>data-toggle="buttons"</code>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="radio" name="optionsRadiosJS" value="option1" checked="checked">#1
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="optionsRadiosJS" value="option2">#2
+        </label>
+        <label class="btn btn-primary disabled">
+            <input type="radio" name="optionsRadiosJS" value="option3">Disabled
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="optionsRadiosJS" value="option2">#4
+        </label>
+    </div>
+</div><br>
+
+<p>Methods: <code>.button('toggle')</code> <code>.button('loading')</code> <code>.button('reset')</code> <code>.button(string)</code></p>

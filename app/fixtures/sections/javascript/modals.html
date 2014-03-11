@@ -1,0 +1,89 @@
+<p>
+    Via data attributes: <code>data-toggle="modal"</code> <code>data-target="#modal"</code>
+    <a data-toggle="modal" href="#modal" class="btn btn-primary">Launch modal</a>
+</p>
+<p>
+    Via Javascript: <code>$('#modal').modal()</code>
+    <a href="#" onclick="$('#modal').modal(); return false;" class="btn btn-primary">Launch modal</a>
+</p>
+<div>
+    <a data-toggle="modal" href="#modal-lg" class="btn btn-primary">Large modal</a>
+    <a data-toggle="modal" href="#modal-sm" class="btn btn-primary">Small modal</a>
+</div>
+<!-- Static modal example -->
+<div class="modal" role="dialog" style="display: block; position: static; overflow: hidden;">
+    <div class="modal-dialog">
+        <p><strong>.modal .modal-dialog .modal-content</strong></p>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close">&times;</button>
+                <h4 class="modal-title">.modal-header h4.modal-title</h4>
+            </div>
+            <div class="modal-body">
+                .modal-body
+            </div>
+            <div class="modal-footer">
+                .modal-footer
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Button</button>
+            </div>
+        </div>
+    </div>
+</div>
+<p>Options: <code>backdrop: true|false|'static'</code> <code>keyboard: true|false</code> <code>show: true|false</code> <code>remote: false|path</code></p>
+<p>Methods: <code>.modal('toggle')</code> <code>.modal('show')</code> <code>.modal('hide')</code></p>
+<p>Events: <code>show.bs.modal</code> <code>shown.bs.modal</code> <code>hide.bs.modal</code> <code>hidden.bs.modal</code> <code>loaded.bs.modal</code></p>
+
+<!-- Default modal -->
+<div class="modal fade" id="modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">.modal-title</h4>
+            </div>
+            <div class="modal-body">
+                .modal-body
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Button</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional sizes -->
+<div class="modal fade" id="modal-lg" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">.modal-title</h4>
+            </div>
+            <div class="modal-body">
+                .modal-body
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Button</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-sm" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">.modal-title</h4>
+            </div>
+            <div class="modal-body">
+                .modal-body
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Button</button>
+            </div>
+        </div>
+    </div>
+</div>
