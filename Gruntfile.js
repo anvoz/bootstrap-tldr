@@ -328,7 +328,7 @@ module.exports = function (grunt) {
                 src: '<%= config.app %>/fixtures/index.html',
                 dest: '<%= config.app %>/index.html',
                 options: {
-                    beautify: true,
+                    // beautify: true,
                     parseTag: 'htmlbuild',
                     sections: {
                         css: {
