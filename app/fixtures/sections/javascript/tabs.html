@@ -1,13 +1,10 @@
+<p>Via data attributes: <code>data-toggle="tab"</code></p>
 <ul class="nav nav-tabs">
     <li class="active">
-        <a href="#js-tab-pane1" data-toggle="tab">
-            Via data attributes: <code>data-toggle="tab"</code>
-        </a>
+        <a href="#js-tab-pane1" data-toggle="tab">Tab #1</a>
     </li>
     <li>
-        <a href="#js-tab-pane2" onclick="$(this).tab('show'); return false;">
-            Via Javascript: <code>$(this).tab('show')</code>
-        </a>
+        <a href="#js-tab-pane2" data-toggle="tab">Tab #2</a>
     </li>
 </ul>
 <div class="tab-content">
@@ -19,12 +16,13 @@
     </div>
 </div>
 
+<p>Via Javascript: <code>$(this).tab('show')</code></p>
 <ul class="nav nav-tabs">
     <li class="active">
-        <a href="#js-tab-pane3" data-toggle="tab">Tab #1</a>
+        <a href="#js-tab-pane3" onclick="$(this).tab('show'); return false;">Tab #1</a>
     </li>
     <li>
-        <a href="#js-tab-pane4" data-toggle="tab">Tab #2</a>
+        <a href="#js-tab-pane4" onclick="$(this).tab('show'); return false;">Tab #2</a>
     </li>
 </ul>
 <div class="tab-content">

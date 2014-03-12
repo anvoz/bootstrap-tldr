@@ -55,7 +55,7 @@
                     <h1 id="css" class="page-header">CSS</h1>
 
                     <h2 id="typography">Typography</h2>
-<div class="media">
+<div class="media bse-heading">
     <!-- Headings -->
     <div class="pull-left"><h1>h1 <small>small</small></h1></div>
     <div class="pull-left"><h2>h2 <small>small</small></h2></div>
@@ -88,13 +88,13 @@
 
 <!-- Alignment classes -->
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-xs-4">
         <p class="text-left">.text-left</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-xs-4">
         <p class="text-center">.text-center</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-xs-4">
         <p class="text-right">.text-right</p>
     </div>
 </div>
@@ -124,30 +124,30 @@
 </div>
 
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-xs-6">
         <!-- Unordered list -->
         <p><strong>ul</strong></p>
         <ul><li>li</li><li>List item<ul><li>ul li</li><li>List item</li></ul></li><li>List item</li></ul>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-xs-6">
         <!-- Ordered list -->
         <p><strong>ol</strong></p>
         <ol><li>List item</li><li>List item<ol><li>List item</li><li>List item</li></ol></li><li>List item</li></ol>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-xs-6">
         <!-- Unstyled list -->
         <p><strong>ul.list-unstyled</strong></p>
         <ul class="list-unstyled"><li>List item</li><li>List item<ul><li>List item</li><li>List item</li></ul></li><li>List item</li></ul>
     </div>
-</div>
-<div>
+    <div class="col-sm-4 col-xs-6">
     <!-- Inline list -->
     <p><strong>ul.list-inline</strong></p>
     <ul class="list-inline"><li>List item</li><li>List item</li><li>List item</li></ul>
+    </div>
 </div>
 
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-xs-6">
         <!-- Description -->
         <p><strong>dl</strong></p>
         <dl>
@@ -157,7 +157,7 @@
             <dd>Description<br>Description</dd>
         </dl>
     </div>
-    <div class="col-sm-6">
+    <div class="col-xs-6">
         <!-- Horizontal description -->
         <p><strong>dl.dl-horizontal</strong></p>
         <dl class="dl-horizontal">
@@ -392,7 +392,10 @@
             </select>
         </div>
         <div class="col-sm-5">
-            <p>select.form-control[multiple]</p>
+            <p>
+                <br class="visible-xs">
+                <strong>select.form-control[multiple]</strong>
+            </p>
             <select class="form-control" multiple>
                 <option>Option #1</option><option>Option #2</option><option>Option #3</option><option>Option #4</option><option>Option #5</option>
             </select>
@@ -463,7 +466,7 @@
     </div>
 </form>
                     <h2 id="buttons">Buttons</h2>
-<p>
+<p class="bse-buttons">
     <!-- Styled buttons -->
     <button class="btn btn-default" type="button">button.btn.btn-default</button>
     <button class="btn btn-primary" type="button">..btn-primary</button>
@@ -474,7 +477,7 @@
     <button class="btn btn-link" type="button">..btn-link</button>
 </p>
 
-<p>
+<p class="bse-buttons">
     <!-- Button sizes -->
     <button class="btn btn-default btn-lg" type="button">...btn-lg</button>
     <button class="btn btn-default" type="button">Default button size</button>
@@ -488,7 +491,7 @@
     <button class="btn btn-default btn-block" type="button">..btn-default.btn-block</button>
 </p>
 
-<p>
+<p class="bse-buttons">
     <!-- Button tags -->
     <a class="btn btn-default" href="#">a.btn.btn-default</a>
     <button class="btn btn-default" type="button">button..</button>
@@ -496,32 +499,29 @@
     <input class="btn btn-default" type="submit" value="input[type='submit']..">
 </p>
 
-<p>
+<p class="bse-buttons">
     <!-- Active state -->
     <a class="btn btn-default active" href="#">a...active</a>
     <button class="btn btn-default active" type="button">button...active</button>
-</p>
-
-<p>
     <!-- Disabled state -->
     <a class="btn btn-default disabled" href="#">a...disabled</a>
     <button class="btn btn-default" type="button" disabled="disabled">button..[disabled]</button>
 </p>
                     <h2 id="images">Images</h2>
-<div class="row">
-    <div class="col-xs-3">
+<div class="row bs-thumbnails">
+    <div class="col-sm-3 col-xs-6">
         <p><strong>.img-rounded</strong></p>
         <img class="img-rounded" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
     </div>
-    <div class="col-xs-3">
+    <div class="col-sm-3 col-xs-6">
         <p><strong>.img-circle</strong></p>
         <img class="img-circle" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
     </div>
-    <div class="col-xs-3">
+    <div class="col-sm-3 col-xs-6">
         <p><strong>.img-thumbnail</strong></p>
         <img class="img-thumbnail" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
     </div>
-    <div class="col-xs-3">
+    <div class="col-sm-3 col-xs-6">
         <p><strong>.img-responsive</strong></p>
         <img class="img-responsive" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
     </div>
@@ -583,10 +583,10 @@
         <thead>
             <tr>
                 <th></th>
-                <th>Extra small devices <small>Phones (&lt;768px)</small></th>
-                <th>Small devices <small>Tablets (=768px)</small></th>
-                <th>Medium devices <small>Desktops (=992px)</small></th>
-                <th>Large devices <small>Desktops (=1200px)</small></th>
+                <th>Extra small devices<br><small>Phones (&lt;768px)</small></th>
+                <th>Small devices<br><small>Tablets (=768px)</small></th>
+                <th>Medium devices<br><small>Desktops (=992px)</small></th>
+                <th>Large devices<br><small>Desktops (=1200px)</small></th>
             </tr>
         </thead>
         <tbody>
@@ -653,7 +653,7 @@
 </div>
 
 <div class="table-responsive">
-    <table class="table table-bordered table-striped responsive-utilities">
+    <table class="table table-bordered responsive-utilities">
         <thead>
             <tr>
                 <th>Class</th>
@@ -1004,7 +1004,7 @@
 </div><br><br>
 
 <p><strong>.btn-toolbar .btn-group</strong></p>
-<div class="btn-toolbar">
+<div class="btn-toolbar bse-buttons">
     <div class="btn-group btn-group-lg">
         <button type="button" class="btn btn-default">..btn-group-lg button</button>
         <button type="button" class="btn btn-default">2</button>
@@ -1020,14 +1020,15 @@
         <button type="button" class="btn btn-default">2</button>
         <button type="button" class="btn btn-default">3</button>
     </div>
-</div><br>
-<div class="btn-toolbar">
+</div>
+<br>
+<div class="btn-toolbar bse-buttons">
     <div class="btn-group">
         <button type="button" class="btn btn-default">1</button>
         <button type="button" class="btn btn-default">2</button>
         <div class="btn-group">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                button[data-toggle="dropdown"].dropdown-toggle <span class="caret"></span>
+                button.dropdown-toggle <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
                 <li><a href="#">Link #1</a></li>
@@ -1059,7 +1060,7 @@
 </div><br>
 
 <p><strong>.btn-toolbar .btn-group.dropup</strong></p>
-<div class="btn-group dropup">
+<div class="btn-group dropup bse-buttons">
     <button type="button" class="btn btn-default">.dropdown-menu &rarr;</button>
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
         <span class="caret"></span>
@@ -1070,7 +1071,7 @@
     </ul>
 </div>
 <div class="btn-group dropup">
-    <button type="button" class="btn btn-default">.dropdown-menu.dropdown-menu-right &rarr;</button>
+    <button type="button" class="btn btn-default">..dropdown-menu-right &rarr;</button>
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
         <span class="caret"></span>
     </button>
@@ -1127,9 +1128,9 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Dropdown <span class="caret"></span>
+                        ... <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu"><li><a href="#">Link #1</a></li><li><a href="#">Link #2</a></li></ul>
+                    <ul class="dropdown-menu dropdown-menu-right"><li><a href="#">Link #1</a></li><li><a href="#">Link #2</a></li></ul>
                 </li>
             </ul>
         </div>
@@ -1144,9 +1145,9 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Dropdown <span class="caret"></span>
+                        ... <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu"><li><a href="#">Link #1</a></li><li><a href="#">Link #2</a></li></ul>
+                    <ul class="dropdown-menu dropdown-menu-right"><li><a href="#">Link #1</a></li><li><a href="#">Link #2</a></li></ul>
                 </li>
             </ul>
         </div>
@@ -1272,26 +1273,28 @@
 <div><strong>ul.pagination</strong></div>
 <ul class="pagination">
     <li><a href="#">li a(&laquo;)</a></li>
-    <li class="disabled"><a href="#">li.disabled a</a></li>
-    <li><a href="#">#2</a></li>
+    <li><a href="#">#1</a></li>
     <li class="active"><a href="#">li.active a</a></li>
-    <li><a href="#">#4</a></li>
-    <li><a href="#">#5</a></li>
+    <li><a href="#">#3</a></li>
     <li><a href="#">&raquo;</a></li>
 </ul>
+
+<div><strong>ul.pagination.pagination-lg</strong></div>
 <ul class="pagination pagination-lg">
-    <li><a href="#">ul.pagination.pagination-lg li a(&laquo;)</a></li>
+    <li><a href="#">&laquo;</a></li>
     <li><a href="#">#1</a></li>
     <li class="active"><a href="#">#2</a></li>
     <li><a href="#">#3</a></li>
     <li><a href="#">&raquo;</a></li>
 </ul>
+
+<div><strong>ul.pagination.pagination-sm</strong></div>
 <ul class="pagination pagination-sm">
-    <li><a href="#">ul.pagination.pagination-sm li a(&laquo;)</a></li>
+    <li><a href="#">&laquo;</a></li>
     <li><a href="#">#1</a></li>
     <li class="active"><a href="#">#2</a></li>
     <li><a href="#">#3</a></li>
-    <li><a href="#">&raquo;</a></li>
+    <li class="disabled"><a href="#">li.disabled a(&raquo;)</a></li>
 </ul>
 
 <div><strong>ul.pager</strong></div>
@@ -1317,7 +1320,7 @@
 <div class="jumbotron">
     <h1>h1</h1>
     <p>p</p>
-    <p><a class="btn btn-primary btn-lg">p a.btn.btn-primary.btn-lg</a></p>
+    <p><a class="btn btn-primary">p Button</a></p>
 </div>
                     <h2 id="page-header">Page header</h2>
 <div class="page-header">
@@ -1716,16 +1719,13 @@
 <p>Methods: <code>.dropdown('toggle')</code></p>
 <p>Events: <code>show.bs.dropdown</code> <code>shown.bs.dropdown</code> <code>hide.bs.dropdown</code> <code>hidden.bs.dropdown</code></p>
                     <h2 id="js-tabs">Tabs</h2>
+<p>Via data attributes: <code>data-toggle="tab"</code></p>
 <ul class="nav nav-tabs">
     <li class="active">
-        <a href="#js-tab-pane1" data-toggle="tab">
-            Via data attributes: <code>data-toggle="tab"</code>
-        </a>
+        <a href="#js-tab-pane1" data-toggle="tab">Tab #1</a>
     </li>
     <li>
-        <a href="#js-tab-pane2" onclick="$(this).tab('show'); return false;">
-            Via Javascript: <code>$(this).tab('show')</code>
-        </a>
+        <a href="#js-tab-pane2" data-toggle="tab">Tab #2</a>
     </li>
 </ul>
 <div class="tab-content">
@@ -1737,12 +1737,13 @@
     </div>
 </div>
 
+<p>Via Javascript: <code>$(this).tab('show')</code></p>
 <ul class="nav nav-tabs">
     <li class="active">
-        <a href="#js-tab-pane3" data-toggle="tab">Tab #1</a>
+        <a href="#js-tab-pane3" onclick="$(this).tab('show'); return false;">Tab #1</a>
     </li>
     <li>
-        <a href="#js-tab-pane4" data-toggle="tab">Tab #2</a>
+        <a href="#js-tab-pane4" onclick="$(this).tab('show'); return false;">Tab #2</a>
     </li>
 </ul>
 <div class="tab-content">
@@ -1773,8 +1774,8 @@
 <p>
     Options: <code>animation: true|false</code> <code>html: false|true</code> <code>selector: false|string</code><br>
     <code>title: ''|function</code> <code>container: false|string</code><br>
-    <code>placement: top|bottom|left|right|auto|function</code><br>
-    <code>trigger: 'hover focus'|click|hover|focus|manual</code><br>
+    <code>placement: top|location|auto|function</code><br>
+    <code>trigger: hover focus|click|manual</code><br>
     <code>delay: 0|{show:500, hide:100}</code>
 </p>
 <p>Methods: <code>.tooltip('show')</code> <code>.tooltip('hide')</code> <code>.tooltip('toggle')</code> <code>.tooltip('destroy')</code></p>
@@ -1800,7 +1801,7 @@
 <p><br>
     Options: <code>animation: true|false</code> <code>html: false|true</code> <code>selector: false|string</code><br>
     <code>title: ''|function</code> <code>content: ''|function</code> <code>container: false|string</code><br>
-    <code>placement: right|top|bottom|left|auto|function</code><br>
+    <code>placement: right|location|auto|function</code><br>
     <code>trigger: click|hover|focus|manual</code><br>
     <code>delay: 0|{show:500, hide:100}</code>
 </p>
@@ -1817,7 +1818,7 @@
 <p>Events: <code>close.bs.alert</code> <code>closed.bs.alert</code></p>
                     <h2 id="js-buttons">Buttons</h2>
 <p>Stateful button: <code>data-loading-text="Loading..."</code> <code>data-complete-text="Completed"</code></p>
-<div class="btn-group">
+<div class="bse-buttons">
     <button class="btn btn-primary" type="button" data-loading-text="Loading..." data-complete-text="Completed" onclick="$(this).button('loading').siblings('button').prop('disabled',false);" autocomplete="off">
         $(this).button('loading')
     </button>

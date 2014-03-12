@@ -9,6 +9,28 @@
     color: #999;
 }
 
+/* Bootstrap's example styles
+-------------------------------------------------- */
+.bse-heading > .pull-left {
+    display: table;
+    height: 70px;
+}
+.bse-heading > .pull-left > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bse-buttons > .btn,
+.bse-buttons > .btn-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bs-thumbnails > div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
