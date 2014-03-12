@@ -377,6 +377,20 @@ module.exports = function (grunt) {
                         }
                     }
                 }
+            },
+            dist: {
+                src: '<%= config.app %>/index.html',
+                dest: '<%= config.app %>/index.html',
+                options: {
+                    parseTag: 'builddist',
+                    sections: {
+                        dist: {
+                            githubRibbon: '<%= config.app %>/fixtures/sections/dist/github_ribbon.html',
+                            feature: '<%= config.app %>/fixtures/sections/dist/feature.html',
+                            footer: '<%= config.app %>/fixtures/sections/dist/footer.html'
+                        }
+                    }
+                }
             }
         }
     });
