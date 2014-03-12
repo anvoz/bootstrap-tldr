@@ -1,0 +1,1 @@
+!function(){"use strict";$(function(){$('[data-toggle="tooltip"]').tooltip(),$('[data-toggle="popover"]').popover(),$('a[href="#"]:not([data-toggle], [rel="async"])').click(function(){return!1}),$("form:not([action])").submit(function(){return!1})})}(window);
