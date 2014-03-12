@@ -61,7 +61,7 @@ module.exports = function (grunt) {
             },
             htmlbuild: {
                 files: ['<%= config.app %>/fixtures/**/*.html'],
-                tasks: ['htmlbuild']
+                tasks: ['htmlbuild:app']
             }
         },
 
@@ -333,7 +333,7 @@ module.exports = function (grunt) {
                 dest: '<%= config.app %>/index.html',
                 options: {
                     // beautify: true,
-                    parseTag: 'htmlbuild',
+                    parseTag: 'buildapp',
                     sections: {
                         css: {
                             typography: '<%= config.app %>/fixtures/sections/css/typography.html',
