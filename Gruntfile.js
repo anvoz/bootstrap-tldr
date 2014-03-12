@@ -280,9 +280,13 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*',
-                        'bower_components/bootstrap/dist/fonts/*.*'
+                        'styles/fonts/{,*/}*.*'
                     ]
+                }, {
+                    expand: true,
+                    cwd: '<%= config.app %>/bower_components/bootstrap/dist/fonts',
+                    dest: '<%= config.dist %>/fonts/',
+                    src: '{,*/}*.*'
                 }]
             },
             styles: {
