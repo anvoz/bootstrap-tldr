@@ -28,11 +28,10 @@
         <!-- /builddist -->
 
         <!-- Fixed navbar -->
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -51,7 +50,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-9" role="main">
+                <div class="col-md-9">
                     <p><strong>.container .row .col-md-9</strong></p>
 
                     <!-- builddist:section dist.feature -->
@@ -312,15 +311,14 @@
 <p><strong>form.form-inline</strong></p>
 <form class="form-inline">
     <div class="form-group">
-        <label class="sr-only" for="example-text-input-inline">label.sr-only</label>
         <input type="text" class="form-control" id="example-text-input-inline" placeholder="input.form-control">
-    </div>&nbsp;<div
-        class="checkbox">
+    </div>
+    <div class="checkbox">
         <label>
             <input type="checkbox"> .checkbox label input[type="checkbox"]
         </label>
-    </div>&nbsp;<button
-        type="submit" class="btn btn-default">Submit</button>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
 </form>
 <br>
 
@@ -499,9 +497,9 @@
 <p class="bse-buttons">
     <!-- Button tags -->
     <a class="btn btn-default" href="#">a.btn.btn-default</a>
-    <button class="btn btn-default" type="button">button..</button>&nbsp;<input
-        class="btn btn-default" type="button" value="input[type='button']..">&nbsp;<input
-        class="btn btn-default" type="submit" value="input[type='submit']..">
+    <button class="btn btn-default" type="button">button..</button>
+    <input class="btn btn-default" type="button" value="input[type='button']..">
+    <input class="btn btn-default" type="submit" value="input[type='submit']..">
 </p>
 
 <p class="bse-buttons">
@@ -553,7 +551,7 @@
 
 <p>
     <!-- Close icon -->
-    button.close <button type="button" class="close" aria-hidden="true">&times;</button>
+    button.close <button type="button" class="close">&times;</button>
 </p>
 
 <p>
@@ -981,22 +979,14 @@
     <p><strong>.dropdown ul.dropdown-menu</strong></p>
     <div class="dropdown">
         <!-- Apply inline style to force dropdown display -->
-        <ul class="dropdown-menu" role="menu" style="display: block; position: static;">
-            <li class="dropdown-header" role="presentation">li.dropdown-header</li>
-            <li role="presentation">
-                <a href="#" role="menuitem">li a</a>
-            </li>
-            <li role="presentation">
-                <a href="#" role="menuitem">Another link</a>
-            </li>
-            <li class="disabled" role="presentation">
-                <a href="#" role="menuitem">li.disabled a</a>
-            </li>
-            <li class="divider" role="presentation"></li>
-            <li class="dropdown-header" role="presentation">Dropdown header</li>
-            <li role="presentation">
-                <a href="#" role="menuitem">Separated link</a>
-            </li>
+        <ul class="dropdown-menu" style="display: block; position: static;">
+            <li class="dropdown-header">li.dropdown-header</li>
+            <li><a href="#">li a</a></li>
+            <li><a href="#">Another link</a></li>
+            <li class="disabled"><a href="#">li.disabled a</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Dropdown header</li>
+            <li><a href="#">Separated link</a></li>
         </ul>
     </div>
 </div>
@@ -1074,8 +1064,8 @@
         <li><a href="#">Link #1</a></li>
         <li><a href="#">Link #2</a></li>
     </ul>
-</div>&nbsp;<div
-    class="btn-group dropup">
+</div>
+<div class="btn-group dropup">
     <button type="button" class="btn btn-default">..dropdown-menu-right &rarr;</button>
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
         <span class="caret"></span>
@@ -1204,7 +1194,7 @@
 </div>
                     <h2 id="navbar">Navbar</h2>
 <p><strong>.navbar.navbar-default .container-fluid</strong></p>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -1218,7 +1208,7 @@
 </nav>
 
 <p><strong>.navbar.navbar-inverse .container-fluid</strong></p>
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Brand</a>
@@ -1228,11 +1218,10 @@
 </nav>
 
 <p>Complex navbar with <code>navbar-left</code>,<code>navbar-right</code> and <code>navbar-collapse</code>.</p>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
-                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -1304,8 +1293,8 @@
 
 <div><strong>ul.pager</strong></div>
 <ul class="pager">
-    <li><a href="#">li a(Previous)</a></li>&nbsp;<li
-        class="disabled"><a href="#">li.disabled a(Next)</a></li>
+    <li><a href="#">li a(Previous)</a></li>
+    <li class="disabled"><a href="#">li.disabled a(Next)</a></li>
 </ul>
 <ul class="pager">
     <li class="previous"><a href="#">li.previous a(&larr; Older)</a></li>
@@ -1340,7 +1329,7 @@
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default" role="button">p Button</a></p>
+                <p><a href="#" class="btn btn-default">p Button</a></p>
             </div>
         </div>
     </div>
@@ -1351,7 +1340,7 @@
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default" role="button">p Button</a></p>
+                <p><a href="#" class="btn btn-default">p Button</a></p>
             </div>
         </div>
     </div>
@@ -1362,7 +1351,7 @@
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default" role="button">p Button</a></p>
+                <p><a href="#" class="btn btn-default">p Button</a></p>
             </div>
         </div>
     </div>
@@ -1373,7 +1362,7 @@
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default" role="button">p Button</a></p>
+                <p><a href="#" class="btn btn-default">p Button</a></p>
             </div>
         </div>
     </div>
@@ -1399,27 +1388,27 @@
                     <h2 id="progress-bars">Progress bars</h2>
 <p><strong>.progress</strong></p>
 <div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: 50%;">
+    <div class="progress-bar" style="width: 50%;">
         <span>.progress-bar</span>
     </div>
 </div>
 
 <p><strong>.progress</strong></p>
 <div class="progress">
-    <div class="progress-bar progress-bar-success" role="progressbar" style="width: 60%;">
+    <div class="progress-bar progress-bar-success" style="width: 60%;">
         <span>.progress-bar.progress-bar-success</span>
     </div>
-    <div class="progress-bar progress-bar-info" role="progressbar" style="width: 30%;">
+    <div class="progress-bar progress-bar-info" style="width: 30%;">
         <span>..progress-bar-info</span>
     </div>
 </div>
 
 <p><strong>.progress</strong></p>
 <div class="progress">
-    <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 60%;">
+    <div class="progress-bar progress-bar-warning" style="width: 60%;">
         <span>.progress-bar.progress-bar-warning</span>
     </div>
-    <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 30%;">
+    <div class="progress-bar progress-bar-danger" style="width: 30%;">
         <span>..progress-bar-danger</span>
     </div>
 </div>
@@ -1635,7 +1624,7 @@
     <a data-toggle="modal" href="#modal-sm" class="btn btn-primary">Small modal</a>
 </div>
 <!-- Static modal example -->
-<div class="modal" role="dialog" style="display: block; position: static; overflow: hidden;">
+<div class="modal" style="display: block; position: static; overflow: hidden;">
     <div class="modal-dialog">
         <p><strong>.modal .modal-dialog .modal-content</strong></p>
         <div class="modal-content">
@@ -1659,7 +1648,7 @@
 <p>Events: <code>show.bs.modal</code> <code>shown.bs.modal</code> <code>hide.bs.modal</code> <code>hidden.bs.modal</code> <code>loaded.bs.modal</code></p>
 
 <!-- Default modal -->
-<div class="modal fade" id="modal" role="dialog">
+<div class="modal fade" id="modal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -1677,7 +1666,7 @@
     </div>
 </div>
 <!-- Optional sizes -->
-<div class="modal fade" id="modal-lg" role="dialog">
+<div class="modal fade" id="modal-lg">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -1694,7 +1683,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal-sm" role="dialog">
+<div class="modal fade" id="modal-sm">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
@@ -1715,7 +1704,7 @@
 <p>Via data attributes: <code>data-toggle="dropdown"</code></p>
 <div class="dropdown">
     <a class="btn btn-primary" data-toggle="dropdown" href="#">Dropdown trigger</a>
-    <ul class="dropdown-menu" role="menu">
+    <ul class="dropdown-menu">
         <li><a href="#">Link #1</a></li>
         <li><a href="#">Link #2</a></li>
     </ul>
@@ -1911,9 +1900,9 @@
 <div class="carousel slide" id="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-slide-to="0" data-target="#carousel" class="active"></li>&nbsp;<li
-            data-slide-to="1" data-target="#carousel"></li>&nbsp;<li
-            data-slide-to="2" data-target="#carousel"></li>
+        <li data-slide-to="0" data-target="#carousel" class="active"></li>
+        <li data-slide-to="1" data-target="#carousel"></li>
+        <li data-slide-to="2" data-target="#carousel"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -1948,7 +1937,7 @@
 <p>Events: <code>slide.bs.carousel</code> <code>slid.bs.carousel</code></p>
                 </div>
                 <div class="col-md-3">
-                    <div id="sidebar" class="sidebar hidden-print" role="complementary" data-spy="affix">
+                    <div id="sidebar" class="sidebar hidden-print" data-spy="affix">
                         <ul class="nav sidenav">
                             <li class="active">
                                 <a href="#css">CSS</a>
