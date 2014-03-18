@@ -1,30 +1,48 @@
+<!-- Headings -->
 <div class="media bse-heading">
-    <!-- Headings -->
-    <div class="pull-left"><h1>h1 <small>small</small></h1></div>
-    <div class="pull-left"><h2>h2 <small>small</small></h2></div>
-    <div class="pull-left"><h3>h3 <small>small</small></h3></div>
-    <div class="pull-left"><h4>h4 <small>small</small></h4></div>
-    <div class="pull-left"><h5>h5 <small>small</small></h5></div>
-    <div class="pull-left"><h6>h6 <small>small</small></h6></div>
+    <div class="pull-left">
+        <h1>h1 <small>small</small></h1>
+    </div>
+    <div class="pull-left">
+        <h2>h2 <small>small</small></h2>
+    </div>
+    <div class="pull-left">
+        <h3>h3 <small>small</small></h3>
+    </div>
+    <div class="pull-left">
+        <h4>h4 <small>small</small></h4>
+    </div>
+    <div class="pull-left">
+        <h5>h5 <small>small</small></h5>
+    </div>
+    <div class="pull-left">
+        <h6>h6 <small>small</small></h6>
+    </div>
 </div>
 
 <p>
     <!-- Lead body copy -->
     <span class="lead">.lead</span>
+
     <!-- Bold -->
     <strong>strong</strong>
     <b>b</b>
+
     <!-- Small text -->
     <small>small</small>
     <span class="small">.small</span>
+
     <!-- Italics -->
     <em>em</em>
     <i>i</i>
+
     <!-- Abbreviations -->
     <abbr title="abbreviation">abbr</abbr>
     <abbr title="abbreviation.initialism" class="initialism">.initialism</abbr>
+
     <!-- Inline code -->
     <code>code</code>
+
     <!-- User input -->
     <kbd>kbd</kbd>
 </p>
@@ -40,15 +58,19 @@
     <div class="col-xs-4">
         <p class="text-right">.text-right</p>
     </div>
+    <div class="col-xs-12">
+        <p class="text-justify">.text-justify</p>
+    </div>
 </div>
-<p class="text-justify">.text-justify</p>
 
 <!-- Addresses -->
-<address>
-    <strong>address strong</strong><br>
-    address<br>
-    <a href="mailto:#">first.last@example.com</a>
-</address>
+<div>
+    <address>
+        <strong>address strong</strong><br>
+        address<br>
+        <a href="mailto:#">first.last@example.com</a>
+    </address>
+</div>
 
 <!-- Blockquotes -->
 <div class="row">
@@ -67,31 +89,65 @@
 </div>
 
 <div class="row">
+    <!-- Unordered list -->
     <div class="col-sm-4 col-xs-6">
-        <!-- Unordered list -->
         <p><strong>ul</strong></p>
-        <ul><li>li</li><li>List item<ul><li>ul li</li><li>List item</li></ul></li><li>List item</li></ul>
+        <ul>
+            <li>li</li>
+            <li>List item
+                <ul>
+                    <li>ul li</li>
+                    <li>List item</li>
+                </ul>
+            </li>
+            <li>List item</li>
+        </ul>
     </div>
+
+    <!-- Ordered list -->
     <div class="col-sm-4 col-xs-6">
-        <!-- Ordered list -->
         <p><strong>ol</strong></p>
-        <ol><li>List item</li><li>List item<ol><li>List item</li><li>List item</li></ol></li><li>List item</li></ol>
+        <ol>
+            <li>List item</li>
+            <li>List item
+                <ol>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ol>
+            </li>
+            <li>List item</li>
+        </ol>
     </div>
+
+    <!-- Unstyled list -->
     <div class="col-sm-4 col-xs-6">
-        <!-- Unstyled list -->
         <p><strong>ul.list-unstyled</strong></p>
-        <ul class="list-unstyled"><li>List item</li><li>List item<ul><li>List item</li><li>List item</li></ul></li><li>List item</li></ul>
+        <ul class="list-unstyled">
+            <li>List item</li>
+            <li>List item
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </li>
+            <li>List item</li>
+        </ul>
     </div>
-    <div class="col-sm-4 col-xs-6">
+
     <!-- Inline list -->
-    <p><strong>ul.list-inline</strong></p>
-    <ul class="list-inline"><li>List item</li><li>List item</li><li>List item</li></ul>
+    <div class="col-sm-4 col-xs-6">
+        <p><strong>ul.list-inline</strong></p>
+        <ul class="list-inline">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
     </div>
 </div>
 
 <div class="row">
+    <!-- Description -->
     <div class="col-xs-6">
-        <!-- Description -->
         <p><strong>dl</strong></p>
         <dl>
             <dt>dt</dt>
@@ -100,13 +156,14 @@
             <dd>Description<br>Description</dd>
         </dl>
     </div>
+
+    <!-- Horizontal description -->
     <div class="col-xs-6">
-        <!-- Horizontal description -->
         <p><strong>dl.dl-horizontal</strong></p>
         <dl class="dl-horizontal">
             <dt>Term</dt>
             <dd>Description</dd>
-            <dt>Horizontal description lists will truncate terms that are too long to fit in the left column with text-overflow.</dt>
+            <dt>Long term will be truncated</dt>
             <dd>Description<br>Description</dd>
         </dl>
     </div>

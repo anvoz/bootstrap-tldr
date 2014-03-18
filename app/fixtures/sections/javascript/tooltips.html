@@ -1,10 +1,12 @@
 <p>Usage: <code>$('[data-toggle="tooltip"]').tooltip()</code></p>
+
 <div class="text-center">
-    <button type="button" title="Tooltip on left" data-toggle="tooltip" data-placement="left" class="btn btn-primary">Left</button>
-    <button type="button" title="Tooltip on top" data-toggle="tooltip" data-placement="top" class="btn btn-primary">Top</button>
-    <button type="button" title="Tooltip on bottom" data-toggle="tooltip" data-placement="bottom" class="btn btn-primary">Bottom</button>
-    <button type="button" title="Tooltip on right" data-toggle="tooltip" data-placement="right" class="btn btn-primary">Right</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="left" type="button" title="Tooltip on left">Left</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" type="button" title="Tooltip on top">Top</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" type="button" title="Tooltip on bottom">Bottom</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" type="button" title="Tooltip on right">Right</button>
 </div>
+
 <div class="text-center">
     <!-- Static tooltip -->
     <div class="tooltip bottom" style="display: inline-block; position: relative; opacity: 1; filter: alpha(opacity=100); z-index: 1000;">
@@ -12,6 +14,7 @@
         <div class="tooltip-arrow"></div>
     </div>
 </div>
+
 <p>
     Options: <code>animation: true|false</code> <code>html: false|true</code> <code>selector: false|string</code><br>
     <code>title: ''|function</code> <code>container: false|string</code><br>

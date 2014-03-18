@@ -31,7 +31,7 @@
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" type="button">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -56,36 +56,54 @@
                     <!-- builddist:section dist.feature -->
                     <!-- /builddist -->
 
-                    <h1 id="css" class="page-header">CSS</h1>
+                    <h1 class="page-header" id="css">CSS</h1>
 
                     <h2 id="typography">Typography</h2>
+<!-- Headings -->
 <div class="media bse-heading">
-    <!-- Headings -->
-    <div class="pull-left"><h1>h1 <small>small</small></h1></div>
-    <div class="pull-left"><h2>h2 <small>small</small></h2></div>
-    <div class="pull-left"><h3>h3 <small>small</small></h3></div>
-    <div class="pull-left"><h4>h4 <small>small</small></h4></div>
-    <div class="pull-left"><h5>h5 <small>small</small></h5></div>
-    <div class="pull-left"><h6>h6 <small>small</small></h6></div>
+    <div class="pull-left">
+        <h1>h1 <small>small</small></h1>
+    </div>
+    <div class="pull-left">
+        <h2>h2 <small>small</small></h2>
+    </div>
+    <div class="pull-left">
+        <h3>h3 <small>small</small></h3>
+    </div>
+    <div class="pull-left">
+        <h4>h4 <small>small</small></h4>
+    </div>
+    <div class="pull-left">
+        <h5>h5 <small>small</small></h5>
+    </div>
+    <div class="pull-left">
+        <h6>h6 <small>small</small></h6>
+    </div>
 </div>
 
 <p>
     <!-- Lead body copy -->
     <span class="lead">.lead</span>
+
     <!-- Bold -->
     <strong>strong</strong>
     <b>b</b>
+
     <!-- Small text -->
     <small>small</small>
     <span class="small">.small</span>
+
     <!-- Italics -->
     <em>em</em>
     <i>i</i>
+
     <!-- Abbreviations -->
     <abbr title="abbreviation">abbr</abbr>
     <abbr title="abbreviation.initialism" class="initialism">.initialism</abbr>
+
     <!-- Inline code -->
     <code>code</code>
+
     <!-- User input -->
     <kbd>kbd</kbd>
 </p>
@@ -101,15 +119,19 @@
     <div class="col-xs-4">
         <p class="text-right">.text-right</p>
     </div>
+    <div class="col-xs-12">
+        <p class="text-justify">.text-justify</p>
+    </div>
 </div>
-<p class="text-justify">.text-justify</p>
 
 <!-- Addresses -->
-<address>
-    <strong>address strong</strong><br>
-    address<br>
-    <a href="mailto:#">first.last@example.com</a>
-</address>
+<div>
+    <address>
+        <strong>address strong</strong><br>
+        address<br>
+        <a href="mailto:#">first.last@example.com</a>
+    </address>
+</div>
 
 <!-- Blockquotes -->
 <div class="row">
@@ -128,31 +150,65 @@
 </div>
 
 <div class="row">
+    <!-- Unordered list -->
     <div class="col-sm-4 col-xs-6">
-        <!-- Unordered list -->
         <p><strong>ul</strong></p>
-        <ul><li>li</li><li>List item<ul><li>ul li</li><li>List item</li></ul></li><li>List item</li></ul>
+        <ul>
+            <li>li</li>
+            <li>List item
+                <ul>
+                    <li>ul li</li>
+                    <li>List item</li>
+                </ul>
+            </li>
+            <li>List item</li>
+        </ul>
     </div>
+
+    <!-- Ordered list -->
     <div class="col-sm-4 col-xs-6">
-        <!-- Ordered list -->
         <p><strong>ol</strong></p>
-        <ol><li>List item</li><li>List item<ol><li>List item</li><li>List item</li></ol></li><li>List item</li></ol>
+        <ol>
+            <li>List item</li>
+            <li>List item
+                <ol>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ol>
+            </li>
+            <li>List item</li>
+        </ol>
     </div>
+
+    <!-- Unstyled list -->
     <div class="col-sm-4 col-xs-6">
-        <!-- Unstyled list -->
         <p><strong>ul.list-unstyled</strong></p>
-        <ul class="list-unstyled"><li>List item</li><li>List item<ul><li>List item</li><li>List item</li></ul></li><li>List item</li></ul>
+        <ul class="list-unstyled">
+            <li>List item</li>
+            <li>List item
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </li>
+            <li>List item</li>
+        </ul>
     </div>
-    <div class="col-sm-4 col-xs-6">
+
     <!-- Inline list -->
-    <p><strong>ul.list-inline</strong></p>
-    <ul class="list-inline"><li>List item</li><li>List item</li><li>List item</li></ul>
+    <div class="col-sm-4 col-xs-6">
+        <p><strong>ul.list-inline</strong></p>
+        <ul class="list-inline">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
     </div>
 </div>
 
 <div class="row">
+    <!-- Description -->
     <div class="col-xs-6">
-        <!-- Description -->
         <p><strong>dl</strong></p>
         <dl>
             <dt>dt</dt>
@@ -161,36 +217,41 @@
             <dd>Description<br>Description</dd>
         </dl>
     </div>
+
+    <!-- Horizontal description -->
     <div class="col-xs-6">
-        <!-- Horizontal description -->
         <p><strong>dl.dl-horizontal</strong></p>
         <dl class="dl-horizontal">
             <dt>Term</dt>
             <dd>Description</dd>
-            <dt>Horizontal description lists will truncate terms that are too long to fit in the left column with text-overflow.</dt>
+            <dt>Long term will be truncated</dt>
             <dd>Description<br>Description</dd>
         </dl>
     </div>
 </div>
                     <h2 id="tables">Tables</h2>
-<p><strong>table.table</strong></p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>thead tr th</th>
-            <th>th</th><th>Header</th><th>Header</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>tbody tr td</td>
-            <td>td</td><td>Data</td><td>Data</td>
-        </tr>
-        <tr><td>Data</td><td>Data</td><td>Data</td><td>Data</td></tr>
-    </tbody>
-</table>
+<!-- Basic example -->
+<div>
+    <p><strong>table.table</strong></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>thead tr th</th>
+                <th>th</th><th>Header</th><th>Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tbody tr td</td>
+                <td>td</td><td>Data</td><td>Data</td>
+            </tr>
+            <tr><td>Data</td><td>Data</td><td>Data</td><td>Data</td></tr>
+        </tbody>
+    </table>
+</div>
 
 <div class="row">
+    <!-- Striped rows -->
     <div class="col-sm-6">
         <p><strong>table.table.table-striped</strong></p>
         <table class="table table-striped">
@@ -198,10 +259,13 @@
                 <tr><th>Header</th><th>Header</th></tr>
             </thead>
             <tbody>
-                <tr><td>Data</td><td>Data</td></tr><tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
             </tbody>
         </table>
     </div>
+
+    <!-- Bordered table -->
     <div class="col-sm-6">
         <p><strong>..table-bordered</strong></p>
         <table class="table table-bordered">
@@ -209,12 +273,15 @@
                 <tr><th>Header</th><th>Header</th></tr>
             </thead>
             <tbody>
-                <tr><td>Data</td><td>Data</td></tr><tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
             </tbody>
         </table>
     </div>
 </div>
+
 <div class="row">
+    <!-- Hover rows -->
     <div class="col-sm-6">
         <p><strong>..table-hover</strong></p>
         <table class="table table-hover">
@@ -222,10 +289,13 @@
                 <tr><th>Header</th><th>Header</th></tr>
             </thead>
             <tbody>
-                <tr><td>Data</td><td>Data</td></tr><tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
             </tbody>
         </table>
     </div>
+
+    <!-- Condensed table -->
     <div class="col-sm-6">
         <p><strong>..table-condensed</strong></p>
         <table class="table table-condensed">
@@ -233,244 +303,273 @@
                 <tr><th>Header</th><th>Header</th></tr>
             </thead>
             <tbody>
-                <tr><td>Data</td><td>Data</td></tr><tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
             </tbody>
         </table>
     </div>
 </div>
 
-<div class="table-responsive">
+<!-- Responsive tables and Contextual classes -->
+<div>
     <p><strong>div.table-responsive table.table</strong></p>
-    <table class="table">
-        <thead>
-            <tr><th>Header</th><th>Header</th><th>Header</th><th>Header</th><th>Header</th></tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="active">td.active</td>
-                <td class="success">td.success</td>
-                <td class="info">td.info</td>
-                <td class="warning">td.warning</td>
-                <td class="danger">td.danger</td>
-            </tr>
-            <tr class="active">
-                <td>tr.active td</td>
-                <td colspan="4">Applies the hover color to a particular row or cell</td>
-            </tr>
-            <tr class="success">
-                <td>tr.success td</td>
-                <td colspan="4">Indicates a successful or positive action</td>
-            </tr>
-            <tr class="info">
-                <td>tr.info td</td>
-                <td colspan="4">Indicates a neutral informative change or action</td>
-            </tr>
-            <tr class="warning">
-                <td>tr.warning td</td>
-                <td colspan="4">Indicates a warning that might need attention</td>
-            </tr>
-            <tr class="danger">
-                <td>tr.danger td</td>
-                <td colspan="4">Indicates a dangerous or potentially negative action</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr><th>Header</th><th>Header</th><th>Header</th><th>Header</th><th>Header</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="active">td.active</td>
+                    <td class="success">td.success</td>
+                    <td class="info">td.info</td>
+                    <td class="warning">td.warning</td>
+                    <td class="danger">td.danger</td>
+                </tr>
+                <tr class="active">
+                    <td>tr.active td</td>
+                    <td colspan="4">Applies the hover color to a particular row or cell</td>
+                </tr>
+                <tr class="success">
+                    <td>tr.success td</td>
+                    <td colspan="4">Indicates a successful or positive action</td>
+                </tr>
+                <tr class="info">
+                    <td>tr.info td</td>
+                    <td colspan="4">Indicates a neutral informative change or action</td>
+                </tr>
+                <tr class="warning">
+                    <td>tr.warning td</td>
+                    <td colspan="4">Indicates a warning that might need attention</td>
+                </tr>
+                <tr class="danger">
+                    <td>tr.danger td</td>
+                    <td colspan="4">Indicates a dangerous or potentially negative action</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
                     <h2 id="forms">Forms</h2>
-<p><strong>form</strong></p>
-<form>
-    <!-- Inputs with different sizes -->
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="input.form-control">
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control input-lg" placeholder="input.form-control.input-lg">
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control input-sm" placeholder="input.form-control.input-sm">
-    </div>
+<!-- Basic example -->
+<div>
+    <p><strong>form</strong></p>
+    <form>
+        <!-- Inputs with different sizes -->
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="input.form-control">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" type="text" placeholder="input.form-control.input-lg">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-sm" type="text" placeholder="input.form-control.input-sm">
+        </div>
 
-    <!-- Textarea -->
-    <div class="form-group">
-        <textarea class="form-control" rows="3">textarea.form-control</textarea>
-    </div>
+        <!-- Textarea -->
+        <div class="form-group">
+            <textarea class="form-control" rows="3">textarea.form-control</textarea>
+        </div>
 
-    <!-- File input -->
-    <div class="form-group">
-        <label for="example-file-input">input[type="file"]</label>
-        <input type="file" id="example-file-input">
-        <span class="help-block">.help-block: Wrap labels and controls in <code>.form-group</code> for optimum spacing.</span>
-    </div>
+        <!-- File input -->
+        <div class="form-group">
+            <label for="example-file-input">input[type="file"]</label>
+            <input id="example-file-input" type="file">
+            <span class="help-block">.help-block: Wrap labels and controls in <code>.form-group</code> for optimum spacing.</span>
+        </div>
 
-    <div class="form-group">
-        <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-</form>
+        <!-- Button -->
+        <div class="form-group">
+            <button class="btn btn-default" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
 
 <!-- Inline form -->
-<p><strong>form.form-inline</strong></p>
-<form class="form-inline">
-    <div class="form-group">
-        <input type="text" class="form-control" id="example-text-input-inline" placeholder="input.form-control">
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox"> .checkbox label input[type="checkbox"]
-        </label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-</form>
+<div>
+    <p><strong>form.form-inline</strong></p>
+    <form class="form-inline">
+        <div class="form-group">
+            <input class="form-control" id="example-text-input-inline" type="text" placeholder="input.form-control">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> .checkbox label input[type="checkbox"]
+            </label>
+        </div>
+        <button class="btn btn-default" type="submit">Submit</button>
+    </form>
+</div>
 <br>
 
 <!-- Horizontal form -->
-<p><strong>form.form-horizontal</strong></p>
-<form class="form-horizontal">
-    <div class="form-group">
-        <label class="col-sm-3 control-label" for="example-text-input-horizontal">label.control-label</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="example-text-input-horizontal" placeholder="input.form-control">
+<div>
+    <p><strong>form.form-horizontal</strong></p>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="example-text-input-horizontal">label.control-label</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="example-text-input-horizontal" type="text" placeholder="input.form-control">
+            </div>
         </div>
-    </div>
 
-    <!-- Checkboxes -->
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Checkboxes</label>
-        <div class="col-sm-9">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> .checkbox label input[type="checkbox"]
+        <!-- Checkbox -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Checkboxes</label>
+            <div class="col-sm-9">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> .checkbox label input[type="checkbox"]
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Inline checkboxes -->
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option1"> label.checkbox-inline Checkbox #1
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option2"> Checkbox #2
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option3" disabled> Disabled checkbox
                 </label>
             </div>
         </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-            <label class="checkbox-inline">
-                <input type="checkbox" value="option1"> label.checkbox-inline Checkbox #1
-            </label>
-            <label class="checkbox-inline">
-                <input type="checkbox" value="option2"> Checkbox #2
-            </label>
-            <label class="checkbox-inline">
-                <input type="checkbox" value="option3" disabled> Disabled checkbox
-            </label>
-        </div>
-    </div>
 
-    <!-- Radios -->
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Radios</label>
-        <div class="col-sm-9">
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" value="option1" checked> .radio label input[type="radio"]
+        <!-- Radio -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Radios</label>
+            <div class="col-sm-9">
+                <div class="radio">
+                    <label>
+                        <input name="optionsRadios" type="radio" value="option1" checked> .radio label input[type="radio"]
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Inline radios -->
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <label class="radio-inline">
+                    <input name="optionsRadios2" type="radio" value="option1" checked> label.radio-inline Radio #1
+                </label>
+                <label class="radio-inline">
+                    <input name="optionsRadios2" type="radio" value="option2"> Radio #2
+                </label>
+                <label class="radio-inline">
+                    <input name="optionsRadios2" type="radio" value="option3" disabled> Disabled radio
                 </label>
             </div>
         </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-            <label class="radio-inline">
-                <input type="radio" name="optionsRadios2" value="option1" checked> label.radio-inline Radio #1
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optionsRadios2" value="option2"> Radio #2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="optionsRadios2" value="option3" disabled> Disabled radio
-            </label>
-        </div>
-    </div>
 
-    <!-- Select -->
-    <div class="form-group">
-        <label class="col-sm-3 control-label">select.form-control</label>
-        <div class="col-sm-4">
-            <select class="form-control">
-                <option>option</option><option>Option #2</option><option>Option #3</option>
-            </select>
-            <br>
-            <select class="form-control" disabled>
-                <option>select[disabled]</option>
-            </select>
-        </div>
-        <div class="col-sm-5">
-            <p>
+        <!-- Select -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">select.form-control</label>
+            <div class="col-sm-4">
+                <select class="form-control">
+                    <option>option</option>
+                    <option>Option #2</option>
+                    <option>Option #3</option>
+                </select>
+                <br>
+                <select class="form-control" disabled>
+                    <option>select[disabled]</option>
+                </select>
+            </div>
+            <div class="col-sm-5">
                 <br class="visible-xs">
-                <strong>select.form-control[multiple]</strong>
-            </p>
-            <select class="form-control" multiple>
-                <option>Option #1</option><option>Option #2</option><option>Option #3</option><option>Option #4</option><option>Option #5</option>
-            </select>
+                <p><strong>select.form-control[multiple]</strong></p>
+                <select class="form-control" multiple>
+                    <option>Option #1</option>
+                    <option selected>option[selected]</option>
+                    <option>Option #3</option>
+                    <option selected>Option #4</option>
+                    <option>Option #5</option>
+                </select>
+            </div>
         </div>
-    </div>
 
-    <!-- Static control -->
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Static control</label>
-        <div class="col-sm-9">
-            <p class="form-control-static">p.form-control-static</p>
+        <!-- Static control -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Static control</label>
+            <div class="col-sm-9">
+                <p class="form-control-static">p.form-control-static</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Disabled input -->
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Disabled input</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder=".form-control[disabled]" disabled>
+        <!-- Disabled input -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Disabled input</label>
+            <div class="col-sm-9">
+                <input class="form-control" type="text" placeholder=".form-control[disabled]" disabled>
+            </div>
         </div>
-    </div>
 
-    <!-- Validation states -->
-    <div class="form-group has-success">
-        <label class="col-sm-3 control-label" for="inputSuccess">.has-success</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputSuccess" placeholder="input.form-control">
+        <!-- Button -->
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
         </div>
-    </div>
-    <div class="form-group has-success has-feedback">
-        <label class="col-sm-3 control-label" for="inputSuccess2">..has-feedback</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputSuccess2" placeholder="input.form-control">
-            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-        </div>
-    </div>
-    <div class="form-group has-warning">
-        <label class="col-sm-3 control-label" for="inputWarning">.has-warning</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputWarning" placeholder="input.form-control">
-        </div>
-    </div>
-    <div class="form-group has-warning has-feedback">
-        <label class="col-sm-3 control-label" for="inputWarning2">..has-feedback</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputWarning2" placeholder="input.form-control">
-            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-        </div>
-    </div>
-    <div class="form-group has-error">
-        <label class="col-sm-3 control-label" for="inputError">.has-error</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputError" placeholder="input.form-control">
-        </div>
-    </div>
-    <div class="form-group has-error has-feedback">
-        <label class="col-sm-3 control-label" for="inputError2">..has-feedback</label>
-        <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputError2" placeholder="input.form-control">
-            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-        </div>
-    </div>
+    </form>
+</div>
 
-    <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-            <button type="submit" class="btn btn-default">Submit</button>
+<!-- Validation states -->
+<div>
+    <p><strong>Validation styles on form controls</strong></p>
+    <form class="form-horizontal">
+        <!-- Success state -->
+        <div class="form-group has-success">
+            <label class="col-sm-3 control-label" for="inputSuccess">.has-success</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputSuccess" type="text" placeholder="input.form-control">
+            </div>
         </div>
-    </div>
-</form>
+        <div class="form-group has-success has-feedback">
+            <label class="col-sm-3 control-label" for="inputSuccess2">..has-feedback</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputSuccess2" type="text" placeholder="input.form-control">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+        </div>
+
+        <!-- Warning state -->
+        <div class="form-group has-warning">
+            <label class="col-sm-3 control-label" for="inputWarning">.has-warning</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputWarning" type="text" placeholder="input.form-control">
+            </div>
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="col-sm-3 control-label" for="inputWarning2">..has-feedback</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputWarning2" type="text" placeholder="input.form-control">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+        </div>
+
+        <!-- Error state -->
+        <div class="form-group has-error">
+            <label class="col-sm-3 control-label" for="inputError">.has-error</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputError" type="text" placeholder="input.form-control">
+            </div>
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label class="col-sm-3 control-label" for="inputError2">..has-feedback</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputError2" type="text" placeholder="input.form-control">
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+        </div>
+    </form>
+</div>
                     <h2 id="buttons">Buttons</h2>
+<!-- Styled buttons -->
 <p class="bse-buttons">
-    <!-- Styled buttons -->
     <button class="btn btn-default" type="button">button.btn.btn-default</button>
     <button class="btn btn-primary" type="button">..btn-primary</button>
     <button class="btn btn-success" type="button">..btn-success</button>
@@ -480,22 +579,22 @@
     <button class="btn btn-link" type="button">..btn-link</button>
 </p>
 
+<!-- Button sizes -->
 <p class="bse-buttons">
-    <!-- Button sizes -->
     <button class="btn btn-default btn-lg" type="button">...btn-lg</button>
     <button class="btn btn-default" type="button">Default button size</button>
     <button class="btn btn-default btn-sm" type="button">...btn-sm</button>
     <button class="btn btn-default btn-xs" type="button">...btn-xs</button>
 </p>
 
+<!-- Block level buttons -->
 <p>
-    <!-- Block level buttons -->
     <button class="btn btn-primary btn-block" type="button">..btn-primary.btn-block</button>
     <button class="btn btn-default btn-block" type="button">..btn-default.btn-block</button>
 </p>
 
+<!-- Button tags -->
 <p class="bse-buttons">
-    <!-- Button tags -->
     <a class="btn btn-default" href="#">a.btn.btn-default</a>
     <button class="btn btn-default" type="button">button..</button>
     <input class="btn btn-default" type="button" value="input[type='button']..">
@@ -506,6 +605,7 @@
     <!-- Active state -->
     <a class="btn btn-default active" href="#">a...active</a>
     <button class="btn btn-default active" type="button">button...active</button>
+
     <!-- Disabled state -->
     <a class="btn btn-default disabled" href="#">a...disabled</a>
     <button class="btn btn-default" type="button" disabled="disabled">button..[disabled]</button>
@@ -514,24 +614,24 @@
 <div class="row bs-thumbnails">
     <div class="col-sm-3 col-xs-6">
         <p><strong>.img-rounded</strong></p>
-        <img class="img-rounded" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+        <img class="img-rounded" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-rounded">
     </div>
     <div class="col-sm-3 col-xs-6">
         <p><strong>.img-circle</strong></p>
-        <img class="img-circle" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+        <img class="img-circle" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-circle">
     </div>
     <div class="col-sm-3 col-xs-6">
         <p><strong>.img-thumbnail</strong></p>
-        <img class="img-thumbnail" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+        <img class="img-thumbnail" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-thumbnail">
     </div>
     <div class="col-sm-3 col-xs-6">
         <p><strong>.img-responsive</strong></p>
-        <img class="img-responsive" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+        <img class="img-responsive" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-responsive">
     </div>
 </div>
                     <h2 id="helper-classes">Helper classes</h2>
+<!-- Contextual colors -->
 <p>
-    <!-- Contextual colors -->
     <span class="text-muted">.text-muted</span>
     <span class="text-primary">.text-primary</span>
     <span class="text-success">.text-success</span>
@@ -540,8 +640,8 @@
     <span class="text-danger">.text-danger</span>
 </p>
 
+<!-- Contextual backgrounds -->
 <p>
-    <!-- Contextual backgrounds -->
     <span class="bg-primary">.bg-primary</span>
     <span class="bg-success">.bg-success</span>
     <span class="bg-info">.bg-info</span>
@@ -549,22 +649,25 @@
     <span class="bg-danger">.bg-danger</span>
 </p>
 
+<!-- Close icon -->
 <p>
-    <!-- Close icon -->
-    button.close <button type="button" class="close">&times;</button>
+    button.close <button class="close" type="button">&times;</button>
 </p>
 
+<!-- Carets -->
 <p>
-    <!-- Carets -->
     .caret <span class="caret"></span>
 </p>
 
 <!-- Clearfix and floats -->
-<div class="text-center"><strong>.clearfix</strong></div>
-<div class="clearfix">
-    <div class="pull-left">.pull-left</div>
-    <div class="pull-right">.pull-right</div>
-</div><br>
+<div>
+    <p><strong>.clearfix</strong></p>
+    <div class="clearfix">
+        <div class="pull-left">.pull-left</div>
+        <div class="pull-right">.pull-right</div>
+    </div>
+</div>
+<br>
 
 <p>
     <!-- Center content blocks -->
@@ -679,7 +782,7 @@
     </table>
 </div>
 
-                    <h1 id="components" class="page-header">Components</h1>
+                    <h1 class="page-header" id="components">Components</h1>
 
                     <h2 id="glyphicons">Glyphicons</h2>
 <p>
@@ -978,7 +1081,6 @@
 <div class="clearfix">
     <p><strong>.dropdown ul.dropdown-menu</strong></p>
     <div class="dropdown">
-        <!-- Apply inline style to force dropdown display -->
         <ul class="dropdown-menu" style="display: block; position: static;">
             <li class="dropdown-header">li.dropdown-header</li>
             <li><a href="#">li a</a></li>
@@ -991,38 +1093,42 @@
     </div>
 </div>
                     <h2 id="button-groups">Button groups</h2>
-<p><strong>.btn-group</strong></p>
-<div class="btn-group">
-    <button type="button" class="btn btn-default">button.btn.btn-default</button>
-    <button type="button" class="btn btn-default">2</button>
-    <button type="button" class="btn btn-default">3</button>
-</div><br><br>
+<div>
+    <p><strong>.btn-group</strong></p>
+    <div class="btn-group">
+        <button class="btn btn-default" type="button">button.btn.btn-default</button>
+        <button class="btn btn-default" type="button">2</button>
+        <button class="btn btn-default" type="button">3</button>
+    </div>
+</div><br>
 
-<p><strong>.btn-toolbar .btn-group</strong></p>
-<div class="btn-toolbar bse-buttons">
-    <div class="btn-group btn-group-lg">
-        <button type="button" class="btn btn-default">..btn-group-lg button</button>
-        <button type="button" class="btn btn-default">2</button>
-        <button type="button" class="btn btn-default">3</button>
+<div>
+    <p><strong>.btn-toolbar .btn-group</strong></p>
+    <div class="btn-toolbar bse-buttons">
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-default" type="button">..btn-group-lg button</button>
+            <button class="btn btn-default" type="button">2</button>
+            <button class="btn btn-default" type="button">3</button>
+        </div>
+        <div class="btn-group btn-group-sm">
+            <button class="btn btn-default" type="button">..btn-group-sm button</button>
+            <button class="btn btn-default" type="button">2</button>
+            <button class="btn btn-default" type="button">3</button>
+        </div>
+        <div class="btn-group btn-group-xs">
+            <button class="btn btn-default" type="button">..btn-group-xs button</button>
+            <button class="btn btn-default" type="button">2</button>
+            <button class="btn btn-default" type="button">3</button>
+        </div>
     </div>
-    <div class="btn-group btn-group-sm">
-        <button type="button" class="btn btn-default">..btn-group-sm button</button>
-        <button type="button" class="btn btn-default">2</button>
-        <button type="button" class="btn btn-default">3</button>
-    </div>
-    <div class="btn-group btn-group-xs">
-        <button type="button" class="btn btn-default">..btn-group-xs</span> button</button>
-        <button type="button" class="btn btn-default">2</button>
-        <button type="button" class="btn btn-default">3</button>
-    </div>
-</div>
-<br>
+</div><br>
+
 <div class="btn-toolbar bse-buttons">
     <div class="btn-group">
-        <button type="button" class="btn btn-default">1</button>
-        <button type="button" class="btn btn-default">2</button>
+        <button class="btn btn-default" type="button">1</button>
+        <button class="btn btn-default" type="button">2</button>
         <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
                 button.dropdown-toggle <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
@@ -1035,7 +1141,7 @@
     <div class="btn-group-vertical">
         <button class="btn btn-default" type="button">.btn-group-vertical button</button>
         <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
                 Dropdown <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
@@ -1047,66 +1153,78 @@
     </div>
 </div><br>
 
-<p><strong>.btn-group.btn-group-justified</strong></p>
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default">Button</a>
-    <a href="#" class="btn btn-default">2</a>
-    <a href="#" class="btn btn-default">3</a>
+<div>
+    <p><strong>.btn-group.btn-group-justified</strong></p>
+    <div class="btn-group btn-group-justified">
+        <a href="#" class="btn btn-default">Button</a>
+        <a href="#" class="btn btn-default">2</a>
+        <a href="#" class="btn btn-default">3</a>
+    </div>
 </div><br>
 
-<p><strong>.btn-toolbar .btn-group.dropup</strong></p>
-<div class="btn-group dropup bse-buttons">
-    <button type="button" class="btn btn-default">.dropdown-menu &rarr;</button>
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="#">Link #1</a></li>
-        <li><a href="#">Link #2</a></li>
-    </ul>
-</div>
-<div class="btn-group dropup">
-    <button type="button" class="btn btn-default">..dropdown-menu-right &rarr;</button>
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu dropdown-menu-right">
-        <li><a href="#">Link #1</a></li>
-        <li><a href="#">Link #2</a></li>
-    </ul>
+<div>
+    <p><strong>.btn-toolbar .btn-group.dropup</strong></p>
+    <div class="btn-group dropup bse-buttons">
+        <button class="btn btn-default" type="button">.dropdown-menu &rarr;</button>
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Link #1</a></li>
+            <li><a href="#">Link #2</a></li>
+        </ul>
+    </div>
+    <div class="btn-group dropup">
+        <button class="btn btn-default" type="button">..dropdown-menu-right &rarr;</button>
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">Link #1</a></li>
+            <li><a href="#">Link #2</a></li>
+        </ul>
+    </div>
 </div>
                     <h2 id="input-groups">Input groups</h2>
-<p><strong>.form-group .input-group</strong></p>
-<div class="form-group">
-    <div class="input-group">
-        <span class="input-group-addon">.input-group-addon</span>
-        <input type="text" class="form-control" placeholder="input.form-control">
-        <span class="input-group-addon"><input type="checkbox"></span>
-        <span class="input-group-addon"><input type="radio"></span>
+<div>
+    <p><strong>.form-group .input-group</strong></p>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon">.input-group-addon</span>
+            <input class="form-control" type="text" placeholder="input.form-control">
+            <span class="input-group-addon"><input type="checkbox"></span>
+            <span class="input-group-addon"><input type="radio"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="input.form-control">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">span.input-group-btn button</button>
+            </span>
+        </div>
     </div>
 </div>
-<div class="form-group">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="input.form-control">
-        <span class="input-group-btn">
-            <button class="btn btn-default" type="button">span.input-group-btn button</button>
-        </span>
+
+<div>
+    <p><strong>.form-group .input-group.input-group-lg</strong></p>
+    <div class="form-group">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">.</span>
+            <input class="form-control input-lg" type="text" placeholder="input.form-control.input-lg">
+            <span class="input-group-addon">.</span>
+        </div>
     </div>
 </div>
-<p><strong>.form-group .input-group.input-group-lg</strong></p>
-<div class="form-group">
-    <div class="input-group input-group-lg">
-        <span class="input-group-addon">.</span>
-        <input type="text" class="form-control input-lg" placeholder="input.form-control.input-lg">
-        <span class="input-group-addon">.</span>
-    </div>
-</div>
-<p><strong>.form-group .input-group.input-group-sm</strong></p>
-<div class="form-group">
-    <div class="input-group input-group-sm">
-        <span class="input-group-addon">.</span>
-        <input type="text" class="form-control input-sm" placeholder="input.form-control.input-sm">
-        <span class="input-group-addon">.</span>
+
+<div>
+    <p><strong>.form-group .input-group.input-group-sm</strong></p>
+    <div class="form-group">
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon">.</span>
+            <input class="form-control input-sm" type="text" placeholder="input.form-control.input-sm">
+            <span class="input-group-addon">.</span>
+        </div>
     </div>
 </div>
                     <h2 id="navs">Navs</h2>
@@ -1122,10 +1240,13 @@
                     <a href="#">li.disabled a</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         ... <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-right"><li><a href="#">Link #1</a></li><li><a href="#">Link #2</a></li></ul>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Link #1</a></li>
+                        <li><a href="#">Link #2</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -1139,10 +1260,13 @@
                     <a href="#">Disabled</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         ... <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-right"><li><a href="#">Link #1</a></li><li><a href="#">Link #2</a></li></ul>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Link #1</a></li>
+                        <li><a href="#">Link #2</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -1156,16 +1280,22 @@
                     <span class="badge pull-right">.badge.pull-right</span>
                 </a>
             </li>
-            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="disabled">
+                <a href="#">Disabled</a>
+            </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Dropdown <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu"><li><a href="#">Link #1</a></li><li><a href="#">Link #2</a></li></ul>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link #1</a></li>
+                    <li><a href="#">Link #2</a></li>
+                </ul>
             </li>
         </ul>
     </div>
 </div>
+
 <div>
     <br><p><strong>ul.nav.nav-tabs.nav-justified</strong></p>
     <ul class="nav nav-tabs nav-justified">
@@ -1179,6 +1309,7 @@
         <li><a href="#">Link #3</a></li>
     </ul>
 </div>
+
 <div>
     <br><p><strong>ul.nav.nav-pills.nav-justified</strong></p>
     <ul class="nav nav-pills nav-justified">
@@ -1193,113 +1324,135 @@
     </ul>
 </div>
                     <h2 id="navbar">Navbar</h2>
-<p><strong>.navbar.navbar-default .container-fluid</strong></p>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">.navbar-header .navbar-brand</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">ul.nav.navbar-nav li.active a</a></li>
-            <li><a href="#">Link #2</a></li>
-        </ul>
-    </div>
-</nav>
-
-<p><strong>.navbar.navbar-inverse .container-fluid</strong></p>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
-        <p class="navbar-text">p.navbar-text <a href="#" class="navbar-link">a.navbar-link</a></p>
-    </div>
-</nav>
-
-<p>Complex navbar with <code>navbar-left</code>,<code>navbar-right</code> and <code>navbar-collapse</code>.</p>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse2">
+<div>
+    <p><strong>.navbar.navbar-default .container-fluid</strong></p>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">.navbar-header .navbar-brand</a>
+            </div>
             <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">.. Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #2</a></li>
-                    </ul>
-                </li>
+                <li class="active"><a href="#">ul.nav.navbar-nav li.active a</a></li>
+                <li><a href="#">Link #2</a></li>
             </ul>
-            <form class="navbar-form navbar-left">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder=".navbar-form.navbar-left">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">...navbar-right Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div>
-</nav>
+        </div>
+    </nav>
+</div>
+
+<div>
+    <p><strong>.navbar.navbar-inverse .container-fluid</strong></p>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <p class="navbar-text">
+                p.navbar-text <a href="#" class="navbar-link">a.navbar-link</a>
+            </p>
+        </div>
+    </nav>
+</div>
+
+<div>
+    <p>Complex navbar with <code>navbar-left</code>, <code>navbar-right</code> and <code>navbar-collapse</code>.</p>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse2">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            .. Dropdown <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link #1</a></li>
+                            <li><a href="#">Link #2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder=".navbar-form.navbar-left">
+                    </div>
+                    <button class="btn btn-default" type="submit">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            ...navbar-right Dropdown <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link #1</a></li>
+                            <li><a href="#">Link #2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div>
                     <h2 id="breadcrumbs">Breadcrumbs</h2>
-<p><strong>ol.breadcrumb</strong></p>
-<ol class="breadcrumb">
-    <li><a href="#">li a</a></li>
-    <li><a href="#">Link #2</a></li>
-    <li class="active">li.active</li>
-</ol>
+<div>
+    <p><strong>ol.breadcrumb</strong></p>
+    <ol class="breadcrumb">
+        <li><a href="#">li a</a></li>
+        <li><a href="#">Link #2</a></li>
+        <li class="active">li.active</li>
+    </ol>
+</div>
                     <h2 id="pagination">Pagination</h2>
-<div><strong>ul.pagination</strong></div>
-<ul class="pagination">
-    <li><a href="#">li a(&laquo;)</a></li>
-    <li><a href="#">#1</a></li>
-    <li class="active"><a href="#">li.active a</a></li>
-    <li><a href="#">#3</a></li>
-    <li><a href="#">&raquo;</a></li>
-</ul>
+<div>
+    <div><strong>ul.pagination</strong></div>
+    <ul class="pagination">
+        <li><a href="#">li a(&laquo;)</a></li>
+        <li><a href="#">#1</a></li>
+        <li class="active"><a href="#">li.active a</a></li>
+        <li><a href="#">#3</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+</div>
 
-<div><strong>ul.pagination.pagination-lg</strong></div>
-<ul class="pagination pagination-lg">
-    <li><a href="#">&laquo;</a></li>
-    <li><a href="#">#1</a></li>
-    <li class="active"><a href="#">#2</a></li>
-    <li><a href="#">#3</a></li>
-    <li><a href="#">&raquo;</a></li>
-</ul>
+<div>
+    <div><strong>ul.pagination.pagination-lg</strong></div>
+    <ul class="pagination pagination-lg">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">#1</a></li>
+        <li class="active"><a href="#">#2</a></li>
+        <li><a href="#">#3</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+</div>
 
-<div><strong>ul.pagination.pagination-sm</strong></div>
-<ul class="pagination pagination-sm">
-    <li><a href="#">&laquo;</a></li>
-    <li><a href="#">#1</a></li>
-    <li class="active"><a href="#">#2</a></li>
-    <li><a href="#">#3</a></li>
-    <li class="disabled"><a href="#">li.disabled a(&raquo;)</a></li>
-</ul>
+<div>
+    <div><strong>ul.pagination.pagination-sm</strong></div>
+    <ul class="pagination pagination-sm">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">#1</a></li>
+        <li class="active"><a href="#">#2</a></li>
+        <li><a href="#">#3</a></li>
+        <li class="disabled"><a href="#">li.disabled a(&raquo;)</a></li>
+    </ul>
+</div>
 
-<div><strong>ul.pager</strong></div>
-<ul class="pager">
-    <li><a href="#">li a(Previous)</a></li>
-    <li class="disabled"><a href="#">li.disabled a(Next)</a></li>
-</ul>
-<ul class="pager">
-    <li class="previous"><a href="#">li.previous a(&larr; Older)</a></li>
-    <li class="next"><a href="#">li.next a(Newer &rarr;)</a></li>
-</ul>
+<div>
+    <div><strong>ul.pager</strong></div>
+    <ul class="pager">
+        <li><a href="#">li a(Previous)</a></li>
+        <li class="disabled"><a href="#">li.disabled a(Next)</a></li>
+    </ul>
+    <ul class="pager">
+        <li class="previous"><a href="#">li.previous a(&larr; Older)</a></li>
+        <li class="next"><a href="#">li.next a(Newer &rarr;)</a></li>
+    </ul>
+</div>
                     <h2 id="labels">Labels</h2>
 <p>
     <span class="label label-default">.label.label-default</span>
@@ -1310,59 +1463,63 @@
     <span class="label label-danger">..label-danger</span>
 </p>
                     <h2 id="jumbotron">Jumbotron</h2>
-<p><strong>.jumbotron</strong></p>
-<div class="jumbotron">
-    <h1>h1</h1>
-    <p>p</p>
-    <p><a class="btn btn-primary">p Button</a></p>
+<div>
+    <p><strong>.jumbotron</strong></p>
+    <div class="jumbotron">
+        <h1>h1</h1>
+        <p>p</p>
+        <p><a class="btn btn-primary">p Button</a></p>
+    </div>
 </div>
                     <h2 id="page-header">Page header</h2>
-<div class="page-header">
-    <h3>.page-header h3 <small>small</small></h3>
+<div>
+    <div class="page-header">
+        <h3>.page-header h3 <small>small</small></h3>
+    </div>
 </div>
                     <h2 id="thumbnails">Thumbnails</h2>
 <div class="row">
     <div class="col-sm-3 col-xs-6">
         <p><strong>.thumbnail</strong></p>
         <div class="thumbnail">
-            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="thumbnail">
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default">p Button</a></p>
+                <p><a class="btn btn-default" href="#">p Button</a></p>
             </div>
         </div>
     </div>
     <div class="col-sm-3 col-xs-6">
         <p><strong>.thumbnail</strong></p>
         <div class="thumbnail">
-            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="thumbnail">
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default">p Button</a></p>
+                <p><a class="btn btn-default" href="#">p Button</a></p>
             </div>
         </div>
     </div>
     <div class="col-sm-3 col-xs-6">
         <p><strong>.thumbnail</strong></p>
         <div class="thumbnail">
-            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="thumbnail">
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default">p Button</a></p>
+                <p><a class="btn btn-default" href="#">p Button</a></p>
             </div>
         </div>
     </div>
     <div class="col-sm-3 col-xs-6">
         <p><strong>.thumbnail</strong></p>
         <div class="thumbnail">
-            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+">
+            <img style="width: 100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="thumbnail">
             <div class="caption">
                 <h3>.caption h3</h3>
                 <p>p</p>
-                <p><a href="#" class="btn btn-default">p Button</a></p>
+                <p><a class="btn btn-default" href="#">p Button</a></p>
             </div>
         </div>
     </div>
@@ -1371,107 +1528,106 @@
 <!-- Alerts -->
 <div class="row">
     <div class="col-sm-6">
-        <div class="alert alert-success">.alert.alert-success <a class="alert-link" href="#">a.alert-link</a></div>
+        <div class="alert alert-success">
+            .alert.alert-success <a class="alert-link" href="#">a.alert-link</a>
+        </div>
     </div>
     <div class="col-sm-6">
-        <div class="alert alert-info">..alert-info <a class="alert-link" href="#">a.alert-link</a></div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-6">
-        <div class="alert alert-warning">..alert-warning <a class="alert-link" href="#">a.alert-link</a></div>
+        <div class="alert alert-info">
+            ..alert-info <a class="alert-link" href="#">a.alert-link</a>
+        </div>
     </div>
     <div class="col-sm-6">
-        <div class="alert alert-danger">..alert-danger <a class="alert-link" href="#">a.alert-link</a></div>
+        <div class="alert alert-warning">
+            ..alert-warning <a class="alert-link" href="#">a.alert-link</a>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="alert alert-danger">
+            ..alert-danger <a class="alert-link" href="#">a.alert-link</a>
+        </div>
     </div>
 </div>
                     <h2 id="progress-bars">Progress bars</h2>
-<p><strong>.progress</strong></p>
-<div class="progress">
-    <div class="progress-bar" style="width: 50%;">
-        <span>.progress-bar</span>
+<div>
+    <p><strong>.progress</strong></p>
+    <div class="progress">
+        <div class="progress-bar" style="width: 50%;">
+            <span>.progress-bar</span>
+        </div>
     </div>
 </div>
 
-<p><strong>.progress</strong></p>
-<div class="progress">
-    <div class="progress-bar progress-bar-success" style="width: 60%;">
-        <span>.progress-bar.progress-bar-success</span>
-    </div>
-    <div class="progress-bar progress-bar-info" style="width: 30%;">
-        <span>..progress-bar-info</span>
-    </div>
-</div>
-
-<p><strong>.progress</strong></p>
-<div class="progress">
-    <div class="progress-bar progress-bar-warning" style="width: 60%;">
-        <span>.progress-bar.progress-bar-warning</span>
-    </div>
-    <div class="progress-bar progress-bar-danger" style="width: 30%;">
-        <span>..progress-bar-danger</span>
+<div>
+    <p><strong>.progress</strong></p>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 60%;">
+            <span>.progress-bar.progress-bar-success</span>
+        </div>
+        <div class="progress-bar progress-bar-info" style="width: 30%;">
+            <span>..progress-bar-info</span>
+        </div>
     </div>
 </div>
 
-<p><strong>.progress.progress-striped</strong></p>
-<div class="progress progress-striped">
-    <div class="progress-bar" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-success" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-info" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-warning" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-danger" style="width: 17%;"></div>
+<div>
+    <p><strong>.progress</strong></p>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning" style="width: 60%;">
+            <span>.progress-bar.progress-bar-warning</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 30%;">
+            <span>..progress-bar-danger</span>
+        </div>
+    </div>
 </div>
 
-<p><strong>.progress.progress-striped.active</strong></p>
-<div class="progress progress-striped active">
-    <div class="progress-bar" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-success" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-info" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-warning" style="width: 17%;"></div>
-    <div class="progress-bar progress-bar-danger" style="width: 17%;"></div>
+<div>
+    <p><strong>.progress.progress-striped</strong></p>
+    <div class="progress progress-striped">
+        <div class="progress-bar" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-success" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-info" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-warning" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-danger" style="width: 17%;"></div>
+    </div>
+</div>
+
+<div>
+    <p><strong>.progress.progress-striped.active</strong></p>
+    <div class="progress progress-striped active">
+        <div class="progress-bar" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-success" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-info" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-warning" style="width: 17%;"></div>
+        <div class="progress-bar progress-bar-danger" style="width: 17%;"></div>
+    </div>
 </div>
                     <h2 id="media-object">Media object</h2>
-<p><strong>.media</strong></p>
-<div class="media">
-    <a class="pull-left" href="#">
-        <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-    </a>
-    <div class="media-body">
-        <h4 class="media-heading">.media-body h4.media-heading</h4>
-        &larr; a.pull-left img.media-object
-    </div>
-</div><br>
-
-<p><strong>.media</strong></p>
-<div class="media">
-    <a class="pull-left" href="#">
-        <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-    </a>
-    <div class="media-body">
-        <h4 class="media-heading">.media-body h4.media-heading</h4>
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">.media .media-body h4.media-heading</h4>
-                ...
-            </div>
+<div>
+    <p><strong>.media</strong></p>
+    <div class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">.media-body h4.media-heading</h4>
+            &larr; a.pull-left img.media-object
         </div>
     </div>
 </div><br>
 
-<p><strong>ul.media-list</strong></p>
-<ul class="media-list">
-    <li class="media">
+<div>
+    <p><strong>.media</strong></p>
+    <div class="media">
         <a class="pull-left" href="#">
-            <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
         </a>
         <div class="media-body">
-            <h4 class="media-heading">li.media .media-body h4.media-heading</h4>
+            <h4 class="media-heading">.media-body h4.media-heading</h4>
             <div class="media">
                 <a class="pull-left" href="#">
-                    <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                    <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
                 </a>
                 <div class="media-body">
                     <h4 class="media-heading">.media .media-body h4.media-heading</h4>
@@ -1479,17 +1635,40 @@
                 </div>
             </div>
         </div>
-    </li>
-    <li class="media">
-        <a class="pull-right" href="#">
-            <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-        </a>
-        <div class="media-body">
-            <h4 class="media-heading">li.media .media-body h4.media-heading</h4>
-            a.pull-right img.media-object &rarr;
-        </div>
-    </li>
-</ul>
+    </div>
+</div><br>
+
+<div>
+    <p><strong>ul.media-list</strong></p>
+    <ul class="media-list">
+        <li class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">li.media .media-body h4.media-heading</h4>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">.media .media-body h4.media-heading</h4>
+                        ...
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="media">
+            <a class="pull-right" href="#">
+                <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">li.media .media-body h4.media-heading</h4>
+                a.pull-right img.media-object &rarr;
+            </div>
+        </li>
+    </ul>
+</div>
                     <h2 id="list-group">List group</h2>
 <div class="row">
     <div class="col-sm-4">
@@ -1503,55 +1682,61 @@
     <div class="col-sm-4">
         <p><strong>div.list-group</strong></p>
         <div class="list-group">
-            <a href="#" class="list-group-item">a.list-group-item</a>
-            <a href="#" class="list-group-item list-group-item-success">..list-group-item-success</a>
-            <a href="#" class="list-group-item list-group-item-info">..list-group-item-info</a>
-            <a href="#" class="list-group-item list-group-item-warning">..list-group-item-warning</a>
-            <a href="#" class="list-group-item list-group-item-danger">..list-group-item-danger</a>
+            <a class="list-group-item" href="#">a.list-group-item</a>
+            <a class="list-group-item list-group-item-success" href="#">..list-group-item-success</a>
+            <a class="list-group-item list-group-item-info" href="#">..list-group-item-info</a>
+            <a class="list-group-item list-group-item-warning" href="#">..list-group-item-warning</a>
+            <a class="list-group-item list-group-item-danger" href="#">..list-group-item-danger</a>
         </div>
     </div>
     <div class="col-sm-4">
         <p><strong>div.list-group</strong></p>
         <div class="list-group">
-            <a href="#" class="list-group-item active">a.list-group-item.active</a>
-            <a href="#" class="list-group-item list-group-item-success active">..list-group-item-success.active</a>
-            <a href="#" class="list-group-item list-group-item-info active">..list-group-item-info.active</a>
-            <a href="#" class="list-group-item list-group-item-warning active">..list-group-item-warning.active</a>
-            <a href="#" class="list-group-item list-group-item-danger active">..list-group-item-danger.active</a>
+            <a class="list-group-item active" href="#">a.list-group-item.active</a>
+            <a class="list-group-item list-group-item-success active" href="#">..list-group-item-success.active</a>
+            <a class="list-group-item list-group-item-info active" href="#">..list-group-item-info.active</a>
+            <a class="list-group-item list-group-item-warning active" href="#">..list-group-item-warning.active</a>
+            <a class="list-group-item list-group-item-danger active" href="#">..list-group-item-danger.active</a>
         </div>
     </div>
 </div>
 
-<p><strong>div.list-group</strong></p>
-<div class="list-group">
-    <a href="#" class="list-group-item active">
-        <h4 class="list-group-item-heading">h4.list-group-item-heading</h4>
-        <p class="list-group-item-text">p.list-group-item-text</p>
-    </a>
-    <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">List group item heading</h4>
-        <p class="list-group-item-text">Paragraph</p>
-    </a>
-</div>
-
-                    <h2 id="panels">Panels</h2>
-<p><strong>.panel.panel-default</strong></p>
-<div class="panel panel-default">
-    <div class="panel-heading">.panel-heading</div>
-    <div class="panel-heading">
-        <h3 class="panel-title">
-            .panel-heading h3.panel-title
-        </h3>
+<div>
+    <p><strong>div.list-group</strong></p>
+    <div class="list-group">
+        <a class="list-group-item active" href="#">
+            <h4 class="list-group-item-heading">h4.list-group-item-heading</h4>
+            <p class="list-group-item-text">p.list-group-item-text</p>
+        </a>
+        <a class="list-group-item" href="#">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Paragraph</p>
+        </a>
     </div>
-    <div class="panel-body">.panel-body</div>
-    <div class="panel-footer">.panel-footer</div>
+</div>
+                    <h2 id="panels">Panels</h2>
+<div>
+    <p><strong>.panel.panel-default</strong></p>
+    <div class="panel panel-default">
+        <div class="panel-heading">.panel-heading</div>
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                .panel-heading h3.panel-title
+            </h3>
+        </div>
+        <div class="panel-body">.panel-body</div>
+        <div class="panel-footer">.panel-footer</div>
+    </div>
 </div>
 
-<p><strong>.panel.panel-primary</strong></p>
-<div class="panel panel-primary">
-    <div class="panel-heading">.panel-heading</div>
-    <div class="panel-body">.panel-body</div>
+<div>
+    <p><strong>.panel.panel-primary</strong></p>
+    <div class="panel panel-primary">
+        <div class="panel-heading">.panel-heading</div>
+        <div class="panel-body">.panel-body</div>
+    </div>
 </div>
+
 <div class="row">
     <div class="col-sm-6">
         <p><strong>.panel.panel-success</strong></p>
@@ -1609,36 +1794,39 @@
     </div>
 </div>
 
-                    <h1 id="javascript" class="page-header">Javascript</h1>
+                    <h1 class="page-header" id="javascript">Javascript</h1>
                     <h2 id="js-modals">Modals</h2>
 <p class="bse-buttons">
     Via data attributes: <code>data-toggle="modal"</code> <code>data-target="#modal"</code>
-    <a data-toggle="modal" href="#modal" class="btn btn-primary">Launch modal</a>
+    <a class="btn btn-primary" data-toggle="modal" href="#modal">Launch modal</a>
 </p>
 <p class="bse-buttons">
     Via Javascript: <code>$('#modal').modal()</code>
-    <a href="#" onclick="$('#modal').modal(); return false;" class="btn btn-primary">Launch modal</a>
+    <a class="btn btn-primary" href="#" onclick="$('#modal').modal(); return false;">Launch modal</a>
 </p>
 <div>
-    <a data-toggle="modal" href="#modal-lg" class="btn btn-primary">Large modal</a>
-    <a data-toggle="modal" href="#modal-sm" class="btn btn-primary">Small modal</a>
+    <a class="btn btn-primary" data-toggle="modal" href="#modal-lg">Large modal</a>
+    <a class="btn btn-primary" data-toggle="modal" href="#modal-sm">Small modal</a>
 </div>
+
 <!-- Static modal example -->
-<div class="modal" style="display: block; position: static; overflow: hidden;">
-    <div class="modal-dialog">
-        <p><strong>.modal .modal-dialog .modal-content</strong></p>
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close">&times;</button>
-                <h4 class="modal-title">.modal-header h4.modal-title</h4>
-            </div>
-            <div class="modal-body">
-                .modal-body
-            </div>
-            <div class="modal-footer">
-                .modal-footer
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Button</button>
+<div>
+    <div class="modal" style="display: block; position: static; overflow: hidden;">
+        <div class="modal-dialog">
+            <p><strong>.modal .modal-dialog .modal-content</strong></p>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button">&times;</button>
+                    <h4 class="modal-title">.modal-header h4.modal-title</h4>
+                </div>
+                <div class="modal-body">
+                    .modal-body
+                </div>
+                <div class="modal-footer">
+                    .modal-footer
+                    <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                </div>
             </div>
         </div>
     </div>
@@ -1652,15 +1840,15 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
                 <h4 class="modal-title">.modal-title</h4>
             </div>
             <div class="modal-body">
                 .modal-body
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Button</button>
+                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                <button class="btn btn-primary" type="button">Button</button>
             </div>
         </div>
     </div>
@@ -1670,15 +1858,15 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
                 <h4 class="modal-title">.modal-title</h4>
             </div>
             <div class="modal-body">
                 .modal-body
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Button</button>
+                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                <button class="btn btn-primary" type="button">Button</button>
             </div>
         </div>
     </div>
@@ -1687,77 +1875,89 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
                 <h4 class="modal-title">.modal-title</h4>
             </div>
             <div class="modal-body">
                 .modal-body
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Button</button>
+                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                <button class="btn btn-primary" type="button">Button</button>
             </div>
         </div>
     </div>
 </div>
                     <h2 id="js-dropdowns">Dropdowns</h2>
 <p>Via data attributes: <code>data-toggle="dropdown"</code></p>
-<div class="dropdown">
-    <a class="btn btn-primary" data-toggle="dropdown" href="#">Dropdown trigger</a>
-    <ul class="dropdown-menu">
-        <li><a href="#">Link #1</a></li>
-        <li><a href="#">Link #2</a></li>
-    </ul>
+
+<div>
+    <div class="dropdown">
+        <a class="btn btn-primary" data-toggle="dropdown" href="#">Dropdown trigger</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Link #1</a></li>
+            <li><a href="#">Link #2</a></li>
+        </ul>
+    </div>
 </div>
+
 <p><br>Via Javascript: <code>$('.dropdown-toggle').dropdown()</code>(<code>data-toggle="dropdown"</code> still required)</p>
 <p>Methods: <code>.dropdown('toggle')</code></p>
 <p>Events: <code>show.bs.dropdown</code> <code>shown.bs.dropdown</code> <code>hide.bs.dropdown</code> <code>hidden.bs.dropdown</code></p>
                     <h2 id="js-tabs">Tabs</h2>
 <p>Via data attributes: <code>data-toggle="tab"</code></p>
-<ul class="nav nav-tabs">
-    <li class="active">
-        <a href="#js-tab-pane1" data-toggle="tab">Tab #1</a>
-    </li>
-    <li>
-        <a href="#js-tab-pane2" data-toggle="tab">Tab #2</a>
-    </li>
-</ul>
-<div class="tab-content">
-    <div class="tab-pane active" id="js-tab-pane1">
-        <p>Content #1: .table-content .tab-pane.active</p>
-    </div>
-    <div class="tab-pane" id="js-tab-pane2">
-        <p>Content #2: .table-content .tab-pane</p>
+
+<div>
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a data-toggle="tab" href="#js-tab-pane1">Tab #1</a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#js-tab-pane2">Tab #2</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="js-tab-pane1">
+            <p>Content #1: .table-content .tab-pane.active</p>
+        </div>
+        <div class="tab-pane" id="js-tab-pane2">
+            <p>Content #2: .table-content .tab-pane</p>
+        </div>
     </div>
 </div>
 
 <p>Via Javascript: <code>$(this).tab('show')</code></p>
-<ul class="nav nav-tabs">
-    <li class="active">
-        <a href="#js-tab-pane3" onclick="$(this).tab('show'); return false;">Tab #1</a>
-    </li>
-    <li>
-        <a href="#js-tab-pane4" onclick="$(this).tab('show'); return false;">Tab #2</a>
-    </li>
-</ul>
-<div class="tab-content">
-    <div class="tab-pane fade in active" id="js-tab-pane3">
-        <p>Content #1: .table-content .tab-pane.fade.in.active</p>
-    </div>
-    <div class="tab-pane fade" id="js-tab-pane4">
-        <p>Content #2: .table-content .tab-pane.fade</p>
+
+<div>
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#js-tab-pane3" onclick="$(this).tab('show'); return false;">Tab #1</a>
+        </li>
+        <li>
+            <a href="#js-tab-pane4" onclick="$(this).tab('show'); return false;">Tab #2</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="js-tab-pane3">
+            <p>Content #1: .table-content .tab-pane.fade.in.active</p>
+        </div>
+        <div class="tab-pane fade" id="js-tab-pane4">
+            <p>Content #2: .table-content .tab-pane.fade</p>
+        </div>
     </div>
 </div>
 
 <p>Events: <code>show.bs.tab</code> <code>shown.bs.tab</code></p>
                     <h2 id="js-tooltips">Tooltips</h2>
 <p>Usage: <code>$('[data-toggle="tooltip"]').tooltip()</code></p>
+
 <div class="text-center">
-    <button type="button" title="Tooltip on left" data-toggle="tooltip" data-placement="left" class="btn btn-primary">Left</button>
-    <button type="button" title="Tooltip on top" data-toggle="tooltip" data-placement="top" class="btn btn-primary">Top</button>
-    <button type="button" title="Tooltip on bottom" data-toggle="tooltip" data-placement="bottom" class="btn btn-primary">Bottom</button>
-    <button type="button" title="Tooltip on right" data-toggle="tooltip" data-placement="right" class="btn btn-primary">Right</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="left" type="button" title="Tooltip on left">Left</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" type="button" title="Tooltip on top">Top</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" type="button" title="Tooltip on bottom">Bottom</button>
+    <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" type="button" title="Tooltip on right">Right</button>
 </div>
+
 <div class="text-center">
     <!-- Static tooltip -->
     <div class="tooltip bottom" style="display: inline-block; position: relative; opacity: 1; filter: alpha(opacity=100); z-index: 1000;">
@@ -1765,6 +1965,7 @@
         <div class="tooltip-arrow"></div>
     </div>
 </div>
+
 <p>
     Options: <code>animation: true|false</code> <code>html: false|true</code> <code>selector: false|string</code><br>
     <code>title: ''|function</code> <code>container: false|string</code><br>
@@ -1776,12 +1977,14 @@
 <p>Events: <code>show.bs.tooltip</code> <code>shown.bs.tooltip</code> <code>hide.bs.tooltip</code> <code>hidden.bs.tooltip</code></p>
                     <h2 id="js-popovers">Popovers</h2>
 <p>Usage: <code>$('[data-toggle="popover"]').popover()</code></p>
+
 <div class="text-center">
-    <button type="button" title="Popover on left" data-toggle="popover" data-placement="left" data-content="..." class="btn btn-primary">Left</button>
-    <button type="button" title="Popover on top" data-toggle="popover" data-placement="top" data-content="..." class="btn btn-primary">Top</button>
-    <button type="button" title="Popover on bottom" data-toggle="popover" data-placement="bottom" data-content="..." class="btn btn-primary">Bottom</button>
-    <button type="button" title="Popover on right" data-toggle="popover" data-placement="right" data-content="..." class="btn btn-primary">Right</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="left" data-content="..." type="button" title="Popover on left">Left</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="top" data-content="..." type="button" title="Popover on top">Top</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-content="..." type="button" title="Popover on bottom">Bottom</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="right" data-content="..." type="button" title="Popover on right">Right</button>
 </div>
+
 <div class="text-center">
     <!-- Static popover -->
     <div class="popover bottom" style="display: inline-block; position: relative; z-index: 1000;">
@@ -1792,6 +1995,7 @@
         </div>
     </div>
 </div>
+
 <p><br>
     Options: <code>animation: true|false</code> <code>html: false|true</code> <code>selector: false|string</code><br>
     <code>title: ''|function</code> <code>content: ''|function</code> <code>container: false|string</code><br>
@@ -1803,29 +2007,34 @@
 <p>Events: <code>show.bs.popover</code> <code>shown.bs.popover</code> <code>hide.bs.popover</code> <code>hidden.bs.popover</code></p>
                     <h2 id="js-alerts">Alerts</h2>
 <p>Via data attributes (close button): <code>data-dismiss="alert"</code></p>
-<div class="alert alert-danger fade in">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    .alert.alert-danger.fade.in
+
+<div>
+    <div class="alert alert-danger fade in">
+        <button class="close" data-dismiss="alert" type="button">&times;</button>
+        .alert.alert-danger.fade.in
+    </div>
 </div>
+
 <p>Via Javascript: <code>$('.alert').alert()</code></p>
 <p>Methods: <code>.alert('close')</code></p>
 <p>Events: <code>close.bs.alert</code> <code>closed.bs.alert</code></p>
                     <h2 id="js-buttons">Buttons</h2>
 <p>Stateful button: <code>data-loading-text="Loading..."</code> <code>data-complete-text="Completed"</code></p>
+
 <div class="bse-buttons">
-    <button class="btn btn-primary" type="button" data-loading-text="Loading..." data-complete-text="Completed" onclick="$(this).button('loading').siblings('button').prop('disabled',false);" autocomplete="off">
+    <button class="btn btn-primary" data-loading-text="Loading..." data-complete-text="Completed" type="button" onclick="$(this).button('loading').siblings('button').prop('disabled',false);">
         $(this).button('loading')
     </button>
-    <button class="btn btn-primary" type="button" onclick="$(this).prop('disabled',true).parent().find('button:first').button('complete');" disabled="disabled" autocomplete="off">
+    <button class="btn btn-primary" type="button" onclick="$(this).prop('disabled',true).parent().find('button:first').button('complete');" disabled>
         $('&larr;').button('complete')
     </button>
-    <button class="btn btn-primary" type="button" onclick="$(this).parent().find('button:first').button('reset').siblings('button').prop('disabled',true);" disabled="disabled" autocomplete="off">
+    <button class="btn btn-primary" type="button" onclick="$(this).parent().find('button:first').button('reset').siblings('button').prop('disabled',true);" disabled>
         $('&larr; &larr;').button('reset')
     </button>
-</div><br><br>
+</div><br>
 
 <div>
-    Single toggle: <button type="button" class="btn btn-primary" data-toggle="button">[data-toggle="button"]</button>
+    Single toggle: <button class="btn btn-primary" data-toggle="button" type="button">[data-toggle="button"]</button>
 </div><br>
 
 <div class="bse-buttons">
@@ -1844,16 +2053,16 @@
     Radio: <code>data-toggle="buttons"</code>
     <div class="btn-group" data-toggle="buttons">
         <label class="btn btn-primary">
-            <input type="radio" name="optionsRadiosJS" value="option1" checked="checked">#1
+            <input name="optionsRadiosJS" type="radio" value="option1" checked>#1
         </label>
         <label class="btn btn-primary">
-            <input type="radio" name="optionsRadiosJS" value="option2">#2
+            <input name="optionsRadiosJS" type="radio" value="option2">#2
         </label>
         <label class="btn btn-primary disabled">
-            <input type="radio" name="optionsRadiosJS" value="option3">Disabled
+            <input name="optionsRadiosJS" type="radio" value="option3">Disabled
         </label>
         <label class="btn btn-primary">
-            <input type="radio" name="optionsRadiosJS" value="option2">#4
+            <input name="optionsRadiosJS" type="radio" value="option2">#4
         </label>
     </div>
 </div><br>
@@ -1861,33 +2070,37 @@
 <p>Methods: <code>.button('toggle')</code> <code>.button('loading')</code> <code>.button('reset')</code> <code>.button(string)</code></p>
                     <h2 id="js-collapse">Collapse</h2>
 <p>Via data attributes: <code>data-toggle="collapse"</code></p>
-<p><strong>#accordion.panel-group</strong></p>
-<div class="panel-group" id="accordion">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
-                    data-toggle="collapse" data-parent="#accordion" href="#collapse-one"
-                </a>
-            </h4>
+
+<div>
+    <p><strong>#accordion.panel-group</strong></p>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
+                        data-toggle="collapse" data-parent="#accordion" href="#collapse-one"
+                    </a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse in" id="collapse-one">
+                <div class="panel-body">#collapse-one.collapse.in</div>
+            </div>
         </div>
-        <div id="collapse-one" class="panel-collapse collapse in">
-            <div class="panel-body">#collapse-one.collapse.in</div>
-        </div>
-    </div>
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-two">
-                    data-toggle="collapse" data-parent="#accordion" href="#collapse-two"
-                </a>
-            </h4>
-        </div>
-        <div id="collapse-two" class="panel-collapse collapse">
-            <div class="panel-body">#collapse-two.collapse</div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-two">
+                        data-toggle="collapse" data-parent="#accordion" href="#collapse-two"
+                    </a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse" id="collapse-two">
+                <div class="panel-body">#collapse-two.collapse</div>
+            </div>
         </div>
     </div>
 </div>
+
 <p>Via Javascript: <code>$(".collapse").collapse()</code></p>
 <p>Options: <code>parent: false|selector</code> <code>toggle: true|false</code></p>
 <p>Methods: <code>.collapse('toggle')</code> <code>.collapse('show')</code> <code>.collapse('hide')</code></p>
@@ -1896,40 +2109,42 @@
 <p>Via data attributes: <code>data-target="#carousel"</code> <code>data-slide</code> <code>data-slide-to</code> <code>data-ride</code></p>
 <p>Via Javascript: <code>$('.carousel').carousel()</code></p>
 
-<p><strong>.carousel.slide</strong></p>
-<div class="carousel slide" id="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-slide-to="0" data-target="#carousel" class="active"></li>
-        <li data-slide-to="1" data-target="#carousel"></li>
-        <li data-slide-to="2" data-target="#carousel"></li>
-    </ol>
+<div>
+    <p><strong>.carousel.slide</strong></p>
+    <div class="carousel slide" id="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#carousel"></li>
+            <li data-slide-to="1" data-target="#carousel"></li>
+            <li data-slide-to="2" data-target="#carousel"></li>
+        </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <img alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
-            <div class="carousel-caption">
-                .carousel-inner .item
-                <h3>&gt; .carousel-caption h3</h3>
-                <p>&gt; Paragraph</p>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+" alt="First slide">
+                <div class="carousel-caption">
+                    .carousel-inner .item
+                    <h3>&gt; .carousel-caption h3</h3>
+                    <p>&gt; Paragraph</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojMzMzO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+" alt="Third slide">
             </div>
         </div>
-        <div class="item">
-            <img alt="Second slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">
-        </div>
-        <div class="item">
-            <img alt="Third slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojMzMzO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+">
-        </div>
-    </div>
 
-    <!-- Controls -->
-    <a href="#carousel" class="left carousel-control" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a href="#carousel" class="right carousel-control" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
+        <!-- Controls -->
+        <a class="left carousel-control" data-slide="prev" href="#carousel">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" data-slide="next" href="#carousel">
+            <span class="icon-next"></span>
+        </a>
+    </div>
 </div><br>
 
 <p>Options: <code>interval: 5000</code> <code>pause: hover</code> <code>wrap: true|false</code></p>
@@ -1937,7 +2152,7 @@
 <p>Events: <code>slide.bs.carousel</code> <code>slid.bs.carousel</code></p>
                 </div>
                 <div class="col-md-3">
-                    <div id="sidebar" class="sidebar hidden-print" data-spy="affix">
+                    <div class="sidebar hidden-print" id="sidebar" data-spy="affix">
                         <ul class="nav sidenav">
                             <li class="active">
                                 <a href="#css">CSS</a>

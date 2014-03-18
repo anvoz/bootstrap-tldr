@@ -1,10 +1,12 @@
 <p>Usage: <code>$('[data-toggle="popover"]').popover()</code></p>
+
 <div class="text-center">
-    <button type="button" title="Popover on left" data-toggle="popover" data-placement="left" data-content="..." class="btn btn-primary">Left</button>
-    <button type="button" title="Popover on top" data-toggle="popover" data-placement="top" data-content="..." class="btn btn-primary">Top</button>
-    <button type="button" title="Popover on bottom" data-toggle="popover" data-placement="bottom" data-content="..." class="btn btn-primary">Bottom</button>
-    <button type="button" title="Popover on right" data-toggle="popover" data-placement="right" data-content="..." class="btn btn-primary">Right</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="left" data-content="..." type="button" title="Popover on left">Left</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="top" data-content="..." type="button" title="Popover on top">Top</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-content="..." type="button" title="Popover on bottom">Bottom</button>
+    <button class="btn btn-primary" data-toggle="popover" data-placement="right" data-content="..." type="button" title="Popover on right">Right</button>
 </div>
+
 <div class="text-center">
     <!-- Static popover -->
     <div class="popover bottom" style="display: inline-block; position: relative; z-index: 1000;">
@@ -15,6 +17,7 @@
         </div>
     </div>
 </div>
+
 <p><br>
     Options: <code>animation: true|false</code> <code>html: false|true</code> <code>selector: false|string</code><br>
     <code>title: ''|function</code> <code>content: ''|function</code> <code>container: false|string</code><br>
