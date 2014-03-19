@@ -1,5 +1,5 @@
 <!-- Headings -->
-<div class="media bse-heading">
+<div class="media bse-heading js-html-inspector">
     <div class="pull-left">
         <h1>h1 <small>small</small></h1>
     </div>
@@ -20,7 +20,7 @@
     </div>
 </div>
 
-<p>
+<p class="js-html-inspector">
     <!-- Lead body copy -->
     <span class="lead">.lead</span>
 
@@ -38,7 +38,9 @@
 
     <!-- Abbreviations -->
     <abbr title="abbreviation">abbr</abbr>
-    <abbr title="abbreviation.initialism" class="initialism">.initialism</abbr>
+    <abbr class="initialism" title="abbreviation.initialism">
+        .initialism
+    </abbr>
 
     <!-- Inline code -->
     <code>code</code>
@@ -48,7 +50,7 @@
 </p>
 
 <!-- Alignment classes -->
-<div class="row">
+<div class="row js-html-inspector">
     <div class="col-xs-4">
         <p class="text-left">.text-left</p>
     </div>
@@ -64,7 +66,7 @@
 </div>
 
 <!-- Addresses -->
-<div>
+<div class="js-html-inspector">
     <address>
         <strong>address strong</strong><br>
         address<br>
@@ -74,23 +76,26 @@
 
 <!-- Blockquotes -->
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6 js-html-inspector">
         <blockquote>
             <p>blockquote p</p>
             <footer>footer <cite title="Cite">cite</cite></footer>
         </blockquote>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 js-html-inspector">
         <blockquote class="blockquote-reverse">
             <p>blockquote.blockquote-reverse p</p>
-            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            <footer>
+                Someone famous in
+                <cite title="Source Title">Source Title</cite>
+            </footer>
         </blockquote>
     </div>
 </div>
 
 <div class="row">
     <!-- Unordered list -->
-    <div class="col-sm-4 col-xs-6">
+    <div class="col-sm-4 col-xs-6 js-html-inspector">
         <p><strong>ul</strong></p>
         <ul>
             <li>li</li>
@@ -105,7 +110,7 @@
     </div>
 
     <!-- Ordered list -->
-    <div class="col-sm-4 col-xs-6">
+    <div class="col-sm-4 col-xs-6 js-html-inspector">
         <p><strong>ol</strong></p>
         <ol>
             <li>List item</li>
@@ -120,7 +125,7 @@
     </div>
 
     <!-- Unstyled list -->
-    <div class="col-sm-4 col-xs-6">
+    <div class="col-sm-4 col-xs-6 js-html-inspector">
         <p><strong>ul.list-unstyled</strong></p>
         <ul class="list-unstyled">
             <li>List item</li>
@@ -135,7 +140,7 @@
     </div>
 
     <!-- Inline list -->
-    <div class="col-sm-4 col-xs-6">
+    <div class="col-sm-4 col-xs-6 js-html-inspector">
         <p><strong>ul.list-inline</strong></p>
         <ul class="list-inline">
             <li>List item</li>
@@ -147,7 +152,7 @@
 
 <div class="row">
     <!-- Description -->
-    <div class="col-xs-6">
+    <div class="col-xs-6 js-html-inspector">
         <p><strong>dl</strong></p>
         <dl>
             <dt>dt</dt>
@@ -158,7 +163,7 @@
     </div>
 
     <!-- Horizontal description -->
-    <div class="col-xs-6">
+    <div class="col-xs-6 js-html-inspector">
         <p><strong>dl.dl-horizontal</strong></p>
         <dl class="dl-horizontal">
             <dt>Term</dt>

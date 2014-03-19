@@ -121,3 +121,20 @@ body {
     text-decoration: none;
     color: #333;
 }
+
+/* HTML inspector button styles
+-------------------------------------------------- */
+.js-html-inspector {
+    position: relative;
+}
+.js-html-inspector .js-btn-inspector {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000;
+    background-color: #fff;
+}
+.js-html-inspector:hover .js-btn-inspector {
+    display: block;
+}
