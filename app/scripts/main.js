@@ -22,15 +22,61 @@
                 '<span class="glyphicon glyphicon-search"></span>' +
             '</button>');
         $inspectorBtn.click(function() {
-            var $html = $(this).closest('.' + inspectorParentCls).clone();
+            var $parent = $(this).closest('.' + inspectorParentCls).clone();
 
-            // Clean some elements
-            $html.find('.' + inspectorBtnCls).remove();
+            // Replace elements
+            var replaceTarget = $parent.data('replace-target');
+            if (typeof replaceTarget !== 'undefined') {
+                $parent.find(replaceTarget).each(function() {
+                    $(this).replaceWith($(this).html());
+                });
+            }
 
-            // Copy html to dialog and launch
-            $inspectorDialog
-                .find('.modal-body pre').text($html.html()).end()
-                .modal();
+            // Remove elements
+            var removeTargets = $parent.data('remove-target') || [];
+            if ( ! (removeTargets instanceof Array)) {
+                removeTargets = [removeTargets];
+            }
+            removeTargets.push('.' + inspectorBtnCls);
+            $.each(removeTargets, function(index, target) {
+                $parent.find(target).remove();
+            });
+
+            // Remove classes from elements
+            var removeClassesTargets = $parent.data('remove-class-target') || [];
+            if ( ! (removeClassesTargets instanceof Array)) {
+                removeClassesTargets = [removeClassesTargets];
+            }
+            $.each(removeClassesTargets, function(index, target) {
+                $parent.find(target).removeClass(target.split('.')[1]);
+            });
+
+            // Trim whitespaces
+            var lines = $parent.html().split('\n');
+            if (lines.length > 0) {
+                // Remove all empty lines on the top
+                while(lines[0].trim().length === 0) {
+                    lines.shift();
+                }
+
+                // Change indentation based on the first line
+                var indentSize = lines[0].length - lines[0].trim().length,
+                    re = new RegExp(' {' + indentSize + '}'),
+                    html = [];
+                $.each(lines, function(index, line) {
+                    if (line.trim().length > 0 && line.match(re)) {
+                        html.push(line.substring(indentSize));
+                    } else if (line.length === 0) {
+                        // Intended empty line
+                        html.push('');
+                    }
+                });
+
+                // Copy html to dialog and launch
+                $inspectorDialog
+                    .find('.modal-body pre').text(html.join('\n')).end()
+                    .modal();
+            }
         });
         // Add inspector button
         $('.' + inspectorParentCls).hover(function() {
