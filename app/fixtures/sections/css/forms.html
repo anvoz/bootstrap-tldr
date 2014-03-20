@@ -1,5 +1,5 @@
 <!-- Basic example -->
-<div>
+<div class="js-html-inspector" data-remove-target="p:first">
     <p><strong>form</strong></p>
     <form>
         <!-- Inputs with different sizes -->
@@ -22,7 +22,11 @@
         <div class="form-group">
             <label for="example-file-input">input[type="file"]</label>
             <input id="example-file-input" type="file">
-            <span class="help-block">.help-block: Wrap labels and controls in <code>.form-group</code> for optimum spacing.</span>
+            <span class="help-block">
+                .help-block: Wrap labels and controls in
+                <code>.form-group</code>
+                for optimum spacing.
+            </span>
         </div>
 
         <!-- Button -->
@@ -33,7 +37,7 @@
 </div>
 
 <!-- Inline form -->
-<div>
+<div class="js-html-inspector" data-remove-target="p:first">
     <p><strong>form.form-inline</strong></p>
     <form class="form-inline">
         <div class="form-group">
@@ -41,7 +45,8 @@
         </div>
         <div class="checkbox">
             <label>
-                <input type="checkbox"> .checkbox label input[type="checkbox"]
+                <input type="checkbox">
+                .checkbox label input[type="checkbox"]
             </label>
         </div>
         <button class="btn btn-default" type="submit">Submit</button>
@@ -50,11 +55,13 @@
 <br>
 
 <!-- Horizontal form -->
-<div>
+<div class="js-html-inspector" data-remove-target='["p:not([class])","br"]'>
     <p><strong>form.form-horizontal</strong></p>
     <form class="form-horizontal">
         <div class="form-group">
-            <label class="col-sm-3 control-label" for="example-text-input-horizontal">label.control-label</label>
+            <label class="col-sm-3 control-label" for="example-text-input-horizontal">
+                label.control-label
+            </label>
             <div class="col-sm-9">
                 <input class="form-control" id="example-text-input-horizontal" type="text" placeholder="input.form-control">
             </div>
@@ -66,7 +73,8 @@
             <div class="col-sm-9">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> .checkbox label input[type="checkbox"]
+                        <input type="checkbox">
+                        .checkbox label input[type="checkbox"]
                     </label>
                 </div>
             </div>
@@ -75,13 +83,16 @@
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option1"> label.checkbox-inline Checkbox #1
+                    <input type="checkbox" value="option1">
+                    label.checkbox-inline Checkbox #1
                 </label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option2"> Checkbox #2
+                    <input type="checkbox" value="option2">
+                    Checkbox #2
                 </label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option3" disabled> Disabled checkbox
+                    <input type="checkbox" value="option3" disabled>
+                    Disabled checkbox
                 </label>
             </div>
         </div>
@@ -92,7 +103,8 @@
             <div class="col-sm-9">
                 <div class="radio">
                     <label>
-                        <input name="optionsRadios" type="radio" value="option1" checked> .radio label input[type="radio"]
+                        <input name="optionsRadios" type="radio" value="option1" checked>
+                        .radio label input[type="radio"]
                     </label>
                 </div>
             </div>
@@ -101,13 +113,16 @@
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
                 <label class="radio-inline">
-                    <input name="optionsRadios2" type="radio" value="option1" checked> label.radio-inline Radio #1
+                    <input name="optionsRadios2" type="radio" value="option1" checked>
+                    label.radio-inline Radio #1
                 </label>
                 <label class="radio-inline">
-                    <input name="optionsRadios2" type="radio" value="option2"> Radio #2
+                    <input name="optionsRadios2" type="radio" value="option2">
+                    Radio #2
                 </label>
                 <label class="radio-inline">
-                    <input name="optionsRadios2" type="radio" value="option3" disabled> Disabled radio
+                    <input name="optionsRadios2" type="radio" value="option3" disabled>
+                    Disabled radio
                 </label>
             </div>
         </div>
@@ -158,25 +173,29 @@
         <!-- Button -->
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button class="btn btn-default" type="submit">Submit</button>
             </div>
         </div>
     </form>
 </div>
 
 <!-- Validation states -->
-<div>
+<div class="js-html-inspector" data-remove-target="p:first">
     <p><strong>Validation styles on form controls</strong></p>
     <form class="form-horizontal">
         <!-- Success state -->
         <div class="form-group has-success">
-            <label class="col-sm-3 control-label" for="inputSuccess">.has-success</label>
+            <label class="col-sm-3 control-label" for="inputSuccess">
+                .has-success
+            </label>
             <div class="col-sm-9">
                 <input class="form-control" id="inputSuccess" type="text" placeholder="input.form-control">
             </div>
         </div>
         <div class="form-group has-success has-feedback">
-            <label class="col-sm-3 control-label" for="inputSuccess2">..has-feedback</label>
+            <label class="col-sm-3 control-label" for="inputSuccess2">
+                ..has-feedback
+            </label>
             <div class="col-sm-9">
                 <input class="form-control" id="inputSuccess2" type="text" placeholder="input.form-control">
                 <span class="glyphicon glyphicon-ok form-control-feedback"></span>
@@ -185,13 +204,17 @@
 
         <!-- Warning state -->
         <div class="form-group has-warning">
-            <label class="col-sm-3 control-label" for="inputWarning">.has-warning</label>
+            <label class="col-sm-3 control-label" for="inputWarning">
+                .has-warning
+            </label>
             <div class="col-sm-9">
                 <input class="form-control" id="inputWarning" type="text" placeholder="input.form-control">
             </div>
         </div>
         <div class="form-group has-warning has-feedback">
-            <label class="col-sm-3 control-label" for="inputWarning2">..has-feedback</label>
+            <label class="col-sm-3 control-label" for="inputWarning2">
+                ..has-feedback
+            </label>
             <div class="col-sm-9">
                 <input class="form-control" id="inputWarning2" type="text" placeholder="input.form-control">
                 <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
@@ -200,13 +223,17 @@
 
         <!-- Error state -->
         <div class="form-group has-error">
-            <label class="col-sm-3 control-label" for="inputError">.has-error</label>
+            <label class="col-sm-3 control-label" for="inputError">
+                .has-error
+            </label>
             <div class="col-sm-9">
                 <input class="form-control" id="inputError" type="text" placeholder="input.form-control">
             </div>
         </div>
         <div class="form-group has-error has-feedback">
-            <label class="col-sm-3 control-label" for="inputError2">..has-feedback</label>
+            <label class="col-sm-3 control-label" for="inputError2">
+                ..has-feedback
+            </label>
             <div class="col-sm-9">
                 <input class="form-control" id="inputError2" type="text" placeholder="input.form-control">
                 <span class="glyphicon glyphicon-remove form-control-feedback"></span>

@@ -1,5 +1,5 @@
 <!-- Headings -->
-<div class="media bse-heading js-html-inspector">
+<div class="media bse-heading js-html-inspector" data-replace-target="> div">
     <div class="pull-left">
         <h1>h1 <small>small</small></h1>
     </div>
@@ -50,7 +50,7 @@
 </p>
 
 <!-- Alignment classes -->
-<div class="row js-html-inspector">
+<div class="row js-html-inspector" data-replace-target="> div">
     <div class="col-xs-4">
         <p class="text-left">.text-left</p>
     </div>
@@ -79,7 +79,10 @@
     <div class="col-sm-6 js-html-inspector">
         <blockquote>
             <p>blockquote p</p>
-            <footer>footer <cite title="Cite">cite</cite></footer>
+            <footer>
+                footer
+                <cite title="Cite">cite</cite>
+            </footer>
         </blockquote>
     </div>
     <div class="col-sm-6 js-html-inspector">
@@ -95,11 +98,12 @@
 
 <div class="row">
     <!-- Unordered list -->
-    <div class="col-sm-4 col-xs-6 js-html-inspector">
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
         <p><strong>ul</strong></p>
         <ul>
             <li>li</li>
-            <li>List item
+            <li>
+                List item
                 <ul>
                     <li>ul li</li>
                     <li>List item</li>
@@ -110,11 +114,12 @@
     </div>
 
     <!-- Ordered list -->
-    <div class="col-sm-4 col-xs-6 js-html-inspector">
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
         <p><strong>ol</strong></p>
         <ol>
             <li>List item</li>
-            <li>List item
+            <li>
+                List item
                 <ol>
                     <li>List item</li>
                     <li>List item</li>
@@ -125,11 +130,12 @@
     </div>
 
     <!-- Unstyled list -->
-    <div class="col-sm-4 col-xs-6 js-html-inspector">
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
         <p><strong>ul.list-unstyled</strong></p>
         <ul class="list-unstyled">
             <li>List item</li>
-            <li>List item
+            <li>
+                List item
                 <ul>
                     <li>List item</li>
                     <li>List item</li>
@@ -140,7 +146,7 @@
     </div>
 
     <!-- Inline list -->
-    <div class="col-sm-4 col-xs-6 js-html-inspector">
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
         <p><strong>ul.list-inline</strong></p>
         <ul class="list-inline">
             <li>List item</li>
@@ -152,7 +158,7 @@
 
 <div class="row">
     <!-- Description -->
-    <div class="col-xs-6 js-html-inspector">
+    <div class="col-xs-6 js-html-inspector" data-remove-target="p:first">
         <p><strong>dl</strong></p>
         <dl>
             <dt>dt</dt>
@@ -163,7 +169,7 @@
     </div>
 
     <!-- Horizontal description -->
-    <div class="col-xs-6 js-html-inspector">
+    <div class="col-xs-6 js-html-inspector" data-remove-target="p:first">
         <p><strong>dl.dl-horizontal</strong></p>
         <dl class="dl-horizontal">
             <dt>Term</dt>

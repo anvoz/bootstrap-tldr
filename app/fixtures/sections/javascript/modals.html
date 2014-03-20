@@ -12,22 +12,29 @@
 </div>
 
 <!-- Static modal example -->
-<div>
+<div class="js-html-inspector" data-remove-target='["p:first","span"]'>
+    <!-- Only use inline style for static display -->
     <div class="modal" style="display: block; position: static; overflow: hidden;">
         <div class="modal-dialog">
             <p><strong>.modal .modal-dialog .modal-content</strong></p>
             <div class="modal-content">
                 <div class="modal-header">
                     <button class="close" type="button">&times;</button>
-                    <h4 class="modal-title">.modal-header h4.modal-title</h4>
+                    <h4 class="modal-title">
+                        .modal-header h4.modal-title
+                    </h4>
                 </div>
                 <div class="modal-body">
                     .modal-body
                 </div>
                 <div class="modal-footer">
-                    .modal-footer
-                    <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-                    <button class="btn btn-primary" type="button">Button</button>
+                    <span>.modal-footer</span>
+                    <button class="btn btn-default" data-dismiss="modal" type="button">
+                        Close
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        Button
+                    </button>
                 </div>
             </div>
         </div>
