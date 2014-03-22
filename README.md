@@ -8,10 +8,12 @@ Bootstrap TLDR
 * Briefly presented with their own CSS selectors
 
 ## Dev
+
+[Public board on Trello](https://trello.com/b/NMaHvmUg/bootstrap-tldr)
+
 * Install dependencies: `npm install` and `bower install`
 * Run webapp: `grunt serve`
 * Modify page content in `app/fixtures/` folder
-* Build HTML: `grunt htmlbuild`
 * Build webapp: `grunt`
 
 ## License
