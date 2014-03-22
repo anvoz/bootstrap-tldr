@@ -62,22 +62,36 @@
 <!-- Headings -->
 <div class="media bse-heading js-html-inspector" data-replace-target="> div">
     <div class="pull-left">
-        <h1>h1 <small>small</small></h1>
+        <h1>
+            h1 <small>small</small>
+        </h1>
     </div>
     <div class="pull-left">
-        <h2>h2 <small>small</small></h2>
+        <h2>
+            h2 <small>small</small>
+        </h2>
     </div>
     <div class="pull-left">
-        <h3>h3 <small>small</small></h3>
+        <h3>
+            h3 <small>small</small>
+        </h3>
     </div>
     <div class="pull-left">
-        <h4>h4 <small>small</small></h4>
+        <h4>
+            h4 <span class="small">.small</span>
+        </h4>
+    </div>
+
+    <div class="pull-left">
+        <!-- .h1 through .h6 classes are also available -->
+        <span class="h5">
+            .h5 <small>small</small>
+        </span>
     </div>
     <div class="pull-left">
-        <h5>h5 <small>small</small></h5>
-    </div>
-    <div class="pull-left">
-        <h6>h6 <small>small</small></h6>
+        <span class="h6">
+            .h6 <span class="small">.small</span>
+        </span>
     </div>
 </div>
 
@@ -105,6 +119,8 @@
 
     <!-- Inline code -->
     <code>code</code>
+    <!-- Sample output from a program -->
+    <samp>samp</samp>
 
     <!-- User input -->
     <kbd>kbd</kbd>
@@ -1453,6 +1469,18 @@
                 p.navbar-text
                 <a href="#" class="navbar-link">a.navbar-link</a>
             </p>
+
+            <!-- Add the .navbar-btn class to <button> elements not residing
+            in a <form> to vertically center them in the navbar. -->
+            <button class="btn btn-default navbar-btn" type="button">
+                ...navbar-btn
+            </button>
+            <button class="btn btn-default navbar-btn btn-sm" type="button">
+                ....btn-sm
+            </button>
+            <button class="btn btn-default navbar-btn btn-xs" type="button">
+                ....btn-xs
+            </button>
         </div>
     </nav>
 </div>
@@ -1587,6 +1615,7 @@
     </div>
 </div>
                     <h2 id="thumbnails">Thumbnails</h2>
+<!-- @TODO: Use 200x200 images instead of style="width: 100%" -->
 <div class="row">
     <div class="col-sm-3 col-xs-6 js-html-inspector" data-remove-target="p:first">
         <p><strong>.thumbnail</strong></p>
@@ -1635,6 +1664,13 @@
 </div>
                     <h2 id="alerts">Alerts</h2>
 <!-- Alerts -->
+<div class="js-html-inspector">
+    <div class="alert alert-dismissable">
+        <button class="close" data-dismiss="alert" type="button">&times;</button>
+        .alert.alert-dismissable
+    </div>
+</div>
+
 <div class="row js-html-inspector" data-replace-target="> div">
     <div class="col-sm-6">
         <div class="alert alert-success">
@@ -2307,14 +2343,21 @@
                 <div class="carousel-caption">
                     .carousel-inner .item
                     <h3>&gt; .carousel-caption h3</h3>
-                    <p>&gt; Paragraph</p>
+                    <p>
+                        &gt; Paragraph
+                        <button class="btn btn-default btn-sm" type="button">...btn-sm</button>
+                    </p>
                 </div>
             </div>
             <div class="item">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==" alt="Second slide">
+                <a href="#">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==" alt="Second slide">
+                </a>
             </div>
             <div class="item">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojMzMzO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+" alt="Third slide">
+                <a href="#">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojMzMzO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+" alt="Third slide">
+                </a>
             </div>
         </div>
 
@@ -2399,7 +2442,7 @@
                         <h4 class="modal-title">Source Code</h4>
                     </div>
                     <div class="modal-body">
-                        <pre></pre>
+                        <pre><code></code></pre>
                     </div>
                 </div>
             </div>

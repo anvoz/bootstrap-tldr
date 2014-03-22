@@ -138,7 +138,7 @@ body {
 .js-html-inspector:hover .js-btn-inspector {
     display: block;
 }
-#dialog-html-inspector pre {
+#dialog-html-inspector code {
     word-break: normal;
     word-wrap: normal;
     white-space: pre;

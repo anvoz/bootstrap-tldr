@@ -74,7 +74,7 @@
 
                 // Copy html to dialog and launch
                 $inspectorDialog
-                    .find('.modal-body pre').text(html.join('\n')).end()
+                    .find('.modal-body code').text(html.join('\n')).end()
                     .modal();
             }
         });
