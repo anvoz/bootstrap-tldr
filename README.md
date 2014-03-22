@@ -4,7 +4,7 @@ Bootstrap TLDR
 ## Feature
 
 * [Bootstrap](http://getbootstrap.com/) v3.1.1
-* All Bootstrap's components in one page
+* All Bootstrap's components in one page ([unused CSS list](https://github.com/anvoz/bootstrap-tldr/wiki/Unused-CSS-v3.1.1))
 * Briefly presented with their own CSS selectors
 
 ## Dev
