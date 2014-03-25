@@ -1,0 +1,808 @@
+<h1 class="page-header" id="css">CSS</h1>
+
+<h2 id="typography">Typography</h2>
+<!-- Headings -->
+<div class="media bse-heading js-html-inspector" data-replace-target="> div">
+    <div class="pull-left">
+        <h1>
+            h1 <small>small</small>
+        </h1>
+    </div>
+    <div class="pull-left">
+        <h2>
+            h2 <small>small</small>
+        </h2>
+    </div>
+    <div class="pull-left">
+        <h3>
+            h3 <small>small</small>
+        </h3>
+    </div>
+    <div class="pull-left">
+        <h4>
+            h4 <span class="small">.small</span>
+        </h4>
+    </div>
+
+    <div class="pull-left">
+        <!-- .h1 through .h6 classes are also available -->
+        <span class="h5">
+            .h5 <small>small</small>
+        </span>
+    </div>
+    <div class="pull-left">
+        <span class="h6">
+            .h6 <span class="small">.small</span>
+        </span>
+    </div>
+</div>
+
+<p class="js-html-inspector">
+    <!-- Lead body copy -->
+    <span class="lead">.lead</span>
+
+    <!-- Bold -->
+    <strong>strong</strong>
+    <b>b</b>
+
+    <!-- Small text -->
+    <small>small</small>
+    <span class="small">.small</span>
+
+    <!-- Italics -->
+    <em>em</em>
+    <i>i</i>
+
+    <!-- Abbreviations -->
+    <abbr title="abbreviation">abbr</abbr>
+    <abbr class="initialism" title="abbreviation.initialism">
+        .initialism
+    </abbr>
+
+    <!-- Inline code -->
+    <code>code</code>
+    <!-- Sample output from a program -->
+    <samp>samp</samp>
+
+    <!-- User input -->
+    <kbd>kbd</kbd>
+</p>
+
+<!-- Alignment classes -->
+<div class="row js-html-inspector" data-replace-target="> div">
+    <div class="col-xs-4">
+        <p class="text-left">.text-left</p>
+    </div>
+    <div class="col-xs-4">
+        <p class="text-center">.text-center</p>
+    </div>
+    <div class="col-xs-4">
+        <p class="text-right">.text-right</p>
+    </div>
+    <div class="col-xs-12">
+        <p class="text-justify">.text-justify</p>
+    </div>
+</div>
+
+<!-- Addresses -->
+<div class="js-html-inspector">
+    <address>
+        <strong>address strong</strong><br>
+        address<br>
+        <a href="mailto:#">first.last@example.com</a>
+    </address>
+</div>
+
+<!-- Blockquotes -->
+<div class="row">
+    <div class="col-sm-6 js-html-inspector">
+        <blockquote>
+            <p>blockquote p</p>
+            <footer>
+                footer
+                <cite title="Cite">cite</cite>
+            </footer>
+        </blockquote>
+    </div>
+    <div class="col-sm-6 js-html-inspector">
+        <blockquote class="blockquote-reverse">
+            <p>blockquote.blockquote-reverse p</p>
+            <footer>
+                Someone famous in
+                <cite title="Source Title">Source Title</cite>
+            </footer>
+        </blockquote>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Unordered list -->
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>ul</strong></p>
+        <ul>
+            <li>li</li>
+            <li>
+                List item
+                <ul>
+                    <li>ul li</li>
+                    <li>List item</li>
+                </ul>
+            </li>
+            <li>List item</li>
+        </ul>
+    </div>
+
+    <!-- Ordered list -->
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>ol</strong></p>
+        <ol>
+            <li>List item</li>
+            <li>
+                List item
+                <ol>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ol>
+            </li>
+            <li>List item</li>
+        </ol>
+    </div>
+
+    <!-- Unstyled list -->
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>ul.list-unstyled</strong></p>
+        <ul class="list-unstyled">
+            <li>List item</li>
+            <li>
+                List item
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </li>
+            <li>List item</li>
+        </ul>
+    </div>
+
+    <!-- Inline list -->
+    <div class="col-sm-4 col-xs-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>ul.list-inline</strong></p>
+        <ul class="list-inline">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Description -->
+    <div class="col-xs-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>dl</strong></p>
+        <dl>
+            <dt>dt</dt>
+            <dd>dd</dd>
+            <dt>Term</dt>
+            <dd>Description<br>Description</dd>
+        </dl>
+    </div>
+
+    <!-- Horizontal description -->
+    <div class="col-xs-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>dl.dl-horizontal</strong></p>
+        <dl class="dl-horizontal">
+            <dt>Term</dt>
+            <dd>Description</dd>
+            <dt>Long term will be truncated</dt>
+            <dd>Description<br>Description</dd>
+        </dl>
+    </div>
+</div>
+
+<h2 id="tables">Tables</h2>
+<!-- Basic example -->
+<div class="js-html-inspector" data-remove-target="p:first">
+    <p><strong>table.table</strong></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>thead tr th</th>
+                <th>th</th><th>Header</th><th>Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tbody tr td</td>
+                <td>td</td><td>Data</td><td>Data</td>
+            </tr>
+            <tr><td>Data</td><td>Data</td><td>Data</td><td>Data</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <!-- Striped rows -->
+    <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>table.table.table-striped</strong></p>
+        <table class="table table-striped">
+            <thead>
+                <tr><th>Header</th><th>Header</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bordered table -->
+    <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>..table-bordered</strong></p>
+        <table class="table table-bordered">
+            <thead>
+                <tr><th>Header</th><th>Header</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Hover rows -->
+    <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>..table-hover</strong></p>
+        <table class="table table-hover">
+            <thead>
+                <tr><th>Header</th><th>Header</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Condensed table -->
+    <div class="col-sm-6 js-html-inspector" data-remove-target="p:first">
+        <p><strong>..table-condensed</strong></p>
+        <table class="table table-condensed">
+            <thead>
+                <tr><th>Header</th><th>Header</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Data</td><td>Data</td></tr>
+                <tr><td>Data</td><td>Data</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Responsive tables and Contextual classes -->
+<div class="js-html-inspector" data-remove-target="p:first">
+    <p><strong>div.table-responsive table.table</strong></p>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th><th>Header</th><th>Header</th><th>Header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="active">td.active</td>
+                    <td class="success">td.success</td>
+                    <td class="info">td.info</td>
+                    <td class="warning">td.warning</td>
+                    <td class="danger">td.danger</td>
+                </tr>
+                <tr class="active">
+                    <td>tr.active td</td>
+                    <td colspan="4">
+                        Applies the hover color to a particular row or cell
+                    </td>
+                </tr>
+                <tr class="success">
+                    <td>tr.success td</td>
+                    <td colspan="4">
+                        Indicates a successful or positive action
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>tr.info td</td>
+                    <td colspan="4">
+                        Indicates a neutral informative change or action
+                    </td>
+                </tr>
+                <tr class="warning">
+                    <td>tr.warning td</td>
+                    <td colspan="4">
+                        Indicates a warning that might need attention
+                    </td>
+                </tr>
+                <tr class="danger">
+                    <td>tr.danger td</td>
+                    <td colspan="4">
+                        Indicates a dangerous or potentially negative action
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2 id="forms">Forms</h2>
+<!-- Basic example -->
+<div class="js-html-inspector" data-remove-target="p:first">
+    <p><strong>form</strong></p>
+    <form>
+        <!-- Inputs with different sizes -->
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="input.form-control">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" type="text" placeholder="input.form-control.input-lg">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-sm" type="text" placeholder="input.form-control.input-sm">
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+            <textarea class="form-control" rows="3">textarea.form-control</textarea>
+        </div>
+
+        <!-- File input -->
+        <div class="form-group">
+            <label for="example-file-input">input[type="file"]</label>
+            <input id="example-file-input" type="file">
+            <span class="help-block">
+                .help-block: Wrap labels and controls in
+                <code>.form-group</code>
+                for optimum spacing.
+            </span>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <button class="btn btn-default" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!-- Inline form -->
+<div class="js-html-inspector" data-remove-target="p:first">
+    <p><strong>form.form-inline</strong></p>
+    <form class="form-inline">
+        <div class="form-group">
+            <input class="form-control" id="example-text-input-inline" type="text" placeholder="input.form-control">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">
+                .checkbox label input[type="checkbox"]
+            </label>
+        </div>
+        <button class="btn btn-default" type="submit">Submit</button>
+    </form>
+</div>
+<br>
+
+<!-- Horizontal form -->
+<div class="js-html-inspector" data-remove-target='["p:not([class])","br"]'>
+    <p><strong>form.form-horizontal</strong></p>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-3 control-label" for="example-text-input-horizontal">
+                label.control-label
+            </label>
+            <div class="col-sm-9">
+                <input class="form-control" id="example-text-input-horizontal" type="text" placeholder="input.form-control">
+            </div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Checkboxes</label>
+            <div class="col-sm-9">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        .checkbox label input[type="checkbox"]
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Inline checkboxes -->
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option1">
+                    label.checkbox-inline Checkbox #1
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option2">
+                    Checkbox #2
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option3" disabled>
+                    Disabled checkbox
+                </label>
+            </div>
+        </div>
+
+        <!-- Radio -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Radios</label>
+            <div class="col-sm-9">
+                <div class="radio">
+                    <label>
+                        <input name="optionsRadios" type="radio" value="option1" checked>
+                        .radio label input[type="radio"]
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Inline radios -->
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <label class="radio-inline">
+                    <input name="optionsRadios2" type="radio" value="option1" checked>
+                    label.radio-inline Radio #1
+                </label>
+                <label class="radio-inline">
+                    <input name="optionsRadios2" type="radio" value="option2">
+                    Radio #2
+                </label>
+                <label class="radio-inline">
+                    <input name="optionsRadios2" type="radio" value="option3" disabled>
+                    Disabled radio
+                </label>
+            </div>
+        </div>
+
+        <!-- Select -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">select.form-control</label>
+            <div class="col-sm-4">
+                <select class="form-control">
+                    <option>option</option>
+                    <option>Option #2</option>
+                    <option>Option #3</option>
+                </select>
+                <br>
+                <select class="form-control" disabled>
+                    <option>select[disabled]</option>
+                </select>
+            </div>
+            <div class="col-sm-5">
+                <br class="visible-xs">
+                <p><strong>select.form-control[multiple]</strong></p>
+                <select class="form-control" multiple>
+                    <option>Option #1</option>
+                    <option selected>option[selected]</option>
+                    <option>Option #3</option>
+                    <option selected>Option #4</option>
+                    <option>Option #5</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Static control -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Static control</label>
+            <div class="col-sm-9">
+                <p class="form-control-static">p.form-control-static</p>
+            </div>
+        </div>
+
+        <!-- Disabled input -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Disabled input</label>
+            <div class="col-sm-9">
+                <input class="form-control" type="text" placeholder=".form-control[disabled]" disabled>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button class="btn btn-default" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Validation states -->
+<div class="js-html-inspector" data-remove-target="p:first">
+    <p><strong>Validation styles on form controls</strong></p>
+    <form class="form-horizontal">
+        <!-- Success state -->
+        <div class="form-group has-success">
+            <label class="col-sm-3 control-label" for="inputSuccess">
+                .has-success
+            </label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputSuccess" type="text" placeholder="input.form-control">
+            </div>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label class="col-sm-3 control-label" for="inputSuccess2">
+                ..has-feedback
+            </label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputSuccess2" type="text" placeholder="input.form-control">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+        </div>
+
+        <!-- Warning state -->
+        <div class="form-group has-warning">
+            <label class="col-sm-3 control-label" for="inputWarning">
+                .has-warning
+            </label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputWarning" type="text" placeholder="input.form-control">
+            </div>
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="col-sm-3 control-label" for="inputWarning2">
+                ..has-feedback
+            </label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputWarning2" type="text" placeholder="input.form-control">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+        </div>
+
+        <!-- Error state -->
+        <div class="form-group has-error">
+            <label class="col-sm-3 control-label" for="inputError">
+                .has-error
+            </label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputError" type="text" placeholder="input.form-control">
+            </div>
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label class="col-sm-3 control-label" for="inputError2">
+                ..has-feedback
+            </label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputError2" type="text" placeholder="input.form-control">
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+        </div>
+    </form>
+</div>
+
+<h2 id="buttons">Buttons</h2>
+<!-- Styled buttons -->
+<p class="bse-buttons js-html-inspector">
+    <button class="btn btn-default" type="button">
+        button.btn.btn-default
+    </button>
+    <button class="btn btn-primary" type="button">..btn-primary</button>
+    <button class="btn btn-success" type="button">..btn-success</button>
+    <button class="btn btn-info" type="button">..btn-info</button>
+    <button class="btn btn-warning" type="button">..btn-warning</button>
+    <button class="btn btn-danger" type="button">..btn-danger</button>
+    <button class="btn btn-link" type="button">..btn-link</button>
+</p>
+
+<!-- Button sizes -->
+<p class="bse-buttons js-html-inspector">
+    <button class="btn btn-default btn-lg" type="button">...btn-lg</button>
+    <button class="btn btn-default" type="button">Default button size</button>
+    <button class="btn btn-default btn-sm" type="button">...btn-sm</button>
+    <button class="btn btn-default btn-xs" type="button">...btn-xs</button>
+</p>
+
+<!-- Block level buttons -->
+<p class="js-html-inspector">
+    <button class="btn btn-primary btn-block" type="button">
+        ..btn-primary.btn-block
+    </button>
+    <button class="btn btn-default btn-block" type="button">
+        ..btn-default.btn-block
+    </button>
+</p>
+
+<!-- Button tags -->
+<p class="bse-buttons js-html-inspector">
+    <a class="btn btn-default" href="#">a.btn.btn-default</a>
+    <button class="btn btn-default" type="button">button..</button>
+    <input class="btn btn-default" type="button" value="input[type='button']..">
+    <input class="btn btn-default" type="submit" value="input[type='submit']..">
+</p>
+
+<p class="bse-buttons js-html-inspector">
+    <!-- Active state -->
+    <a class="btn btn-default active" href="#">a...active</a>
+    <button class="btn btn-default active" type="button">
+        button...active
+    </button>
+
+    <!-- Disabled state -->
+    <a class="btn btn-default disabled" href="#">a...disabled</a>
+    <button class="btn btn-default" type="button" disabled="disabled">
+        button..[disabled]
+    </button>
+</p>
+
+<h2 id="images">Images</h2>
+<div class="row bs-thumbnails js-html-inspector" data-remove-target="p" data-replace-target="> div">
+    <div class="col-sm-3 col-xs-6">
+        <p><strong>.img-rounded</strong></p>
+        <img class="img-rounded" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-rounded">
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <p><strong>.img-circle</strong></p>
+        <img class="img-circle" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-circle">
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <p><strong>.img-thumbnail</strong></p>
+        <img class="img-thumbnail" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-thumbnail">
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <p><strong>.img-responsive</strong></p>
+        <img class="img-responsive" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt=".img-responsive">
+    </div>
+</div>
+
+<h2 id="helper-classes">Helper classes</h2>
+<!-- Contextual colors -->
+<p class="js-html-inspector">
+    <span class="text-muted">.text-muted</span>
+    <span class="text-primary">.text-primary</span>
+    <span class="text-success">.text-success</span>
+    <span class="text-info">.text-info</span>
+    <span class="text-warning">.text-warning</span>
+    <span class="text-danger">.text-danger</span>
+</p>
+
+<!-- Contextual backgrounds -->
+<p class="js-html-inspector">
+    <span class="bg-primary">.bg-primary</span>
+    <span class="bg-success">.bg-success</span>
+    <span class="bg-info">.bg-info</span>
+    <span class="bg-warning">.bg-warning</span>
+    <span class="bg-danger">.bg-danger</span>
+</p>
+
+<!-- Close icon -->
+<p class="js-html-inspector">
+    button.close <button class="close" type="button">&times;</button>
+</p>
+
+<!-- Carets -->
+<p class="js-html-inspector">
+    .caret <span class="caret"></span>
+</p>
+
+<!-- Clearfix and floats -->
+<div class="js-html-inspector" data-remove-target="p:first">
+    <p><strong>.clearfix</strong></p>
+    <div class="clearfix">
+        <div class="pull-left">.pull-left</div>
+        <div class="pull-right">.pull-right</div>
+    </div>
+</div>
+<br>
+
+<p>
+    <!-- Center content blocks -->
+    <code>.center-block</code>: Set an element to <code>display: block</code> and center via <code>margin</code>.<br>
+
+    <!-- Showing and hiding content -->
+    <code>.show</code> and <code>.hidden</code>: Showing and hiding content.<br>
+    <code>.invisible</code>: Toggle only the visibility of an element.<br>
+
+    <!-- Screen reader content -->
+    <code>.sr-only</code>: Hide an element to all devices <b>except screen readers</b>.<br>
+
+    <!-- Image replacement -->
+    <code>.text-hide</code>: Replace an element's text content with a background image.
+</p>
+
+<h2 id="responsive-utilities">Responsive utilities</h2>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Extra small devices<br><small>Phones (&lt;768px)</small></th>
+                <th>Small devices<br><small>Tablets (=768px)</small></th>
+                <th>Medium devices<br><small>Desktops (=992px)</small></th>
+                <th>Large devices<br><small>Desktops (=1200px)</small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><code>.visible-xs</code></th>
+                <td class="success">Visible</td>
+                <td>Hidden</td>
+                <td>Hidden</td>
+                <td>Hidden</td>
+            </tr>
+            <tr>
+                <th><code>.visible-sm</code></th>
+                <td>Hidden</td>
+                <td class="success">Visible</td>
+                <td>Hidden</td>
+                <td>Hidden</td>
+            </tr>
+            <tr>
+                <th><code>.visible-md</code></th>
+                <td>Hidden</td>
+                <td>Hidden</td>
+                <td class="success">Visible</td>
+                <td>Hidden</td>
+            </tr>
+            <tr>
+                <th><code>.visible-lg</code></th>
+                <td>Hidden</td>
+                <td>Hidden</td>
+                <td>Hidden</td>
+                <td class="success">Visible</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th><code>.hidden-xs</code></th>
+                <td>Hidden</td>
+                <td class="success">Visible</td>
+                <td class="success">Visible</td>
+                <td class="success">Visible</td>
+            </tr>
+            <tr>
+                <th><code>.hidden-sm</code></th>
+                <td class="success">Visible</td>
+                <td>Hidden</td>
+                <td class="success">Visible</td>
+                <td class="success">Visible</td>
+            </tr>
+            <tr>
+                <th><code>.hidden-md</code></th>
+                <td class="success">Visible</td>
+                <td class="success">Visible</td>
+                <td>Hidden</td>
+                <td class="success">Visible</td>
+            </tr>
+            <tr>
+                <th><code>.hidden-lg</code></th>
+                <td class="success">Visible</td>
+                <td class="success">Visible</td>
+                <td class="success">Visible</td>
+                <td>Hidden</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered responsive-utilities">
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Browser</th>
+                <th>Print</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><code>.visible-print</code></th>
+                <td>Hidden</td>
+                <td class="success">Visible</td>
+            </tr>
+            <tr>
+                <th><code>.hidden-print</code></th>
+                <td class="success">Visible</td>
+                <td>Hidden</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
