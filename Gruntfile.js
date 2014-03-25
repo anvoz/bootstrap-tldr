@@ -59,8 +59,29 @@ module.exports = function (grunt) {
                     '<%= config.app %>/images/{,*/}*'
                 ]
             },
+            htmlbuild_css: {
+                files: [
+                    '<%= config.app %>/fixtures/sections/css/*.html',
+                    '<%= config.app %>/fixtures/sections/css.html'
+                ],
+                tasks: ['htmlbuild:css']
+            },
+            htmlbuild_components: {
+                files: [
+                    '<%= config.app %>/fixtures/sections/components/*.html',
+                    '<%= config.app %>/fixtures/sections/components.html'
+                ],
+                tasks: ['htmlbuild:components']
+            },
+            htmlbuild_javascript: {
+                files: [
+                    '<%= config.app %>/fixtures/sections/javascript/*.html',
+                    '<%= config.app %>/fixtures/sections/javascript.html'
+                ],
+                tasks: ['htmlbuild:javascript']
+            },
             htmlbuild: {
-                files: ['<%= config.app %>/fixtures/**/*.html'],
+                files: ['<%= config.app %>/fixtures/*.html'],
                 tasks: ['htmlbuild:app']
             }
         },
