@@ -130,7 +130,8 @@ module.exports = function (grunt) {
                     src: [
                         '.tmp',
                         '<%= config.dist %>/*',
-                        '!<%= config.dist %>/.git*'
+                        '!<%= config.dist %>/.git*',
+                        '!<%= config.dist %>/reddit_button.html'
                     ]
                 }]
             },
@@ -407,7 +408,8 @@ module.exports = function (grunt) {
                     parseTag: 'builddist',
                     sections: {
                         githubRibbon: '<%= config.app %>/fixtures/sections/dist/github_ribbon.html',
-                        footer: '<%= config.app %>/fixtures/sections/dist/footer.html'
+                        footer: '<%= config.app %>/fixtures/sections/dist/footer.html',
+                        sidebarBanners: '<%= config.app %>/fixtures/sections/dist/sidebar_banners.html'
                     }
                 }
             }

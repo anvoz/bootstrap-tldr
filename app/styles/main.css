@@ -122,6 +122,30 @@ body {
     color: #333;
 }
 
+/* Banner
+-------------------------------------------------- */
+.banner {
+    width: 200px;
+    margin-top: 20px;
+}
+.banner a {
+    font-size: 85%;
+    color: #999;
+}
+.banner a:hover,
+.banner a:active {
+    color: #333;
+    text-decoration: none;
+}
+.banner-thumbnail {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-image: url(http://anvoz.github.io/world-js/images/thumb.png);
+    background-position: -160px -60px;
+}
+
 /* HTML inspector button styles
 -------------------------------------------------- */
 .js-html-inspector {
