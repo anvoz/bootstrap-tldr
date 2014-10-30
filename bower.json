@@ -1,10 +1,9 @@
 {
-  "name": "bootstrap-one",
+  "name": "bootstrap-tldr",
   "private": true,
   "dependencies": {
     "bootstrap": "~3.1.1",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.11.0"
-  },
-  "devDependencies": {}
+    "modernizr": "~2.8.2",
+    "jquery": "~1.11.1"
+  }
 }

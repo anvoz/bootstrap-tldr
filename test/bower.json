@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-one",
+  "name": "bootstrap-tldr",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",
