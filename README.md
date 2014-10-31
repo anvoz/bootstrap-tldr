@@ -3,9 +3,15 @@ Bootstrap TLDR
 
 ## Feature
 
-* [Bootstrap](http://getbootstrap.com/) v3.1.1
+* [Bootstrap](http://getbootstrap.com/) v3.2.0
 * All Bootstrap's components in one page
 * Briefly presented with their own CSS selectors
+
+Not include in this document:
+* [Grid system](http://getbootstrap.com/css/#grid)
+* [Responsive utilities](http://getbootstrap.com/css/#responsive-utilities)
+* [Responsive embed](http://getbootstrap.com/components/#responsive-embed)
+* [ScrollSpy](http://getbootstrap.com/javascript/#scrollspy)
 
 ## Dev
 

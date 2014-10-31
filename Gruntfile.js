@@ -355,8 +355,7 @@ module.exports = function (grunt) {
             forms: '<%= config.app %>/contents/sections/css/forms.html',
             buttons: '<%= config.app %>/contents/sections/css/buttons.html',
             images: '<%= config.app %>/contents/sections/css/images.html',
-            helperClasses: '<%= config.app %>/contents/sections/css/helper_classes.html',
-            responsiveUtilities: '<%= config.app %>/contents/sections/css/responsive_utilities.html'
+            helperClasses: '<%= config.app %>/contents/sections/css/helper_classes.html'
           }
         }
       },
