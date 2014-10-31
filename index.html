@@ -8,8 +8,8 @@
     <title>Bootstrap TLDR</title>
     <meta name="description" content="All Bootstrap's components in one page. Briefly presented with their own CSS selectors.">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles/9c307a9d.vendor.css">
-    <link rel="stylesheet" href="styles/d2f68ded.main.css">
+    <link rel="stylesheet" href="styles/ff312dc9.vendor.css">
+    <link rel="stylesheet" href="styles/ec99370d.main.css">
     <script src="scripts/vendor/d4d78a91.modernizr.js"></script>
   </head>
   <body data-spy="scroll" data-target="#sidebar">
@@ -40,6 +40,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a href="http://anvoz.github.io/bootstrap-tldr/old/v3.1.1/">Bootstrap v3.1.1</a></li>
+                <li><a href="http://anvoz.github.io/bootstrap-tldr/old/v3.2.0/">Bootstrap v3.2.0</a></li>
               </ul>
             </li>
           </ul>
@@ -56,7 +57,7 @@
   <p>Bootstrap TLDR</p>
   <footer>
     <span class="glyphicon glyphicon-heart"></span>
-    <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> v3.2.0
+    <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> v3.3.0
   </footer>
   <footer>
     <span class="glyphicon glyphicon-star"></span>
@@ -73,33 +74,33 @@
 
 <h2 id="typography">Typography</h2>
 <!-- Headings -->
-<div class="media bse-heading js-html-inspector" data-replace-target="> div">
-  <div class="pull-left">
+<div class="media js-html-inspector" data-replace-target="> div">
+  <div class="media-left media-middle">
     <h1>
       h1 <small>small</small>
     </h1>
   </div>
-  <div class="pull-left">
+  <div class="media-left media-middle">
     <div class="h2">
       .h2 <small>small</small>
     </div>
   </div>
-  <div class="pull-left">
+  <div class="media-left media-middle">
     <h3>
       h3 <small>small</small>
     </h3>
   </div>
-  <div class="pull-left">
+  <div class="media-left media-middle">
     <div class="h4">
       .h4 <small>small</small>
     </div>
   </div>
-  <div class="pull-left">
+  <div class="media-left media-middle">
     <h5>
       h5 <small>small</small>
     </h5>
   </div>
-  <div class="pull-left">
+  <div class="media-left media-middle">
     <div class="h6">
       .h6 <small>small</small>
     </div>
@@ -1726,12 +1727,12 @@
 <div class="js-html-inspector" data-remove-target="p:first">
   <p><strong>.media</strong></p>
   <div class="media">
-    <a class="pull-left" href="#">
+    <a class="media-left" href="#">
       <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
     </a>
     <div class="media-body">
       <h4 class="media-heading">.media-body h4.media-heading</h4>
-      &larr; a.pull-left img.media-object
+      &larr; a.media-left img.media-object
     </div>
   </div>
 </div><br>
@@ -1739,18 +1740,19 @@
 <div class="js-html-inspector" data-remove-target="p:first">
   <p><strong>.media</strong></p>
   <div class="media">
-    <a class="pull-left" href="#">
+    <a class="media-left media-middle" href="#">
       <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
     </a>
     <div class="media-body">
       <h4 class="media-heading">.media-body h4.media-heading</h4>
+      &larr; a.media-left.media-middle img.media-object
       <div class="media">
-        <a class="pull-left" href="#">
+        <a class="media-left" href="#">
           <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
         </a>
         <div class="media-body">
           <h4 class="media-heading">.media .media-body h4.media-heading</h4>
-          &larr; a.pull-left img.media-object
+          &larr; a.media-left img.media-object
         </div>
       </div>
     </div>
@@ -1761,30 +1763,31 @@
   <p><strong>ul.media-list</strong></p>
   <ul class="media-list">
     <li class="media">
-      <a class="pull-left" href="#">
+      <a class="media-left media-bottom" href="#">
         <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
       </a>
       <div class="media-body">
         <h4 class="media-heading">li.media .media-body h4.media-heading</h4>
+        &larr; a.media-left.media-bottom img.media-object
         <div class="media">
-          <a class="pull-left" href="#">
+          <a class="media-left" href="#">
             <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
           </a>
           <div class="media-body">
             <h4 class="media-heading">.media .media-body h4.media-heading</h4>
-            &larr; a.pull-left img.media-object
+            &larr; a.media-left img.media-object
           </div>
         </div>
       </div>
     </li>
     <li class="media">
-      <a class="pull-right" href="#">
-        <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
-      </a>
       <div class="media-body">
         <h4 class="media-heading">li.media .media-body h4.media-heading</h4>
-        a.pull-right img.media-object &rarr;
+        a.media-right img.media-object &rarr;
       </div>
+      <a class="media-right" href="#">
+        <img class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt=".media-object">
+      </a>
     </li>
   </ul>
 </div>
@@ -2462,7 +2465,7 @@
       ga('create','UA-2509540-4');ga('send','pageview');
     </script>
 
-    <script src="scripts/d08775b7.plugins.js"></script>
+    <script src="scripts/172cb070.plugins.js"></script>
 
     <script src="scripts/66e5c45c.main.js"></script>
   </body>
