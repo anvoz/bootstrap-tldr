@@ -3,7 +3,7 @@ Bootstrap TLDR
 
 ## Feature
 
-* [Bootstrap](http://getbootstrap.com/) v3.2.0
+* [Bootstrap](http://getbootstrap.com/) v3.3.0
 * All Bootstrap's components in one page
 * Briefly presented with their own CSS selectors
 
