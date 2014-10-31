@@ -137,8 +137,7 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= config.dist %>/*',
-            '!<%= config.dist %>/.git*',
-            '!<%= config.dist %>/reddit_button.html'
+            '!<%= config.dist %>/.git*'
           ]
         }]
       },

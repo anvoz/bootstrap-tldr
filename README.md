@@ -11,8 +11,8 @@ Bootstrap TLDR
 
 * Install dependencies: `npm install` and `bower install`
 * Run webapp: `grunt serve`
-* Modify page content in `app/fixtures/` folder
-* Build webapp: `grunt`
+* Modify page content in `app/contents/` folder
+* Build webapp: `grunt htmlbuild:dist && grunt`
 
 ## License
 MIT © An Vo [@an_voz](https://twitter.com/an_voz), 2014
