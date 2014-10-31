@@ -62,27 +62,27 @@ module.exports = function (grunt) {
       },
       htmlbuildCSS: {
         files: [
-          '<%= config.app %>/fixtures/sections/css/*.html',
-          '<%= config.app %>/fixtures/sections/css.html'
+          '<%= config.app %>/contents/sections/css/*.html',
+          '<%= config.app %>/contents/sections/css.html'
         ],
         tasks: ['htmlbuild:css']
       },
       htmlbuildComponents: {
         files: [
-          '<%= config.app %>/fixtures/sections/components/*.html',
-          '<%= config.app %>/fixtures/sections/components.html'
+          '<%= config.app %>/contents/sections/components/*.html',
+          '<%= config.app %>/contents/sections/components.html'
         ],
         tasks: ['htmlbuild:components']
       },
       htmlbuildJavascript: {
         files: [
-          '<%= config.app %>/fixtures/sections/javascript/*.html',
-          '<%= config.app %>/fixtures/sections/javascript.html'
+          '<%= config.app %>/contents/sections/javascript/*.html',
+          '<%= config.app %>/contents/sections/javascript.html'
         ],
         tasks: ['htmlbuild:javascript']
       },
       htmlbuild: {
-        files: ['<%= config.app %>/fixtures/*.html'],
+        files: ['<%= config.app %>/contents/*.html'],
         tasks: ['htmlbuild:app']
       }
     },
@@ -346,74 +346,74 @@ module.exports = function (grunt) {
     // Append html partials
     htmlbuild: {
       css: {
-        src: '<%= config.app %>/fixtures/sections/css.html',
-        dest: '<%= config.app %>/fixtures/css.html',
+        src: '<%= config.app %>/contents/sections/css.html',
+        dest: '<%= config.app %>/contents/css.html',
         options: {
           sections: {
-            typography: '<%= config.app %>/fixtures/sections/css/typography.html',
-            tables: '<%= config.app %>/fixtures/sections/css/tables.html',
-            forms: '<%= config.app %>/fixtures/sections/css/forms.html',
-            buttons: '<%= config.app %>/fixtures/sections/css/buttons.html',
-            images: '<%= config.app %>/fixtures/sections/css/images.html',
-            helperClasses: '<%= config.app %>/fixtures/sections/css/helper_classes.html',
-            responsiveUtilities: '<%= config.app %>/fixtures/sections/css/responsive_utilities.html'
+            typography: '<%= config.app %>/contents/sections/css/typography.html',
+            tables: '<%= config.app %>/contents/sections/css/tables.html',
+            forms: '<%= config.app %>/contents/sections/css/forms.html',
+            buttons: '<%= config.app %>/contents/sections/css/buttons.html',
+            images: '<%= config.app %>/contents/sections/css/images.html',
+            helperClasses: '<%= config.app %>/contents/sections/css/helper_classes.html',
+            responsiveUtilities: '<%= config.app %>/contents/sections/css/responsive_utilities.html'
           }
         }
       },
       components: {
-        src: '<%= config.app %>/fixtures/sections/components.html',
-        dest: '<%= config.app %>/fixtures/components.html',
+        src: '<%= config.app %>/contents/sections/components.html',
+        dest: '<%= config.app %>/contents/components.html',
         options: {
           sections: {
-            glyphicons: '<%= config.app %>/fixtures/sections/components/glyphicons.html',
-            dropdowns: '<%= config.app %>/fixtures/sections/components/dropdowns.html',
-            buttonGroups: '<%= config.app %>/fixtures/sections/components/button_groups.html',
-            inputGroups: '<%= config.app %>/fixtures/sections/components/input_groups.html',
-            navs: '<%= config.app %>/fixtures/sections/components/navs.html',
-            navbar: '<%= config.app %>/fixtures/sections/components/navbar.html',
-            breadcrumbs: '<%= config.app %>/fixtures/sections/components/breadcrumbs.html',
-            pagination: '<%= config.app %>/fixtures/sections/components/pagination.html',
-            labels: '<%= config.app %>/fixtures/sections/components/labels.html',
-            jumbotron: '<%= config.app %>/fixtures/sections/components/jumbotron.html',
-            pageHeader: '<%= config.app %>/fixtures/sections/components/page_header.html',
-            thumbnails: '<%= config.app %>/fixtures/sections/components/thumbnails.html',
-            alerts: '<%= config.app %>/fixtures/sections/components/alerts.html',
-            progressBars: '<%= config.app %>/fixtures/sections/components/progress_bars.html',
-            mediaObject: '<%= config.app %>/fixtures/sections/components/media_object.html',
-            listGroup: '<%= config.app %>/fixtures/sections/components/list_group.html',
-            panels: '<%= config.app %>/fixtures/sections/components/panels.html',
-            wells: '<%= config.app %>/fixtures/sections/components/wells.html'
+            glyphicons: '<%= config.app %>/contents/sections/components/glyphicons.html',
+            dropdowns: '<%= config.app %>/contents/sections/components/dropdowns.html',
+            buttonGroups: '<%= config.app %>/contents/sections/components/button_groups.html',
+            inputGroups: '<%= config.app %>/contents/sections/components/input_groups.html',
+            navs: '<%= config.app %>/contents/sections/components/navs.html',
+            navbar: '<%= config.app %>/contents/sections/components/navbar.html',
+            breadcrumbs: '<%= config.app %>/contents/sections/components/breadcrumbs.html',
+            pagination: '<%= config.app %>/contents/sections/components/pagination.html',
+            labels: '<%= config.app %>/contents/sections/components/labels.html',
+            jumbotron: '<%= config.app %>/contents/sections/components/jumbotron.html',
+            pageHeader: '<%= config.app %>/contents/sections/components/page_header.html',
+            thumbnails: '<%= config.app %>/contents/sections/components/thumbnails.html',
+            alerts: '<%= config.app %>/contents/sections/components/alerts.html',
+            progressBars: '<%= config.app %>/contents/sections/components/progress_bars.html',
+            mediaObject: '<%= config.app %>/contents/sections/components/media_object.html',
+            listGroup: '<%= config.app %>/contents/sections/components/list_group.html',
+            panels: '<%= config.app %>/contents/sections/components/panels.html',
+            wells: '<%= config.app %>/contents/sections/components/wells.html'
           }
         }
       },
       javascript: {
-        src: '<%= config.app %>/fixtures/sections/javascript.html',
-        dest: '<%= config.app %>/fixtures/javascript.html',
+        src: '<%= config.app %>/contents/sections/javascript.html',
+        dest: '<%= config.app %>/contents/javascript.html',
         options: {
           sections: {
-            modals: '<%= config.app %>/fixtures/sections/javascript/modals.html',
-            dropdowns: '<%= config.app %>/fixtures/sections/javascript/dropdowns.html',
-            tabs: '<%= config.app %>/fixtures/sections/javascript/tabs.html',
-            tooltips: '<%= config.app %>/fixtures/sections/javascript/tooltips.html',
-            popovers: '<%= config.app %>/fixtures/sections/javascript/popovers.html',
-            alerts: '<%= config.app %>/fixtures/sections/javascript/alerts.html',
-            buttons: '<%= config.app %>/fixtures/sections/javascript/buttons.html',
-            collapse: '<%= config.app %>/fixtures/sections/javascript/collapse.html',
-            carousel: '<%= config.app %>/fixtures/sections/javascript/carousel.html'
+            modals: '<%= config.app %>/contents/sections/javascript/modals.html',
+            dropdowns: '<%= config.app %>/contents/sections/javascript/dropdowns.html',
+            tabs: '<%= config.app %>/contents/sections/javascript/tabs.html',
+            tooltips: '<%= config.app %>/contents/sections/javascript/tooltips.html',
+            popovers: '<%= config.app %>/contents/sections/javascript/popovers.html',
+            alerts: '<%= config.app %>/contents/sections/javascript/alerts.html',
+            buttons: '<%= config.app %>/contents/sections/javascript/buttons.html',
+            collapse: '<%= config.app %>/contents/sections/javascript/collapse.html',
+            carousel: '<%= config.app %>/contents/sections/javascript/carousel.html'
           }
         }
       },
       app: {
-        src: '<%= config.app %>/fixtures/index.html',
+        src: '<%= config.app %>/contents/index.html',
         dest: '<%= config.app %>/index.html',
         options: {
           parseTag: 'buildapp',
           sections: {
-            feature: '<%= config.app %>/fixtures/feature.html',
-            css: '<%= config.app %>/fixtures/css.html',
-            components: '<%= config.app %>/fixtures/components.html',
-            javascript: '<%= config.app %>/fixtures/javascript.html',
-            sidebar: '<%= config.app %>/fixtures/sidebar.html'
+            feature: '<%= config.app %>/contents/feature.html',
+            css: '<%= config.app %>/contents/css.html',
+            components: '<%= config.app %>/contents/components.html',
+            javascript: '<%= config.app %>/contents/javascript.html',
+            sidebar: '<%= config.app %>/contents/sidebar.html'
           }
         }
       },
@@ -423,9 +423,9 @@ module.exports = function (grunt) {
         options: {
           parseTag: 'builddist',
           sections: {
-            githubRibbon: '<%= config.app %>/fixtures/sections/dist/github_ribbon.html',
-            footer: '<%= config.app %>/fixtures/sections/dist/footer.html',
-            sidebarBanners: '<%= config.app %>/fixtures/sections/dist/sidebar_banners.html'
+            githubRibbon: '<%= config.app %>/contents/sections/extra/github_ribbon.html',
+            footer: '<%= config.app %>/contents/sections/extra/footer.html',
+            sidebarBanners: '<%= config.app %>/contents/sections/extra/sidebar_banners.html'
           }
         }
       }
