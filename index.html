@@ -8,7 +8,7 @@
     <title>Bootstrap TLDR</title>
     <meta name="description" content="All Bootstrap's components in one page. Briefly presented with their own CSS selectors.">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles/8e279390.vendor.css">
+    <link rel="stylesheet" href="styles/9c307a9d.vendor.css">
     <link rel="stylesheet" href="styles/d2f68ded.main.css">
     <script src="scripts/vendor/d4d78a91.modernizr.js"></script>
   </head>
@@ -34,6 +34,14 @@
             <li><a href="#css">CSS</a></li>
             <li><a href="#components">Components</a></li>
             <li><a href="#javascript">Javascript</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Old <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://anvoz.github.io/bootstrap-tldr/old/v3.1.1/">Bootstrap v3.1.1</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -48,7 +56,7 @@
   <p>Bootstrap TLDR</p>
   <footer>
     <span class="glyphicon glyphicon-heart"></span>
-    <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> v3.1.1
+    <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> v3.2.0
   </footer>
   <footer>
     <span class="glyphicon glyphicon-star"></span>
@@ -119,22 +127,30 @@
     <i>i (italic)</i>
   </div>
 
+  <!-- Inline text elements -->
   <div class="col-sm-2 col-xs-4">
-    <!-- Abbreviations -->
-    <abbr title="abbreviation">abbr</abbr><br>
-    <abbr class="initialism" title="abbreviation.initialism">
-      .initialism
-    </abbr>
+    <!-- Deleted text -->
+    <del>del</del><br>
+    <!-- Strikethrough text -->
+    <s>s (strikethrough)</s><br>
+    <!-- Inserted text -->
+    <ins>ins</ins><br>
+    <!-- Underlined text -->
+    <u>u (underline)</u>
   </div>
 
   <div class="col-sm-2 col-xs-4">
     <!-- Inline code -->
     <code>code</code><br>
+    <!-- Variables -->
+    <var>var</var><br>
     <!-- Sample output from a program -->
     <samp>samp</samp>
   </div>
 
   <div class="col-sm-2 col-xs-4">
+    <!-- Marked text -->
+    <mark>mark</mark><br>
     <!-- User input -->
     <kbd>kbd</kbd>
   </div>
@@ -152,9 +168,24 @@
     <p class="text-right">.text-right</p>
   </div>
   <div class="col-xs-12">
-    <p class="text-justify">.text-justify</p>
+    <div class="text-justify">.text-justify</div>
   </div>
-</div>
+</div><br>
+
+<!-- Transformation classes -->
+<div class="js-html-inspector">
+  <span class="text-lowercase">.text-lowercase</span>
+  <span class="text-uppercase">.text-uppercase</span>
+  <span class="text-capitalize">.text-capitalize</span>
+</div><br>
+
+<!-- Abbreviations -->
+<div class="js-html-inspector">
+  <abbr title="abbreviation">abbr</abbr>
+  <abbr class="initialism" title="abbreviation.initialism">
+    .initialism
+  </abbr>
+</div><br>
 
 <!-- Addresses -->
 <div class="js-html-inspector">
@@ -477,6 +508,22 @@
         <input class="form-control" id="example-text-input-horizontal" type="text" placeholder="input.form-control">
       </div>
     </div>
+    <div class="form-group form-group-lg">
+      <label class="col-sm-3 control-label" for="example-text-input-horizontal-lg">
+        label.control-label
+      </label>
+      <div class="col-sm-9">
+        <input class="form-control" id="example-text-input-horizontal-lg" type="text" placeholder="input.form-control">
+      </div>
+    </div>
+    <div class="form-group form-group-sm">
+      <label class="col-sm-3 control-label" for="example-text-input-horizontal-sm">
+        label.control-label
+      </label>
+      <div class="col-sm-9">
+        <input class="form-control" id="example-text-input-horizontal-sm" type="text" placeholder="input.form-control">
+      </div>
+    </div>
 
       <!-- Checkbox -->
       <div class="form-group">
@@ -501,7 +548,7 @@
             <input type="checkbox" value="option2">
             Checkbox #2
           </label>
-          <label class="checkbox-inline">
+          <label class="checkbox-inline disabled">
             <input type="checkbox" value="option3" disabled>
             Disabled checkbox #3
           </label>
@@ -531,7 +578,7 @@
             <input name="optionsRadios2" type="radio" value="option2">
             Radio #2
           </label>
-          <label class="radio-inline">
+          <label class="radio-inline disabled">
             <input name="optionsRadios2" type="radio" value="option3" disabled>
             Disabled radio #3
           </label>
@@ -782,105 +829,6 @@
   <code>.text-hide</code>: Replace an element's text content with a background image.
 </p>
 
-
-<h2 id="responsive-utilities">Responsive utilities</h2>
-<div class="table-responsive">
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Extra small devices<br><small>Phones (&lt;768px)</small></th>
-        <th>Small devices<br><small>Tablets (=768px)</small></th>
-        <th>Medium devices<br><small>Desktops (=992px)</small></th>
-        <th>Large devices<br><small>Desktops (=1200px)</small></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th><code>.visible-xs</code></th>
-        <td class="success">Visible</td>
-        <td>Hidden</td>
-        <td>Hidden</td>
-        <td>Hidden</td>
-      </tr>
-      <tr>
-        <th><code>.visible-sm</code></th>
-        <td>Hidden</td>
-        <td class="success">Visible</td>
-        <td>Hidden</td>
-        <td>Hidden</td>
-      </tr>
-      <tr>
-        <th><code>.visible-md</code></th>
-        <td>Hidden</td>
-        <td>Hidden</td>
-        <td class="success">Visible</td>
-        <td>Hidden</td>
-      </tr>
-      <tr>
-        <th><code>.visible-lg</code></th>
-        <td>Hidden</td>
-        <td>Hidden</td>
-        <td>Hidden</td>
-        <td class="success">Visible</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th><code>.hidden-xs</code></th>
-        <td>Hidden</td>
-        <td class="success">Visible</td>
-        <td class="success">Visible</td>
-        <td class="success">Visible</td>
-      </tr>
-      <tr>
-        <th><code>.hidden-sm</code></th>
-        <td class="success">Visible</td>
-        <td>Hidden</td>
-        <td class="success">Visible</td>
-        <td class="success">Visible</td>
-      </tr>
-      <tr>
-        <th><code>.hidden-md</code></th>
-        <td class="success">Visible</td>
-        <td class="success">Visible</td>
-        <td>Hidden</td>
-        <td class="success">Visible</td>
-      </tr>
-      <tr>
-        <th><code>.hidden-lg</code></th>
-        <td class="success">Visible</td>
-        <td class="success">Visible</td>
-        <td class="success">Visible</td>
-        <td>Hidden</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="table-responsive">
-  <table class="table table-bordered responsive-utilities">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Browser</th>
-        <th>Print</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th><code>.visible-print</code></th>
-        <td>Hidden</td>
-        <td class="success">Visible</td>
-      </tr>
-      <tr>
-        <th><code>.hidden-print</code></th>
-        <td class="success">Visible</td>
-        <td>Hidden</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 
 <h1 class="page-header" id="components">Components</h1>
@@ -2414,7 +2362,6 @@
         <li><a href="#buttons">Buttons</a></li>
         <li><a href="#images">Images</a></li>
         <li><a href="#helper-classes">Helper classes</a></li>
-        <li><a href="#responsive-utilities">Responsive utilities</a></li>
       </ul>
     </li>
     <li>
@@ -2515,7 +2462,7 @@
       ga('create','UA-2509540-4');ga('send','pageview');
     </script>
 
-    <script src="scripts/ffbd60ee.plugins.js"></script>
+    <script src="scripts/d08775b7.plugins.js"></script>
 
     <script src="scripts/66e5c45c.main.js"></script>
   </body>
